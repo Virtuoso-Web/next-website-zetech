@@ -1,0 +1,372 @@
+@import "@/assets/variables";
+
+.kontakt-page {
+    padding-block-start: $header-block-size;
+    background-color: $color-white-dark;
+
+    .intro-section {
+        padding-inline: min(5rem, 5%);
+        padding-block: 10rem;
+        isolation: isolate;
+        background-color: $color-black-dark;
+
+        .section-container {
+            inline-size: min($max-size, 100%);
+            margin-inline: auto;
+
+            > .flex-grid {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5rem;
+
+                > .title-box {
+                    display: flex;
+
+                    .title {
+                        color: $color-white-dark;
+                        font-size: 7rem;
+                        font-weight: $weight-bold;
+
+                        @media (max-width: 768px) {
+                            font-size: 6rem;
+                        }
+
+                        @media (max-width: 425px) {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+
+                > .description-box {
+                    display: flex;
+
+                    .description {
+                        color: $color-white-dark;
+                        font-size: 2.5rem;
+
+                        @media (max-width: 768px) {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .team-section {
+        padding-inline: min(5rem, 5%);
+        padding-block: 10rem;
+        isolation: isolate;
+
+        .section-container {
+            inline-size: min($max-size, 100%);
+            margin-inline: auto;
+
+            > .flex-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 5rem;
+
+                > .title-box {
+                    display: flex;
+
+                    .title {
+                        font-size: 7rem;
+                        font-weight: $weight-bold;
+
+                        @media (max-width: 768px) {
+                            font-size: 6rem;
+                        }
+
+                        @media (max-width: 425px) {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+
+                > .sub-flex-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(min(35rem, 100%), 1fr));
+                    column-gap: 5rem;
+                    row-gap: 5rem;
+
+                    .partner-box {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1rem;
+                        padding-block-end: 1rem;
+                        border-radius: 1rem;
+                        outline: 0.5rem solid $color-black-light;
+                        background-color: $color-white-light;
+                        overflow: hidden;
+
+                        .image-holder {
+                            position: relative;
+                            display: flex;
+                            inline-size: 100%;
+                            aspect-ratio: 4 / 3;
+                            background-color: $color-white-dark;
+                        }
+
+                        .box-group {
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 1rem;
+                            padding-inline: min(5rem, 5%);
+
+                            .name {
+                                font-size: 2rem;
+                                font-weight: $weight-bold;
+                            }
+
+                            .area-group {
+                                display: flex;
+                                align-items: center;
+                                column-gap: 3rem;
+                                font-size: 2rem;
+                            }
+
+                            .contact-group {
+                                inline-size: fit-content;
+                                display: flex;
+                                align-items: center;
+                                column-gap: 3rem;
+                                font-size: 2rem;
+
+                                .contact-link {
+                                    color: $color-blue-main;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .form-section {
+        padding-inline: min(5rem, 5%);
+        padding-block: 10rem;
+        isolation: isolate;
+        background-color: $color-white-light;
+
+        .section-container {
+            inline-size: min($max-size, 100%);
+            margin-inline: auto;
+
+            > .flex-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas:
+                    "h h"
+                    "o c"
+                    "f f";
+                column-gap: 5rem;
+                row-gap: 5rem;
+
+                @media (max-width: 1024px) {
+                    grid-template-areas:
+                        "h h"
+                        "o o"
+                        "c c"
+                        "f f";
+                }
+
+                > .title-box {
+                    grid-area: h;
+                    margin-block-end: 5rem;
+
+                    .title {
+                        font-size: 7rem;
+                        font-weight: $weight-bold;
+
+                        @media (max-width: 768px) {
+                            font-size: 6rem;
+                        }
+
+                        @media (max-width: 425px) {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+
+                > .sub-flex-grid-1 {
+                    grid-area: o;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    row-gap: 3rem;
+                    padding-inline: min(5rem, 5%);
+                    padding-block: 3rem;
+                    border-radius: 1rem;
+                    outline: 0.5rem solid $color-black-light;
+                    background-color: $color-white-dark;
+
+                    .title {
+                        font-size: 5rem;
+                        font-weight: $weight-bold;
+                    }
+
+                    .open-days {
+                        font-size: 3rem;
+                    }
+
+                    .open-hours-box {
+                        font-size: 2rem;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1rem;
+                    }
+                }
+
+                > .sub-flex-grid-2 {
+                    grid-area: c;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-inline: min(5rem, 5%);
+                    padding-block: 3rem;
+                    border-radius: 1rem;
+                    outline: 0.5rem solid $color-black-light;
+                    background-color: $color-white-dark;
+
+                    .box-container {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 3rem;
+
+                        .box {
+                            inline-size: fit-content;
+                            display: flex;
+                            align-items: center;
+                            column-gap: 5rem;
+
+                            .icon {
+                                font-size: 5rem;
+                            }
+
+                            .box-group {
+                                display: flex;
+                                flex-direction: column;
+
+                                > p {
+                                    font-size: 2rem;
+                                }
+                            }
+
+                            .contact-link {
+                                color: $color-blue-main;
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+
+                > .sub-flex-grid-3 {
+                    grid-area: f;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    border-radius: 1rem;
+                    outline: 0.5rem solid $color-black-light;
+                    overflow: hidden;
+
+                    @media (max-width: 1024px) {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .map-box {
+                        position: relative;
+                        display: flex;
+
+                        @media (max-width: 1024px) {
+                            block-size: 50rem;
+                        }
+
+                        .map {
+                            position: absolute;
+                            inline-size: 100%;
+                            block-size: 100%;
+                            border: none;
+                        }
+                    }
+
+                    .form-box {
+                        padding-inline: min(5rem, 5%);
+                        padding-block: 3rem;
+                        background-color: $color-white-dark;
+
+                        .form {
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 2rem;
+
+                            .input-group {
+                                display: flex;
+                                flex-direction: column;
+
+                                .input-label {
+                                    font-size: 2rem;
+                                }
+
+                                .form-input {
+                                    font-size: 2rem;
+                                    padding-inline: min(5rem, 5%);
+                                    padding-block: 1rem;
+                                    border-radius: 1rem;
+                                    border: none;
+                                    outline: 0.3rem solid $color-black-light;
+                                    background-color: $color-white-light;
+                                }
+
+                                .form-input-text {
+                                    font-size: 2rem;
+                                    min-block-size: 20rem;
+                                    max-block-size: 50rem;
+                                    padding-inline: min(5rem, 5%);
+                                    padding-block: 1rem;
+                                    resize: vertical;
+                                    border-radius: 1rem;
+                                    border: none;
+                                    outline: 0.3rem solid $color-black-light;
+                                    background-color: $color-white-light;
+                                }
+                            }
+
+                            .button-group {
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+                                column-gap: min(5rem, 5%);
+                                row-gap: 3rem;
+
+                                .send-button {
+                                    color: $color-white-dark;
+                                    font-size: 2rem;
+                                    padding-block: 1rem;
+                                    border-radius: 1rem;
+                                    border: none;
+                                    outline: 0.3rem solid $color-black-light;
+                                    background-color: $color-blue-main;
+                                    cursor: pointer;
+                                }
+
+                                .reset-button {
+                                    color: $color-white-dark;
+                                    font-size: 2rem;
+                                    padding-block: 1rem;
+                                    border-radius: 1rem;
+                                    border: none;
+                                    outline: 0.3rem solid $color-black-light;
+                                    background-color: red;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

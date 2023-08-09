@@ -1,0 +1,145 @@
+@import "@/assets/variables";
+
+.header {
+    position: fixed;
+    inset-inline: 0;
+    inset-block-start: 0;
+    block-size: $header-block-size;
+    padding-inline: min(5rem, 5%);
+    box-shadow: 0 0 1rem 0 $color-black-light;
+    background-color: $color-white-dark;
+    z-index: 100;
+
+    .header-container {
+        block-size: 100%;
+        inline-size: min($max-size, 100%);
+        margin-inline: auto;
+
+        .navigation {
+            block-size: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo-link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding-inline: 1rem;
+                padding-block: 0.5rem;
+                border-radius: 1rem;
+                transition-property: background-color;
+                transition-timing-function: ease-in-out;
+                transition-duration: 200ms;
+
+                &:hover {
+                    background-color: $color-white-light;
+                }
+
+                .company-name {
+                    color: $color-blue-main;
+                    font-size: 4rem;
+                    font-weight: $weight-bold;
+                    font-style: italic;
+                    line-height: 1;
+                }
+
+                .company-desc {
+                    color: $color-blue-main;
+                    font-size: 2rem;
+                    font-style: italic;
+                    line-height: 1;
+                }
+            }
+
+            .nav-list {
+                display: flex;
+                column-gap: 1rem;
+
+                @media (max-width: 1024px) {
+                    position: fixed;
+                    inset-inline: 0;
+                    inset-block: $header-block-size 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    overflow-y: hidden;
+                    background-color: $color-black-light;
+                    z-index: 90;
+
+                    &.active {
+                        inset-block-end: 0;
+                        overflow-y: auto;
+                        overscroll-behavior-block: contain;
+                    }
+                }
+
+                .nav-link {
+                    color: $color-black-light;
+                    font-size: 2rem;
+                    font-weight: $weight-bold;
+                    padding-inline: 1rem;
+                    padding-block: 0.5rem;
+                    border-radius: 1rem;
+                    transition-property: background-color, color;
+                    transition-timing-function: ease-in-out;
+                    transition-duration: 200ms;
+
+                    @media (max-width: 1024px) {
+                        inline-size: 80%;
+                        color: $color-white-dark;
+                        font-size: 3rem;
+                        padding-block: 1rem;
+                        margin-block: 0.5rem;
+
+                        &.first {
+                            margin-block: 1rem 0.5rem;
+                        }
+
+                        &.last {
+                            margin-block: 0.5rem 1rem;
+                        }
+
+                        &.active,
+                        &:hover {
+                            background-color: $color-white-dark;
+                            color: $color-black-light;
+                        }
+                    }
+
+                    &.active,
+                    &:hover {
+                        background-color: $color-white-light;
+                    }
+                }
+            }
+
+            .menu-burger {
+                display: none;
+                cursor: pointer;
+
+                &.active {
+                    .line-top {
+                        transform: translateY(5px) rotate(45deg);
+                    }
+
+                    .line-bot {
+                        transform: translateY(-5px) rotate(-45deg);
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    display: initial;
+                }
+
+                > div {
+                    inline-size: 40px;
+                    block-size: 3px;
+                    margin-block: 7px;
+                    background-color: $color-black-light;
+                }
+            }
+        }
+    }
+}

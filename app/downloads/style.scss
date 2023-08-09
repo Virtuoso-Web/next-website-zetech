@@ -1,0 +1,127 @@
+@import "@/assets/variables";
+
+.downloads-page {
+    padding-block-start: $header-block-size;
+    background-color: $color-white-dark;
+
+    .intro-section {
+        padding-inline: min(5rem, 5%);
+        padding-block: 10rem;
+        isolation: isolate;
+        background-color: $color-black-dark;
+
+        .section-container {
+            inline-size: min($max-size, 100%);
+            margin-inline: auto;
+
+            > .flex-grid {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5rem;
+
+                > .title-box {
+                    display: flex;
+
+                    .title {
+                        color: $color-white-dark;
+                        font-size: 7rem;
+                        font-weight: $weight-bold;
+
+                        @media (max-width: 768px) {
+                            font-size: 6rem;
+                        }
+
+                        @media (max-width: 425px) {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+
+                > .description-box {
+                    display: flex;
+
+                    .description {
+                        color: $color-white-dark;
+                        font-size: 2.5rem;
+
+                        @media (max-width: 768px) {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .teamviewer-section {
+        padding-inline: min(5rem, 5%);
+        padding-block: 10rem;
+        isolation: isolate;
+
+        .section-container {
+            inline-size: min($max-size, 100%);
+            margin-inline: auto;
+
+            > .flex-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 5rem;
+
+                > .title-box {
+                    display: flex;
+
+                    .title {
+                        font-size: 7rem;
+                        font-weight: $weight-bold;
+
+                        @media (max-width: 768px) {
+                            font-size: 6rem;
+                        }
+
+                        @media (max-width: 425px) {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+
+                > .sub-flex-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
+                    column-gap: min(5rem, 5%);
+                    row-gap: 5rem;
+
+                    .box {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 2rem;
+                        padding-inline: min(5rem, 5%);
+                        padding-block: 3rem;
+                        border-radius: 1rem;
+                        outline: 0.5rem solid $color-black-light;
+                        background-color: $color-white-light;
+
+                        .logo-holder {
+                            display: flex;
+                            font-size: 6rem;
+                        }
+
+                        .description {
+                            display: flex;
+                            flex-direction: column;
+
+                            .name {
+                                color: $color-black-light;
+                                font-size: 3rem;
+                            }
+
+                            .os {
+                                color: $color-black-light;
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
