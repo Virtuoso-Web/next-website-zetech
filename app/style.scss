@@ -4,9 +4,9 @@
     padding-block-start: $header-block-size;
 
     .hero-section {
-        position: sticky;
-        inset-block-start: $header-block-size;
+        position: relative;
         display: flex;
+        min-block-size: calc(100vh - $header-block-size);
         isolation: isolate;
 
         .bg-image {
@@ -14,107 +14,112 @@
             inline-size: 100%;
             block-size: 100%;
             object-fit: cover;
-            object-position: right;
-            filter: brightness(0.45);
             z-index: -1;
         }
 
         .section-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5rem;
             inline-size: min($max-size, 100%);
             margin-inline: auto;
             padding-inline: min(5rem, 5%);
+            padding-block: 5vh;
 
-            > .flex-grid {
-                min-block-size: calc(100vh - $header-block-size);
+            .hero-slider {
+                position: relative;
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-areas:
-                    "h h h ."
-                    "t t t .";
-                row-gap: 5vh;
-                padding-block: 5vh;
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 5rem;
 
-                @media (max-width: 1024px) {
-                    grid-template-areas:
-                        "h h h h"
-                        "t t t t";
-                }
-
-                > .title-box {
-                    grid-area: h;
+                .icon-holder-prev {
+                    position: absolute;
                     display: flex;
                     align-items: center;
+                    inset-inline-start: 0;
+                    inset-block: 50%;
+                    transform: translateY(-50%);
+                    padding-inline: 1rem;
+                    padding-block: 3rem;
+                    border-radius: 1rem;
+                    background-color: $color-black-light;
+                    cursor: pointer;
 
-                    @media (max-width: 1024px) {
-                        text-align: center;
-                        align-items: flex-end;
-                    }
-
-                    .title {
+                    .icon {
                         color: $color-white-dark;
-                        font-size: 8rem;
-                        font-weight: $weight-bolder;
-
-                        @media (max-width: 1024px) {
-                            font-size: 5rem;
-                        }
-
-                        @media (max-width: 425px) {
-                            font-size: 4rem;
-                        }
+                        font-size: 4rem;
                     }
                 }
 
-                > .text-box {
-                    grid-area: t;
+                .text-box {
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-start;
-                    row-gap: 5vh;
 
-                    @media (max-width: 1024px) {
-                        text-align: center;
-                        justify-content: flex-start;
-                    }
+                    .flex-box {
+                        display: flex;
+                        justify-content: center;
 
-                    .intro {
-                        color: $color-white-dark;
-                        font-size: 3rem;
-
-                        @media (max-width: 425px) {
-                            font-size: 2rem;
-                        }
-                    }
-
-                    .motion-div {
-                        .link {
-                            color: $color-black-light;
-                            font-size: 3rem;
+                        .title {
+                            font-size: 8rem;
                             font-weight: $weight-bold;
-                            padding-inline: 20%;
-                            padding-block: 1rem;
-                            border-radius: 3rem;
-                            outline: 0.3rem solid $color-white-dark;
-                            outline-offset: 0.3rem;
-                            background-image: $color-gradient-blue;
-                            transition-property: outline-offset;
-                            transition-timing-function: ease-in-out;
-                            transition-duration: 200ms;
-
-                            &:hover {
-                                outline-offset: 0;
-                            }
-
-                            @media (max-width: 1024px) {
-                                margin-inline: auto;
-                                padding-inline: 10%;
-                            }
-
-                            @media (max-width: 425px) {
-                                font-size: 2rem;
-                            }
                         }
                     }
+
+                    .description {
+                        font-size: 4rem;
+                    }
+                }
+
+                .image-box {
+                    display: flex;
+                    justify-content: center;
+
+                    .image-holder {
+                        position: relative;
+                        display: flex;
+                        inline-size: min(100rem, 80%);
+                        aspect-ratio: calc(16 / 9);
+                        outline: solid black;
+                    }
+                }
+
+                .icon-holder-next {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    inset-inline-end: 0;
+                    inset-block: 50%;
+                    transform: translateY(-50%);
+                    padding-inline: 1rem;
+                    padding-block: 3rem;
+                    border-radius: 1rem;
+                    background-color: $color-black-light;
+                    cursor: pointer;
+
+                    .icon {
+                        color: $color-white-dark;
+                        font-size: 4rem;
+                    }
+                }
+            }
+
+            .link {
+                inline-size: fit-content;
+                margin-inline: auto;
+                color: $color-black-light;
+                font-size: 2rem;
+                padding-inline: 20%;
+                padding-block: 1rem;
+                border-radius: 3rem;
+                outline: 0.3rem solid $color-black-light;
+                outline-offset: 0.3rem;
+                background-image: $color-gradient-blue;
+                transition-property: outline-offset;
+                transition-timing-function: ease-in-out;
+                transition-duration: 200ms;
+
+                &:hover {
+                    outline-offset: 0;
                 }
             }
         }
