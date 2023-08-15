@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -15,45 +15,35 @@ import "@/app/style.scss";
 
 const products = [
     {
-        key: 1,
-        title: "Title 1",
-        description: "Description 1",
-        image: "Image 1",
+        title: "Leica iCON Robot 70",
+        image: "/images/home/leica-icon-robot-70.webp",
     },
     {
-        key: 2,
-        title: "Title 2",
-        description: "Description 2",
-        image: "Image 2",
+        title: "Leica iCON Robot 80",
+        image: "/images/home/leica-icon-robot-80.webp",
     },
     {
-        key: 3,
-        title: "Title 3",
-        description: "Description 3",
-        image: "Image 3",
+        title: "Leica ICB 70",
+        image: "/images/home/leica-icb-70.webp",
     },
     {
-        key: 4,
-        title: "Title 4",
-        description: "Description 4",
-        image: "Image 4",
+        title: "Leica iCON GPS 70",
+        image: "/images/home/leica-icon-gps-70.webp",
     },
     {
-        key: 5,
-        title: "Title 5",
-        description: "Description 5",
-        image: "Image 5",
+        title: "Leica iCON CC 200",
+        image: "/images/home/leica-icon-cc-200.webp",
+    },
+    {
+        title: "Leica iCON CC 80",
+        image: "/images/home/leica-icon-cc-80.webp",
     },
 ];
 
 const switches = {
-    initial: (dir) => {
-        return { opacity: 0, x: dir > 0 ? "10vw" : "-10vw" };
-    },
-    animate: { opacity: 1, x: 0, transition: { ease: "linear", delay: 0.2, duration: 0.2 } },
-    exit: (dir) => {
-        return { opacity: 0, x: dir > 0 ? "-10vw" : "10vw", transition: { ease: "linear", duration: 0.2 } };
-    },
+    initial: { opacity: 0 },
+    animate: { opacity: 1, transition: { ease: "linear", delay: 0.2, duration: 0.2 } },
+    exit: { opacity: 0, transition: { ease: "linear", duration: 0.2 } },
 };
 
 const scales = {
@@ -61,55 +51,90 @@ const scales = {
     visible: { scale: 1, transition: { type: "spring", duration: 0.4 } },
 };
 
+let interval;
+
 export default function Page() {
-    const [dir, setDir] = useState(0);
     const [slide, setSlide] = useState(0);
 
     const prev = () => {
-        setDir(-1);
         setSlide((slide) => (slide === 0 ? products.length - 1 : slide - 1));
     };
 
     const next = () => {
-        setDir(1);
         setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
+    };
+
+    const jump = (i) => {
+        setSlide(i);
+    };
+
+    useEffect(() => {
+        interval = setInterval(() => {
+            next();
+        }, 5000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
+
+    const pause = () => {
+        clearInterval(interval);
+    };
+
+    const play = () => {
+        interval = setInterval(() => {
+            next();
+        }, 5000);
     };
 
     return (
         <main className="home-page">
-            <section className="hero-section">
+            <section className="slider-section">
                 <img src="/images/bg-concrete.webp" alt="Hintergrund" className="bg-image" />
                 <div className="section-container">
-                    <div className="hero-slider">
-                        <div className="icon-holder-prev" onClick={prev}>
-                            <BsArrowLeft className="icon" />
-                        </div>
+                    <div className="hero-slider" onMouseEnter={pause} onMouseLeave={play}>
                         <div className="text-box">
-                            <div className="flex-box">
-                                <AnimatePresence initial={false} custom={dir}>
-                                    <motion.h1 initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} custom={dir} key={slide} className="title">
-                                        {products[slide].title}
-                                    </motion.h1>
-                                </AnimatePresence>
-                            </div>
-                            <div className="flex-box">
-                                <AnimatePresence initial={false} custom={dir}>
-                                    <motion.p initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} custom={dir} key={slide} className="description">
-                                        {products[slide].description}
-                                    </motion.p>
-                                </AnimatePresence>
-                            </div>
+                            <AnimatePresence initial={false}>
+                                <motion.h1 initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} className="title">
+                                    {products[slide].title}
+                                </motion.h1>
+                            </AnimatePresence>
                         </div>
                         <div className="image-box">
-                            <div className="image-holder"></div>
+                            <div className="image-holder">
+                                <AnimatePresence initial={false}>
+                                    <motion.img src={products[slide].image} alt={products[slide].title} initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} className="image" />
+                                </AnimatePresence>
+                            </div>
                         </div>
-                        <div className="icon-holder-next" onClick={next}>
-                            <BsArrowRight className="icon" />
+                        <div className="navigation-box">
+                            <button className="icon-holder-prev" onClick={prev}>
+                                <BsArrowLeft className="icon" />
+                            </button>
+                            <div className="dots">
+                                {products.map((_, index) => (
+                                    <button className={index === slide ? "dot active" : "dot"} key={index} onClick={() => jump(index)}></button>
+                                ))}
+                            </div>
+                            <button className="icon-holder-next" onClick={next}>
+                                <BsArrowRight className="icon" />
+                            </button>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section className="hero-section">
+                <div className="section-container">
                     <Link href={"/shop"} className="link">
                         Zum Shop
                     </Link>
+                    <h1 className="title">
+                        IHRE EXPERTEN IN SACHEN
+                        <br />
+                        <span className="gradient">BAUMESSTECHNIK</span>
+                    </h1>
                 </div>
             </section>
 
@@ -123,11 +148,11 @@ export default function Page() {
                     <div className="flex-grid">
                         <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid">
                             <div className="title-box">
-                                <h2 className="title">BERATUNG</h2>
+                                <h2 className="title">BERATUNG / VERKAUF</h2>
                             </div>
-                            <div className="description-box">
+                            <div className="text-box">
                                 <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                                <Link href={"/dienstleistungen"} prefetch={false} className="link">
+                                <Link href={"/"} prefetch={false} className="link">
                                     Mehr erfahren
                                 </Link>
                             </div>
@@ -135,47 +160,31 @@ export default function Page() {
                                 <div className="image-holder"></div>
                             </div>
                         </motion.div>
-                        <div className="sub-flex-grid-container">
-                            <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid">
-                                <div className="title-box">
-                                    <h2 className="title">MIETE</h2>
-                                </div>
-                                <div className="description-box">
-                                    <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                                    <Link href={"/dienstleistungen/#miete"} prefetch={false} className="link">
-                                        Mehr erfahren
-                                    </Link>
-                                </div>
-                                <div className="image-box">
-                                    <div className="image-holder"></div>
-                                </div>
-                            </motion.div>
-                            <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid">
-                                <div className="title-box">
-                                    <h2 className="title">VERKAUF</h2>
-                                </div>
-                                <div className="description-box">
-                                    <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                                    <Link href={"/dienstleistungen/#verkauf"} prefetch={false} className="link">
-                                        Mehr erfahren
-                                    </Link>
-                                </div>
-                                <div className="image-box">
-                                    <div className="image-holder"></div>
-                                </div>
-                            </motion.div>
-                        </div>
                         <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid reversed">
                             <div className="title-box">
-                                <h2 className="title">SERVICE</h2>
+                                <h2 className="title">DIENSTLEISTUNG / DATENAUFBEREITUNG</h2>
                             </div>
-                            <div className="description-box">
+                            <div className="text-box">
                                 <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                                <Link href={"/dienstleistungen/#service"} prefetch={false} className="link">
+                                <Link href={"/dienstleistungen"} prefetch={false} className="link">
                                     Mehr erfahren
                                 </Link>
                             </div>
                             <div className="image-box flex-start">
+                                <div className="image-holder"></div>
+                            </div>
+                        </motion.div>
+                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid">
+                            <div className="title-box">
+                                <h2 className="title">SERVICE / WERKSTATT</h2>
+                            </div>
+                            <div className="text-box">
+                                <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
+                                <Link href={"/"} prefetch={false} className="link">
+                                    Mehr erfahren
+                                </Link>
+                            </div>
+                            <div className="image-box flex-end">
                                 <div className="image-holder"></div>
                             </div>
                         </motion.div>

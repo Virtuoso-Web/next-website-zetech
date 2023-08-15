@@ -27,9 +27,11 @@ export default function Header() {
                             Home
                         </Link>
                         <Link href={"/dienstleistungen"} prefetch={false} className={pathname.includes("/dienstleistungen") ? "nav-link active" : "nav-link"} onClick={removeActive}>
-                            Dienstleistungen
+                            Dienstleistungen / Datenaufbereitung
                         </Link>
-
+                        <Link href={"/"} prefetch={false} className={pathname.includes("/service") ? "nav-link active" : "nav-link"} onClick={removeActive}>
+                            Service / Werkstatt
+                        </Link>
                         <Link href={"/shop"} prefetch={false} className={pathname.includes("/shop") ? "nav-link active" : "nav-link"} onClick={removeActive}>
                             Shop
                         </Link>

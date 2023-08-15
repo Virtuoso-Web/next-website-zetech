@@ -8,30 +8,26 @@ export default function Page() {
             <section className="intro-section">
                 <div className="section-container">
                     <div className="flex-grid">
-                        <div className="title-box">
-                            <h1 className="title">Auf Sie zugeschnittene Dienstleistungen</h1>
-                        </div>
-                        <div className="description-box">
-                            <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem consectetur maiores incidunt, quisquam pariatur fugit, cumque minima nesciunt odit numquam et voluptatum molestiae dolorem magni quas ad hic, sapiente quae facilis voluptates tempore! A aut perferendis ut, quo nam culpa molestias maxime, accusantium veritatis architecto dolore iste veniam fugit officiis.</p>
-                        </div>
+                        <h1 className="title">Auf Sie zugeschnittene Dienstleistungen</h1>
+                        <p className="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut vel tenetur molestias dolorum earum rerum odit reiciendis maiores ex unde voluptatibus, suscipit laboriosam rem nobis fugit! Hic similique dicta ducimus.</p>
                     </div>
                 </div>
             </section>
 
-            <section className="consulting-section">
+            <section className="service-section-odd">
                 <div className="section-container">
                     <div className="flex-grid">
                         <div className="title-box">
-                            <h2 className="title">BERATUNG</h2>
+                            <h2 className="title">DATENAUFBEREITUNG</h2>
                         </div>
                         <div className="sub-flex-grid">
                             <div className="title-box">
                                 <h3 className="title">Titel</h3>
                             </div>
-                            <div className="description-box">
-                                <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore. Quos delectus deserunt corrupti saepe veritatis debitis odit commodi, aspernatur quam minima quod perferendis laborum molestiae repellendus quidem, magni assumenda quaerat sequi. Corporis.</p>
+                            <div className="text-box">
+                                <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore.</p>
                                 <Link href={"/kontakt"} prefetch={false} className="link">
-                                    LINK
+                                    Kontakt aufnehmen
                                 </Link>
                             </div>
                             <div className="image-box">
@@ -40,23 +36,23 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div id="miete" aria-hidden="true"></div>
+                <div id="bestandaufnahme" aria-hidden="true"></div>
             </section>
 
-            <section className="rent-section">
+            <section className="service-section-even">
                 <div className="section-container">
                     <div className="flex-grid">
                         <div className="title-box">
-                            <h2 className="title">MIETE</h2>
+                            <h2 className="title">BESTANDAUFNAHME</h2>
                         </div>
                         <div className="sub-flex-grid">
                             <div className="title-box">
                                 <h3 className="title">Titel</h3>
                             </div>
-                            <div className="description-box">
-                                <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore. Quos delectus deserunt corrupti saepe veritatis debitis odit commodi, aspernatur quam minima quod perferendis laborum molestiae repellendus quidem, magni assumenda quaerat sequi. Corporis.</p>
+                            <div className="text-box">
+                                <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore.</p>
                                 <Link href={"/kontakt"} prefetch={false} className="link">
-                                    LINK
+                                    Kontakt aufnehmen
                                 </Link>
                             </div>
                             <div className="image-box">
@@ -65,23 +61,23 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div id="verkauf" aria-hidden="true"></div>
+                <div id="massenermittlung" aria-hidden="true"></div>
             </section>
 
-            <section className="sell-section">
+            <section className="service-section-odd">
                 <div className="section-container">
                     <div className="flex-grid">
                         <div className="title-box">
-                            <h2 className="title">VERKAUF</h2>
+                            <h2 className="title">MASSENERMITTLUNG / AUFNAHME</h2>
                         </div>
                         <div className="sub-flex-grid">
                             <div className="title-box">
                                 <h3 className="title">Titel</h3>
                             </div>
-                            <div className="description-box">
-                                <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore. Quos delectus deserunt corrupti saepe veritatis debitis odit commodi, aspernatur quam minima quod perferendis laborum molestiae repellendus quidem, magni assumenda quaerat sequi. Corporis.</p>
+                            <div className="text-box">
+                                <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore.</p>
                                 <Link href={"/kontakt"} prefetch={false} className="link">
-                                    LINK
+                                    Kontakt aufnehmen
                                 </Link>
                             </div>
                             <div className="image-box">
@@ -90,23 +86,23 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div id="service" aria-hidden="true"></div>
+                <div id="schulungen" aria-hidden="true"></div>
             </section>
 
-            <section className="service-section">
+            <section className="service-section-even">
                 <div className="section-container">
                     <div className="flex-grid">
                         <div className="title-box">
-                            <h2 className="title">SERVICE</h2>
+                            <h2 className="title">SCHULUNGEN</h2>
                         </div>
                         <div className="sub-flex-grid">
                             <div className="title-box">
                                 <h3 className="title">Titel</h3>
                             </div>
-                            <div className="description-box">
-                                <p className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore. Quos delectus deserunt corrupti saepe veritatis debitis odit commodi, aspernatur quam minima quod perferendis laborum molestiae repellendus quidem, magni assumenda quaerat sequi. Corporis.</p>
+                            <div className="text-box">
+                                <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore.</p>
                                 <Link href={"/kontakt"} prefetch={false} className="link">
-                                    LINK
+                                    Kontakt aufnehmen
                                 </Link>
                             </div>
                             <div className="image-box">

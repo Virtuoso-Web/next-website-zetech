@@ -20,13 +20,13 @@ export default function Footer() {
                                 <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
                                     Beratung
                                 </Link>
-                                <Link href={"/dienstleistungen/#miete"} prefetch={false} className="sub-link">
+                                <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
                                     Miete
                                 </Link>
-                                <Link href={"/dienstleistungen/#verkauf"} prefetch={false} className="sub-link">
+                                <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
                                     Verkauf
                                 </Link>
-                                <Link href={"/dienstleistungen/#service"} prefetch={false} className="sub-link">
+                                <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
                                     Service
                                 </Link>
                             </div>

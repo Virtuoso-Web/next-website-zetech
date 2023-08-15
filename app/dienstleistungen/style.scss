@@ -2,76 +2,73 @@
 
 .dienstleistungen-page {
     padding-block-start: $header-block-size;
-    background-color: $color-white-dark;
 
     .intro-section {
-        padding-inline: min(5rem, 5%);
-        padding-block: 10rem;
         isolation: isolate;
         background-color: $color-black-dark;
 
         .section-container {
             inline-size: min($max-size, 100%);
             margin-inline: auto;
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
 
-            > .flex-grid {
+            .flex-grid {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5rem;
+
+                .title {
+                    color: $color-white-dark;
+                    font-size: 8rem;
+                    font-weight: $weight-bold;
+
+                    @media (max-width: 768px) {
+                        font-size: 5rem;
+                    }
+
+                    @media (max-width: 425px) {
+                        font-size: 4rem;
+                    }
+                }
+
+                .text {
+                    color: $color-white-dark;
+                    font-size: 3rem;
+
+                    @media (max-width: 768px) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .service-section-odd {
+        isolation: isolate;
+        background-color: $color-white-dark;
+
+        .section-container {
+            inline-size: min($max-size, 100%);
+            margin-inline: auto;
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
+
+            .flex-grid {
                 display: flex;
                 flex-direction: column;
                 row-gap: 5rem;
 
                 > .title-box {
-                    display: flex;
-
-                    .title {
-                        color: $color-white-dark;
-                        font-size: 7rem;
-                        font-weight: $weight-bold;
-
-                        @media (max-width: 768px) {
-                            font-size: 6rem;
-                        }
-
-                        @media (max-width: 425px) {
-                            font-size: 5rem;
-                        }
-                    }
-                }
-
-                > .description-box {
-                    display: flex;
-
-                    .description {
-                        color: $color-white-dark;
-                        font-size: 2.5rem;
-
-                        @media (max-width: 768px) {
-                            font-size: 2rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .consulting-section {
-        padding-inline: min(5rem, 5%);
-        padding-block: 10rem;
-        isolation: isolate;
-
-        .section-container {
-            inline-size: min($max-size, 100%);
-            margin-inline: auto;
-
-            > .flex-grid {
-                display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 5rem;
-
-                > .title-box {
                     position: relative;
                     display: flex;
                     justify-content: flex-start;
                     overflow-x: hidden;
+
+                    @media (max-width: 1024px) {
+                        justify-content: center;
+                        text-align: center;
+                    }
 
                     &::before {
                         position: absolute;
@@ -83,12 +80,16 @@
                         border-radius: 3rem;
                         background-color: $color-black-light;
                         z-index: -2;
+
+                        @media (max-width: 1024px) {
+                            display: none;
+                        }
                     }
 
                     .title {
                         position: relative;
                         color: transparent;
-                        font-size: 8rem;
+                        font-size: 4rem;
                         font-weight: $weight-bold;
                         background-image: $color-gradient-blue;
                         background-clip: text;
@@ -96,11 +97,7 @@
                         -webkit-text-fill-color: transparent;
 
                         @media (max-width: 768px) {
-                            font-size: 6rem;
-                        }
-
-                        @media (max-width: 425px) {
-                            font-size: 4rem;
+                            font-size: 3rem;
                         }
 
                         &::before {
@@ -114,18 +111,13 @@
                     }
                 }
 
-                > .sub-flex-grid {
+                .sub-flex-grid {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-areas:
                         "h i"
                         "p i";
                     row-gap: 5rem;
-                    // padding-inline: min(5rem, 5%);
-                    // padding-block: 5rem;
-                    // border-radius: 1rem;
-                    // outline: 0.5rem solid $color-black-light;
-                    // background-color: $color-white-light;
 
                     @media (max-width: 1024px) {
                         grid-template-areas:
@@ -134,7 +126,7 @@
                             "p p";
                     }
 
-                    > .title-box {
+                    .title-box {
                         grid-area: h;
                         display: flex;
                         align-items: flex-end;
@@ -150,20 +142,21 @@
                         }
                     }
 
-                    > .description-box {
+                    .text-box {
                         grid-area: p;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
                         row-gap: 5rem;
 
-                        .description {
+                        .text {
                             font-size: 2rem;
                         }
 
                         .link {
                             color: $color-black-light;
                             font-size: 2rem;
+                            font-weight: $weight-bold;
                             text-align: center;
                             padding-block: 0.5rem;
                             border-radius: 3rem;
@@ -180,7 +173,7 @@
                         }
                     }
 
-                    > .image-box {
+                    .image-box {
                         grid-area: i;
                         display: flex;
                         justify-content: flex-end;
@@ -193,13 +186,9 @@
                             display: flex;
                             position: relative;
                             inline-size: 80%;
-                            aspect-ratio: 16 / 9;
+                            aspect-ratio: calc(16 / 9);
                             border-radius: 1rem;
-                            border: 1px solid $color-black-light;
-
-                            // @media (max-width: 1024px) {
-                            //     inline-size: 80%;
-                            // }
+                            border: 1px solid black;
                         }
                     }
                 }
@@ -207,19 +196,18 @@
         }
     }
 
-    .rent-section {
-        padding-inline: min(5rem, 5%);
-        padding-block: 10rem;
+    .service-section-even {
         isolation: isolate;
-        background-color: $color-white-light;
 
         .section-container {
             inline-size: min($max-size, 100%);
             margin-inline: auto;
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
 
-            > .flex-grid {
-                display: grid;
-                grid-template-columns: 1fr;
+            .flex-grid {
+                display: flex;
+                flex-direction: column;
                 row-gap: 5rem;
 
                 > .title-box {
@@ -227,6 +215,11 @@
                     display: flex;
                     justify-content: flex-end;
                     overflow-x: hidden;
+
+                    @media (max-width: 1024px) {
+                        justify-content: center;
+                        text-align: center;
+                    }
 
                     &::before {
                         position: absolute;
@@ -238,12 +231,16 @@
                         border-radius: 3rem;
                         background-color: $color-black-light;
                         z-index: -2;
+
+                        @media (max-width: 1024px) {
+                            display: none;
+                        }
                     }
 
                     .title {
                         position: relative;
                         color: transparent;
-                        font-size: 8rem;
+                        font-size: 4rem;
                         font-weight: $weight-bold;
                         background-image: $color-gradient-blue;
                         background-clip: text;
@@ -251,11 +248,7 @@
                         -webkit-text-fill-color: transparent;
 
                         @media (max-width: 768px) {
-                            font-size: 6rem;
-                        }
-
-                        @media (max-width: 425px) {
-                            font-size: 4rem;
+                            font-size: 3rem;
                         }
 
                         &::before {
@@ -269,18 +262,13 @@
                     }
                 }
 
-                > .sub-flex-grid {
+                .sub-flex-grid {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-areas:
                         "i h"
                         "i p";
                     row-gap: 5rem;
-                    // padding-inline: min(5rem, 5%);
-                    // padding-block: 5rem;
-                    // border-radius: 1rem;
-                    // outline: 0.5rem solid $color-black-light;
-                    // background-color: $color-white-light;
 
                     @media (max-width: 1024px) {
                         grid-template-areas:
@@ -289,7 +277,7 @@
                             "p p";
                     }
 
-                    > .title-box {
+                    .title-box {
                         grid-area: h;
                         display: flex;
                         align-items: flex-end;
@@ -305,20 +293,21 @@
                         }
                     }
 
-                    > .description-box {
+                    .text-box {
                         grid-area: p;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
                         row-gap: 5rem;
 
-                        .description {
+                        .text {
                             font-size: 2rem;
                         }
 
                         .link {
                             color: $color-black-light;
                             font-size: 2rem;
+                            font-weight: $weight-bold;
                             text-align: center;
                             padding-block: 0.5rem;
                             border-radius: 3rem;
@@ -335,7 +324,7 @@
                         }
                     }
 
-                    > .image-box {
+                    .image-box {
                         grid-area: i;
                         display: flex;
                         justify-content: flex-start;
@@ -348,322 +337,9 @@
                             display: flex;
                             position: relative;
                             inline-size: 80%;
-                            aspect-ratio: 16 / 9;
+                            aspect-ratio: calc(16 / 9);
                             border-radius: 1rem;
-                            border: 1px solid $color-black-light;
-
-                            // @media (max-width: 1024px) {
-                            //     inline-size: 80%;
-                            // }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .sell-section {
-        padding-inline: min(5rem, 5%);
-        padding-block: 10rem;
-        isolation: isolate;
-
-        .section-container {
-            inline-size: min($max-size, 100%);
-            margin-inline: auto;
-
-            > .flex-grid {
-                display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 5rem;
-
-                > .title-box {
-                    position: relative;
-                    display: flex;
-                    justify-content: flex-start;
-                    overflow-x: hidden;
-
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        inset-inline: 0;
-                        inset-block-start: 50%;
-                        transform: translateY(-50%);
-                        block-size: 1rem;
-                        border-radius: 3rem;
-                        background-color: $color-black-light;
-                        z-index: -2;
-                    }
-
-                    .title {
-                        position: relative;
-                        color: transparent;
-                        font-size: 8rem;
-                        font-weight: $weight-bold;
-                        background-image: $color-gradient-blue;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-
-                        @media (max-width: 768px) {
-                            font-size: 6rem;
-                        }
-
-                        @media (max-width: 425px) {
-                            font-size: 4rem;
-                        }
-
-                        &::before {
-                            position: absolute;
-                            content: "";
-                            inset-inline: min(-5rem, -10%);
-                            inset-block: 0;
-                            background-color: $color-white-dark;
-                            z-index: -1;
-                        }
-                    }
-                }
-
-                > .sub-flex-grid {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-areas:
-                        "h i"
-                        "p i";
-                    row-gap: 5rem;
-                    // padding-inline: min(5rem, 5%);
-                    // padding-block: 5rem;
-                    // border-radius: 1rem;
-                    // outline: 0.5rem solid $color-black-light;
-                    // background-color: $color-white-light;
-
-                    @media (max-width: 1024px) {
-                        grid-template-areas:
-                            "h h"
-                            "i i"
-                            "p p";
-                    }
-
-                    > .title-box {
-                        grid-area: h;
-                        display: flex;
-                        align-items: flex-end;
-
-                        @media (max-width: 1024px) {
-                            justify-content: center;
-                            text-align: center;
-                        }
-
-                        .title {
-                            font-size: 3rem;
-                            font-weight: $weight-bold;
-                        }
-                    }
-
-                    > .description-box {
-                        grid-area: p;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        row-gap: 5rem;
-
-                        .description {
-                            font-size: 2rem;
-                        }
-
-                        .link {
-                            color: $color-black-light;
-                            font-size: 2rem;
-                            text-align: center;
-                            padding-block: 0.5rem;
-                            border-radius: 3rem;
-                            outline: 0.3rem solid $color-black-light;
-                            outline-offset: 0.3rem;
-                            background-image: $color-gradient-blue;
-                            transition-property: outline-offset;
-                            transition-timing-function: ease-in-out;
-                            transition-duration: 200ms;
-
-                            &:hover {
-                                outline-offset: 0;
-                            }
-                        }
-                    }
-
-                    > .image-box {
-                        grid-area: i;
-                        display: flex;
-                        justify-content: flex-end;
-
-                        @media (max-width: 1024px) {
-                            justify-content: center;
-                        }
-
-                        .image-holder {
-                            display: flex;
-                            position: relative;
-                            inline-size: 80%;
-                            aspect-ratio: 16 / 9;
-                            border-radius: 1rem;
-                            border: 1px solid $color-black-light;
-
-                            // @media (max-width: 1024px) {
-                            //     inline-size: 80%;
-                            // }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .service-section {
-        padding-inline: min(5rem, 5%);
-        padding-block: 10rem;
-        isolation: isolate;
-        background-color: $color-white-light;
-
-        .section-container {
-            inline-size: min($max-size, 100%);
-            margin-inline: auto;
-
-            > .flex-grid {
-                display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 5rem;
-
-                > .title-box {
-                    position: relative;
-                    display: flex;
-                    justify-content: flex-end;
-                    overflow-x: hidden;
-
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        inset-inline: 0;
-                        inset-block-start: 50%;
-                        transform: translateY(-50%);
-                        block-size: 1rem;
-                        border-radius: 3rem;
-                        background-color: $color-black-light;
-                        z-index: -2;
-                    }
-
-                    .title {
-                        position: relative;
-                        color: transparent;
-                        font-size: 8rem;
-                        font-weight: $weight-bold;
-                        background-image: $color-gradient-blue;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-
-                        @media (max-width: 768px) {
-                            font-size: 6rem;
-                        }
-
-                        @media (max-width: 425px) {
-                            font-size: 4rem;
-                        }
-
-                        &::before {
-                            position: absolute;
-                            content: "";
-                            inset-inline: min(-5rem, -10%);
-                            inset-block: 0;
-                            background-color: $color-white-light;
-                            z-index: -1;
-                        }
-                    }
-                }
-
-                > .sub-flex-grid {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-areas:
-                        "i h"
-                        "i p";
-                    row-gap: 5rem;
-                    // padding-inline: min(5rem, 5%);
-                    // padding-block: 5rem;
-                    // border-radius: 1rem;
-                    // outline: 0.5rem solid $color-black-light;
-                    // background-color: $color-white-light;
-
-                    @media (max-width: 1024px) {
-                        grid-template-areas:
-                            "h h"
-                            "i i"
-                            "p p";
-                    }
-
-                    > .title-box {
-                        grid-area: h;
-                        display: flex;
-                        align-items: flex-end;
-
-                        @media (max-width: 1024px) {
-                            justify-content: center;
-                            text-align: center;
-                        }
-
-                        .title {
-                            font-size: 3rem;
-                            font-weight: $weight-bold;
-                        }
-                    }
-
-                    > .description-box {
-                        grid-area: p;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        row-gap: 5rem;
-
-                        .description {
-                            font-size: 2rem;
-                        }
-
-                        .link {
-                            color: $color-black-light;
-                            font-size: 2rem;
-                            text-align: center;
-                            padding-block: 0.5rem;
-                            border-radius: 3rem;
-                            outline: 0.3rem solid $color-black-light;
-                            outline-offset: 0.3rem;
-                            background-image: $color-gradient-blue;
-                            transition-property: outline-offset;
-                            transition-timing-function: ease-in-out;
-                            transition-duration: 200ms;
-
-                            &:hover {
-                                outline-offset: 0;
-                            }
-                        }
-                    }
-
-                    > .image-box {
-                        grid-area: i;
-                        display: flex;
-                        justify-content: flex-start;
-
-                        @media (max-width: 1024px) {
-                            justify-content: center;
-                        }
-
-                        .image-holder {
-                            display: flex;
-                            position: relative;
-                            inline-size: 80%;
-                            aspect-ratio: 16 / 9;
-                            border-radius: 1rem;
-                            border: 1px solid $color-black-light;
-
-                            // @media (max-width: 1024px) {
-                            //     inline-size: 80%;
-                            // }
+                            border: 1px solid black;
                         }
                     }
                 }
