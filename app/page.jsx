@@ -69,9 +69,7 @@ export default function Page() {
     };
 
     useEffect(() => {
-        interval = setInterval(() => {
-            next();
-        }, 5000);
+        interval = setInterval(next, 5000);
 
         return () => {
             clearInterval(interval);
@@ -83,9 +81,7 @@ export default function Page() {
     };
 
     const play = () => {
-        interval = setInterval(() => {
-            next();
-        }, 5000);
+        interval = setInterval(next, 5000);
     };
 
     return (
@@ -93,7 +89,7 @@ export default function Page() {
             <section className="slider-section">
                 <img src="/images/bg-concrete.webp" alt="Hintergrund" className="bg-image" />
                 <div className="section-container">
-                    <div className="hero-slider" onMouseEnter={pause} onMouseLeave={play}>
+                    <div className="hero-slider" onPointerEnter={pause} onPointerLeave={play}>
                         <div className="text-box">
                             <AnimatePresence initial={false}>
                                 <motion.h1 initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} className="title">
