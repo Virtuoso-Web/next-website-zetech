@@ -1,13 +1,8 @@
-"use client";
+import Slider from "@/app/(components)/slider.jsx";
+import Services from "@/app/(components)/services.jsx";
 
 import Link from "next/link";
 
-import { useState, useEffect } from "react";
-
-import { motion, AnimatePresence } from "framer-motion";
-
-import { BsArrowLeft } from "react-icons/bs";
-import { BsArrowRight } from "react-icons/bs";
 import { PiArrowArcRightBold } from "react-icons/pi";
 import { MdOutlineWavingHand } from "react-icons/md";
 
@@ -23,109 +18,48 @@ const products = [
         image: "/images/home/leica-icon-robot-80.webp",
     },
     {
-        title: "Leica ICB 70",
+        title: "Leica iCB 70",
         image: "/images/home/leica-icb-70.webp",
     },
     {
-        title: "Leica iCON GPS 70",
-        image: "/images/home/leica-icon-gps-70.webp",
+        title: "Leica iCON GPS 70T",
+        image: "/images/home/leica-icon-gps-70t.webp",
     },
     {
-        title: "Leica iCON CC 200",
-        image: "/images/home/leica-icon-cc-200.webp",
+        title: "Leica iCON CC200",
+        image: "/images/home/leica-icon-cc200.webp",
     },
     {
-        title: "Leica iCON CC 80",
-        image: "/images/home/leica-icon-cc-80.webp",
+        title: "Leica iCON CC80",
+        image: "/images/home/leica-icon-cc80.webp",
+    },
+    {
+        title: "Leica AP20 AutoPole",
+        image: "/images/home/leica-ap20-autopole.webp",
+    },
+    {
+        title: "Leica Rugby CLA-CTIVE",
+        image: "/images/home/leica-rugby-cla-ctive.webp",
+    },
+    {
+        title: "Geomax 60DG",
+        image: "/images/home/geomax-60dg.webp",
     },
 ];
 
-const switches = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1, transition: { ease: "linear", delay: 0.2, duration: 0.2 } },
-    exit: { opacity: 0, transition: { ease: "linear", duration: 0.2 } },
-};
-
-const scales = {
-    hidden: { scale: 0 },
-    visible: { scale: 1, transition: { type: "spring", duration: 0.4 } },
-};
-
-let interval;
-
 export default function Page() {
-    const [slide, setSlide] = useState(0);
-
-    const prev = () => {
-        setSlide((slide) => (slide === 0 ? products.length - 1 : slide - 1));
-    };
-
-    const next = () => {
-        setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
-    };
-
-    const jump = (i) => {
-        setSlide(i);
-    };
-
-    useEffect(() => {
-        interval = setInterval(next, 5000);
-
-        return () => {
-            clearInterval(interval);
-        };
-    }, []);
-
-    const pause = () => {
-        clearInterval(interval);
-    };
-
-    const play = () => {
-        interval = setInterval(next, 5000);
-    };
-
     return (
         <main className="home-page">
             <section className="slider-section">
-                <img src="/images/bg-concrete.webp" alt="Hintergrund" className="bg-image" />
+                <img src="/images/concrete.webp" alt="Hintergrund" className="bg-image" />
                 <div className="section-container">
-                    <div className="hero-slider" onPointerEnter={pause} onPointerLeave={play}>
-                        <div className="text-box">
-                            <AnimatePresence initial={false}>
-                                <motion.h1 initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} className="title">
-                                    {products[slide].title}
-                                </motion.h1>
-                            </AnimatePresence>
-                        </div>
-                        <div className="image-box">
-                            <div className="image-holder">
-                                <AnimatePresence initial={false}>
-                                    <motion.img src={products[slide].image} alt={products[slide].title} initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} className="image" />
-                                </AnimatePresence>
-                            </div>
-                        </div>
-                        <div className="navigation-box">
-                            <button className="icon-holder-prev" onClick={prev}>
-                                <BsArrowLeft className="icon" />
-                            </button>
-                            <div className="dots">
-                                {products.map((_, index) => (
-                                    <button className={index === slide ? "dot active" : "dot"} key={index} onClick={() => jump(index)}></button>
-                                ))}
-                            </div>
-                            <button className="icon-holder-next" onClick={next}>
-                                <BsArrowRight className="icon" />
-                            </button>
-                        </div>
-                    </div>
+                    <Slider products={products} />
                 </div>
             </section>
 
             <section className="hero-section">
+                <div className="bg-holder" style={{ backgroundImage: "url(/images/stripe.webp)" }}></div>
                 <div className="section-container">
-                    <Link href={"/shop"} className="link">
-                        Zum Shop
-                    </Link>
                     <h1 className="title">
                         IHRE EXPERTEN IN SACHEN
                         <br />
@@ -141,50 +75,7 @@ export default function Page() {
                         <br />
                         <span className="gradient">FACHGEBIETE</span>
                     </h1>
-                    <div className="flex-grid">
-                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid">
-                            <div className="title-box">
-                                <h2 className="title">BERATUNG / VERKAUF</h2>
-                            </div>
-                            <div className="text-box">
-                                <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                                <Link href={"/"} prefetch={false} className="link">
-                                    Mehr erfahren
-                                </Link>
-                            </div>
-                            <div className="image-box flex-end">
-                                <div className="image-holder"></div>
-                            </div>
-                        </motion.div>
-                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid reversed">
-                            <div className="title-box">
-                                <h2 className="title">DIENSTLEISTUNG / DATENAUFBEREITUNG</h2>
-                            </div>
-                            <div className="text-box">
-                                <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                                <Link href={"/dienstleistungen"} prefetch={false} className="link">
-                                    Mehr erfahren
-                                </Link>
-                            </div>
-                            <div className="image-box flex-start">
-                                <div className="image-holder"></div>
-                            </div>
-                        </motion.div>
-                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid">
-                            <div className="title-box">
-                                <h2 className="title">SERVICE / WERKSTATT</h2>
-                            </div>
-                            <div className="text-box">
-                                <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                                <Link href={"/"} prefetch={false} className="link">
-                                    Mehr erfahren
-                                </Link>
-                            </div>
-                            <div className="image-box flex-end">
-                                <div className="image-holder"></div>
-                            </div>
-                        </motion.div>
-                    </div>
+                    <Services />
                 </div>
             </section>
 
@@ -202,75 +93,16 @@ export default function Page() {
                             </h1>
                         </div>
                         <div className="sub-flex-grid">
-                            <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="description-box">
+                            <div className="description-box">
                                 <h2 className="title">BESCHREIBUNG</h2>
                                 <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, illum earum deserunt unde obcaecati enim totam distinctio recusandae praesentium dicta explicabo, eum molestiae rem eveniet, consequatur eos porro natus soluta ab beatae ex vitae. Consequatur, impedit eius explicabo, veritatis modi cupiditate itaque ad doloremque illum natus earum, sunt quia ratione?</p>
-                            </motion.div>
-                            <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="description-box">
+                            </div>
+                            <div className="description-box">
                                 <h2 className="title">BESCHREIBUNG</h2>
                                 <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, illum earum deserunt unde obcaecati enim totam distinctio recusandae praesentium dicta explicabo, eum molestiae rem eveniet, consequatur eos porro natus soluta ab beatae ex vitae. Consequatur, impedit eius explicabo?</p>
-                            </motion.div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section className="products-section">
-                <div className="section-container">
-                    <h1 className="title">
-                        UNSERE BESTEN
-                        <br />
-                        <span className="gradient">PRODUKTE</span>
-                    </h1>
-                    <div className="flex-grid">
-                        <div className="product-box">
-                            <h2 className="title">Leica GPS</h2>
-                            <div className="image-holder"></div>
-                            <div className="image-navigator">
-                                <motion.div initial={{ scale: 1 }} whileTap={{ scale: 1.1 }} className="icon-holder">
-                                    <BsArrowLeft className="icon" />
-                                </motion.div>
-                                <div className="dots">
-                                    <div className="dot active"></div>
-                                    <div className="dot"></div>
-                                    <div className="dot"></div>
-                                    <div className="dot"></div>
-                                </div>
-                                <motion.div initial={{ scale: 1 }} whileTap={{ scale: 1.1 }} className="icon-holder">
-                                    <BsArrowRight className="icon" />
-                                </motion.div>
-                            </div>
-                            <Link href={"/shop/leica"} prefetch={false} className="link">
-                                Produkt ansehen
-                            </Link>
-                        </div>
-                        <div className="product-box">
-                            <h2 className="title">Leica Total Station</h2>
-                            <div className="image-holder"></div>
-                            <div className="image-navigator">
-                                <motion.div initial={{ scale: 1 }} whileTap={{ scale: 1.1 }} className="icon-holder">
-                                    <BsArrowLeft className="icon" />
-                                </motion.div>
-                                <div className="dots">
-                                    <div className="dot active"></div>
-                                    <div className="dot"></div>
-                                    <div className="dot"></div>
-                                    <div className="dot"></div>
-                                </div>
-                                <motion.div initial={{ scale: 1 }} whileTap={{ scale: 1.1 }} className="icon-holder">
-                                    <BsArrowRight className="icon" />
-                                </motion.div>
-                            </div>
-                            <Link href={"/shop/leica"} prefetch={false} className="link">
-                                Produkt ansehen
-                            </Link>
-                        </div>
-                    </div>
-                    <p className="text">Durchstöbern Sie unseren Shop und finden Sie ihr passendes Produkt.</p>
-                    <p className="text">Wir sind Ihnen bei der Auswahl gerne behilflich.</p>
-                    <Link href={"/shop"} prefetch={false} className="link">
-                        Zum Shop
-                    </Link>
                 </div>
             </section>
 
@@ -288,11 +120,9 @@ export default function Page() {
                                     <PiArrowArcRightBold className="icon" />
                                 </div>
                             </div>
-                            <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="motion-div">
-                                <Link href={"/kontakt"} prefetch={false} className="icon-holder">
-                                    <MdOutlineWavingHand className="icon" />
-                                </Link>
-                            </motion.div>
+                            <Link href={"/kontakt"} prefetch={false} className="icon-holder">
+                                <MdOutlineWavingHand className="icon" />
+                            </Link>
                         </div>
                     </div>
                 </div>
