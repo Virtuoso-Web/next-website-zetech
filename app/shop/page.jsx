@@ -1,31 +1,57 @@
+import Navigation from "@/app/shop/(components)/navigation.jsx";
+
 import Link from "next/link";
 
 import "@/app/shop/style.scss";
 
 const products = [
     {
-        name: "Androtec",
-        link: "/shop/androtec",
+        name: "Totalstationen",
+        link: "/shop",
     },
     {
-        name: "Zubehör",
-        link: "/shop/zubehoer",
+        name: "GPS",
+        link: "/shop",
     },
     {
-        name: "Geomax",
-        link: "/shop/geomax",
+        name: "Tablets",
+        link: "/shop",
     },
     {
-        name: "Leica",
-        link: "/shop/leica",
+        name: "Baulaser",
+        link: "/shop",
     },
     {
-        name: "Theis",
-        link: "/shop/theis",
+        name: "Kanalbaulaser",
+        link: "/shop",
     },
     {
-        name: "Prismen",
-        link: "/shop/prismen",
+        name: "Linienlaser",
+        link: "/shop",
+    },
+    {
+        name: "Disto",
+        link: "/shop",
+    },
+    {
+        name: "Empfänger",
+        link: "/shop",
+    },
+    {
+        name: "Nivelliere",
+        link: "/shop",
+    },
+    {
+        name: "Stative",
+        link: "/shop",
+    },
+    {
+        name: "Zubehör Totalstationen",
+        link: "/shop",
+    },
+    {
+        name: "Zubehör GPS",
+        link: "/shop",
     },
 ];
 
@@ -35,12 +61,8 @@ export default function Page() {
             <section className="intro-section">
                 <div className="section-container">
                     <div className="flex-grid">
-                        <div className="title-box">
-                            <h1 className="title">Finden Sie Ihr passendes Produkt</h1>
-                        </div>
-                        <div className="description-box">
-                            <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem consectetur maiores incidunt, quisquam pariatur fugit, cumque minima nesciunt odit numquam et voluptatum molestiae dolorem magni quas ad hic, sapiente quae facilis voluptates tempore! A aut perferendis ut, quo nam culpa molestias maxime, accusantium veritatis architecto dolore iste veniam fugit officiis.</p>
-                        </div>
+                        <h1 className="title">Finden Sie das passende Produkt</h1>
+                        <p className="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut vel tenetur molestias dolorum earum rerum odit reiciendis maiores ex unde voluptatibus, suscipit laboriosam rem nobis fugit! Hic similique dicta ducimus.</p>
                     </div>
                 </div>
             </section>
@@ -48,24 +70,13 @@ export default function Page() {
             <section className="catalogue-section">
                 <div className="section-container">
                     <div className="flex-grid">
-                        <div className="indicator-box">
-                            <div className="title-box">
-                                <h1 className="title">PRODUKTE KATALOG</h1>
-                            </div>
-                            <nav className="nav-box">
-                                <Link href={"/shop"} prefetch={false} className="link">
-                                    Produkte
+                        <Navigation />
+                        <div className="products-box">
+                            {products.map((product, index) => (
+                                <Link href={product.link} prefetch={false} className="product" key={index}>
+                                    <h2 className="title">{product.name}</h2>
                                 </Link>
-                            </nav>
-                        </div>
-                        <div className="sub-flex-grid">
-                            {products
-                                .sort((a, b) => a.name.localeCompare(b.name))
-                                .map((product, index) => (
-                                    <Link href={product.link} prefetch={false} className="product" key={index}>
-                                        <h2 className="title">{product.name}</h2>
-                                    </Link>
-                                ))}
+                            ))}
                         </div>
                     </div>
                 </div>

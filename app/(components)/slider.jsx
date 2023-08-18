@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -13,41 +13,51 @@ const switches = {
     exit: { opacity: 0, transition: { ease: "linear", duration: 0.2 } },
 };
 
-let interval;
-
 export default function Slider({ products }) {
+    const interval = useRef(null);
+    const [playing, setPlaying] = useState(true);
     const [slide, setSlide] = useState(0);
 
     const prev = () => {
+        clearInterval(interval.current);
+        setPlaying(false);
         setSlide((slide) => (slide === 0 ? products.length - 1 : slide - 1));
     };
 
     const next = () => {
+        clearInterval(interval.current);
+        setPlaying(false);
         setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
     };
 
     const jump = (i) => {
+        clearInterval(interval.current);
+        setPlaying(false);
         setSlide(i);
     };
 
+    const play = () => {
+        if (playing) return;
+
+        interval.current = setInterval(() => {
+            setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
+        }, 10000);
+
+        setPlaying(true);
+    };
+
     useEffect(() => {
-        interval = setInterval(next, 10000);
+        interval.current = setInterval(() => {
+            setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
+        }, 10000);
 
         return () => {
-            clearInterval(interval);
+            clearInterval(interval.current);
         };
     }, []);
 
-    const pause = () => {
-        clearInterval(interval);
-    };
-
-    const play = () => {
-        interval = setInterval(next, 10000);
-    };
-
     return (
-        <div className="hero-slider" onPointerEnter={pause} onPointerLeave={play}>
+        <div className="hero-slider" onPointerLeave={play}>
             <div className="text-box">
                 <AnimatePresence initial={false}>
                     <motion.h1 initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} className="title">

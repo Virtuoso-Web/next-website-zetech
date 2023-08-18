@@ -114,17 +114,17 @@
                         .dot {
                             inline-size: 1rem;
                             block-size: 1rem;
-                            border: none;
+                            border: 1px solid transparent;
                             border-radius: 50%;
                             cursor: pointer;
                             background-color: $color-white-dark;
-                            transition-property: transform, background-color;
+                            transition-property: border-color, background-color;
                             transition-timing-function: linear;
                             transition-duration: 400ms;
 
                             &.active {
-                                transform: scale(1.25);
-                                background-color: $color-white-light;
+                                border-color: $color-white-dark;
+                                background-color: $color-black-light;
                             }
                         }
                     }

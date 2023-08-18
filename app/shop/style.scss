@@ -2,51 +2,42 @@
 
 .shop-page {
     padding-block-start: $header-block-size;
-    background-color: $color-white-dark;
 
     .intro-section {
-        padding-inline: min(5rem, 5%);
-        padding-block: 10rem;
         isolation: isolate;
         background-color: $color-black-dark;
 
-        .section-container {
+        > .section-container {
             inline-size: min($max-size, 100%);
             margin-inline: auto;
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
 
-            > .flex-grid {
+            .flex-grid {
                 display: flex;
                 flex-direction: column;
                 row-gap: 5rem;
 
-                > .title-box {
-                    display: flex;
+                .title {
+                    color: $color-white-dark;
+                    font-size: 8rem;
+                    font-weight: $weight-bold;
 
-                    .title {
-                        color: $color-white-dark;
-                        font-size: 7rem;
-                        font-weight: $weight-bold;
+                    @media (max-width: 768px) {
+                        font-size: 5rem;
+                    }
 
-                        @media (max-width: 768px) {
-                            font-size: 6rem;
-                        }
-
-                        @media (max-width: 425px) {
-                            font-size: 5rem;
-                        }
+                    @media (max-width: 425px) {
+                        font-size: 4rem;
                     }
                 }
 
-                > .description-box {
-                    display: flex;
+                .text {
+                    color: $color-white-dark;
+                    font-size: 3rem;
 
-                    .description {
-                        color: $color-white-dark;
-                        font-size: 2.5rem;
-
-                        @media (max-width: 768px) {
-                            font-size: 2rem;
-                        }
+                    @media (max-width: 768px) {
+                        font-size: 2rem;
                     }
                 }
             }
@@ -54,65 +45,68 @@
     }
 
     .catalogue-section {
-        padding-inline: min(5rem, 5%);
-        padding-block-end: 10rem;
         isolation: isolate;
+        background-color: $color-white-dark;
 
-        .section-container {
+        > .section-container {
             inline-size: min($max-size, 100%);
             margin-inline: auto;
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
 
-            > .flex-grid {
+            .flex-grid {
                 display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 5rem;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: "a b b b";
+                column-gap: 5rem;
 
-                > .indicator-box {
+                .nav-box {
+                    grid-area: a;
                     position: sticky;
-                    inset-block-start: calc($header-block-size - 8rem);
+                    inset-block-start: calc($header-block-size + 10rem);
                     display: flex;
                     flex-direction: column;
-                    padding-block: 10rem 2rem;
-                    box-shadow: 0 0 0 100vmax $color-white-dark;
-                    clip-path: inset(0 -100vmax);
-                    background-color: $color-white-dark;
+                    row-gap: 5rem;
+                    height: fit-content;
 
-                    .title-box {
-                        display: flex;
-
-                        .title {
-                            font-size: 5rem;
-                            font-weight: $weight-bold;
-
-                            @media (max-width: 768px) {
-                                font-size: 4rem;
-                            }
-
-                            @media (max-width: 425px) {
-                                font-size: 3rem;
-                            }
-                        }
+                    .title {
+                        font-size: 3rem;
+                        font-weight: $weight-bold;
                     }
 
-                    .nav-box {
+                    .navigation {
                         display: flex;
+                        flex-direction: column;
+                        row-gap: 0.5rem;
 
                         .link {
-                            color: $color-blue-main;
+                            color: $color-black-light;
                             font-size: 2rem;
+                            inline-size: fit-content;
+                            padding-inline: 1rem;
+                            padding-block: 0.5rem;
+                            border-radius: 1rem;
+                            transition-property: background-color;
+                            transition-timing-function: ease-in-out;
+                            transition-duration: 200ms;
+
+                            &:hover {
+                                background-color: $color-white-light;
+                            }
                         }
                     }
                 }
 
-                > .sub-flex-grid {
+                .products-box {
+                    grid-area: b;
                     display: grid;
                     grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
-                    column-gap: min(5rem, 5%);
+                    column-gap: 5rem;
                     row-gap: 5rem;
 
                     .product {
                         inline-size: 100%;
-                        aspect-ratio: 1;
+                        aspect-ratio: calc(1);
                         border-radius: 1rem;
                         outline: 0.5rem solid $color-black-light;
                         display: flex;
