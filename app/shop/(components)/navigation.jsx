@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 import Link from "next/link";
 
 const products = [
@@ -52,10 +56,19 @@ const products = [
 ];
 
 export default function Navigation() {
+    const [active, setActive] = useState(false);
+
+    const toggle = () => {
+        setActive((active) => !active);
+    };
+
     return (
         <div className="nav-box">
-            <h1 className="title">PRODUKTE KATALOG</h1>
-            <nav className="navigation">
+            <h1 className="title" onClick={toggle}>
+                PRODUKTE KATALOG
+                <span className={active ? "arrow active" : "arrow"}>{">"}</span>
+            </h1>
+            <nav className={active ? "navigation active" : "navigation"}>
                 {products.map((product, index) => (
                     <Link href={product.link} prefetch={false} className="link" key={index}>
                         {product.name}

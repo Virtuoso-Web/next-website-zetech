@@ -96,7 +96,7 @@
                         row-gap: 1rem;
                         padding-block-end: 1rem;
                         border-radius: 1rem;
-                        outline: 0.5rem solid $color-black-light;
+                        border: 0.5rem solid $color-black-light;
                         background-color: $color-white-light;
                         overflow: hidden;
 
@@ -201,7 +201,7 @@
                     padding-inline: min(5rem, 5%);
                     padding-block: 3rem;
                     border-radius: 1rem;
-                    outline: 0.5rem solid $color-black-light;
+                    border: 0.5rem solid $color-black-light;
                     background-color: $color-white-dark;
 
                     .title {
@@ -230,7 +230,7 @@
                     padding-inline: min(5rem, 5%);
                     padding-block: 3rem;
                     border-radius: 1rem;
-                    outline: 0.5rem solid $color-black-light;
+                    border: 0.5rem solid $color-black-light;
                     background-color: $color-white-dark;
 
                     .box-container {
@@ -270,7 +270,7 @@
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     border-radius: 1rem;
-                    outline: 0.5rem solid $color-black-light;
+                    border: 0.5rem solid $color-black-light;
                     overflow: hidden;
 
                     @media (max-width: 1024px) {
@@ -316,8 +316,8 @@
                                     padding-inline: min(5rem, 5%);
                                     padding-block: 1rem;
                                     border-radius: 1rem;
-                                    border: none;
-                                    outline: 0.3rem solid $color-black-light;
+                                    border: 0.3rem solid $color-black-light;
+                                    outline: none;
                                     background-color: $color-white-light;
                                 }
 
@@ -329,8 +329,8 @@
                                     padding-block: 1rem;
                                     resize: vertical;
                                     border-radius: 1rem;
-                                    border: none;
-                                    outline: 0.3rem solid $color-black-light;
+                                    border: 0.3rem solid $color-black-light;
+                                    outline: none;
                                     background-color: $color-white-light;
                                 }
                             }
@@ -346,8 +346,8 @@
                                     font-size: 2rem;
                                     padding-block: 1rem;
                                     border-radius: 1rem;
-                                    border: none;
-                                    outline: 0.3rem solid $color-black-light;
+                                    border: 0.3rem solid $color-black-light;
+                                    outline: none;
                                     background-color: $color-blue-main;
                                     cursor: pointer;
                                 }
@@ -357,8 +357,8 @@
                                     font-size: 2rem;
                                     padding-block: 1rem;
                                     border-radius: 1rem;
-                                    border: none;
-                                    outline: 0.3rem solid $color-black-light;
+                                    border: 0.3rem solid $color-black-light;
+                                    outline: none;
                                     background-color: red;
                                     cursor: pointer;
                                 }

@@ -54,11 +54,22 @@
             padding-inline: min(5rem, 5%);
             padding-block: 10rem;
 
+            @media (max-width: 1024px) {
+                padding-block-start: 5rem;
+            }
+
             .flex-grid {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-areas: "a b b b";
                 column-gap: 5rem;
+                row-gap: 5rem;
+
+                @media (max-width: 1024px) {
+                    grid-template-areas:
+                        "a a a a"
+                        "b b b b";
+                }
 
                 .nav-box {
                     grid-area: a;
@@ -67,17 +78,57 @@
                     display: flex;
                     flex-direction: column;
                     row-gap: 5rem;
-                    height: fit-content;
+                    block-size: fit-content;
+
+                    @media (max-width: 1024px) {
+                        inset-block-start: $header-block-size;
+                        padding-block-start: 5rem;
+                        background-color: $color-white-dark;
+                    }
 
                     .title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
                         font-size: 3rem;
                         font-weight: $weight-bold;
+                        pointer-events: none;
+
+                        @media (max-width: 1024px) {
+                            cursor: pointer;
+                            pointer-events: initial;
+                        }
+
+                        .arrow {
+                            display: none;
+
+                            @media (max-width: 1024px) {
+                                display: initial;
+
+                                &.active {
+                                    transform: rotate(90deg);
+                                }
+                            }
+                        }
                     }
 
                     .navigation {
                         display: flex;
                         flex-direction: column;
                         row-gap: 0.5rem;
+                        background-color: $color-white-dark;
+
+                        @media (max-width: 1024px) {
+                            block-size: 0;
+                            overflow-y: hidden;
+
+                            &.active {
+                                block-size: initial;
+                                padding-block-end: 5rem;
+                                overflow-y: auto;
+                                overscroll-behavior-block: contain;
+                            }
+                        }
 
                         .link {
                             color: $color-black-light;
@@ -108,7 +159,7 @@
                         inline-size: 100%;
                         aspect-ratio: calc(1);
                         border-radius: 1rem;
-                        outline: 0.5rem solid $color-black-light;
+                        border: 0.5rem solid $color-black-light;
                         display: flex;
                         justify-content: center;
                         align-items: center;
