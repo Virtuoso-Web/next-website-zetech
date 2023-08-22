@@ -1,11 +1,11 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+import "@/components/header.scss";
 
 import Link from "next/link";
 
-import "@/components/header-style.scss";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function Header() {
     const pathname = usePathname();

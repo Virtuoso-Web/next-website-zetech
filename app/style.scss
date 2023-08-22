@@ -22,6 +22,7 @@
             margin-inline: auto;
             padding-inline: min(5rem, 5%);
             padding-block: 5rem;
+            overflow-x: hidden;
 
             .hero-slider {
                 position: relative;
@@ -177,6 +178,7 @@
             margin-inline: auto;
             padding-inline: min(5rem, 5%);
             padding-block: 10rem 5rem;
+            overflow-x: hidden;
 
             .title {
                 font-size: 8rem;
@@ -259,6 +261,7 @@
             margin-inline: auto;
             padding-inline: min(5rem, 5%);
             padding-block: 10rem;
+            overflow-x: hidden;
 
             > .title {
                 color: $color-white-dark;
@@ -441,6 +444,7 @@
             margin-inline: auto;
             padding-inline: min(5rem, 5%);
             padding-block: 10rem;
+            overflow-x: hidden;
 
             .flex-grid {
                 display: flex;
@@ -561,6 +565,7 @@
             margin-inline: auto;
             padding-inline: min(5rem, 5%);
             padding-block: 10rem;
+            overflow-x: hidden;
 
             .flex-grid {
                 display: grid;

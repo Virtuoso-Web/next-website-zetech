@@ -1,10 +1,10 @@
+import "@/components/footer.scss";
+
 import Link from "next/link";
 
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { BsEnvelopeFill } from "react-icons/bs";
-
-import "@/components/footer-style.scss";
 
 export default function Footer() {
     return (
@@ -14,20 +14,33 @@ export default function Footer() {
                     <nav className="footer-navigation">
                         <div className="nav-box">
                             <Link href={"/dienstleistungen"} prefetch={false} className="header-link">
-                                Dienstleistungen
+                                Dienstleistungen / Datenaufbereitung
                             </Link>
                             <div className="sub-links-container">
                                 <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
-                                    Beratung
+                                    Datenaufbereitung
                                 </Link>
                                 <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
-                                    Miete
+                                    Bestandaufnahme
                                 </Link>
                                 <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
-                                    Verkauf
+                                    Massenermittlung / Aufnahme
                                 </Link>
                                 <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
+                                    Schulungen
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="nav-box">
+                            <Link href={"/"} prefetch={false} className="header-link">
+                                Service / Werkstatt
+                            </Link>
+                            <div className="sub-links-container">
+                                <Link href={"/"} prefetch={false} className="sub-link">
                                     Service
+                                </Link>
+                                <Link href={"/"} prefetch={false} className="sub-link">
+                                    Werkstatt
                                 </Link>
                             </div>
                         </div>
@@ -36,23 +49,41 @@ export default function Footer() {
                                 Shop
                             </Link>
                             <div className="sub-links-container">
-                                <Link href={"/shop/androtec"} prefetch={false} className="sub-link">
-                                    Androtec
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Totalstationen
                                 </Link>
-                                <Link href={"/shop/geomax"} prefetch={false} className="sub-link">
-                                    Geomax
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    GPS
                                 </Link>
-                                <Link href={"/shop/leica"} prefetch={false} className="sub-link">
-                                    Leica
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Tablets
                                 </Link>
-                                <Link href={"/shop/prismen"} prefetch={false} className="sub-link">
-                                    Prismen
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Baulaser
                                 </Link>
-                                <Link href={"/shop/theis"} prefetch={false} className="sub-link">
-                                    Theis
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Kanalbaulaser
                                 </Link>
-                                <Link href={"/shop/zubehoer"} prefetch={false} className="sub-link">
-                                    Zubehör
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Linienlaser
+                                </Link>
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Distanzmessgeräte
+                                </Link>
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Empfänger
+                                </Link>
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Nivelliere
+                                </Link>
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Stative
+                                </Link>
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Zubehör Totalstationen
+                                </Link>
+                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                    Zubehör GPS
                                 </Link>
                             </div>
                         </div>

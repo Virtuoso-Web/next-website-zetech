@@ -1,62 +1,22 @@
-import "@/app/shop/style.scss";
+import "@/app/shop/totalstationen/leica-totalstationen/style.scss";
 
 import Navigation from "@/app/shop/(components)/navigation.jsx";
 import Products from "@/app/shop/(components)/products.jsx";
 
 const products = [
     {
-        name: "Totalstationen",
+        name: "Leica iCON Robot 70",
         link: "/shop/totalstationen",
     },
     {
-        name: "GPS",
-        link: "/shop",
-    },
-    {
-        name: "Tablets",
-        link: "/shop",
-    },
-    {
-        name: "Baulaser",
-        link: "/shop",
-    },
-    {
-        name: "Kanalbaulaser",
-        link: "/shop",
-    },
-    {
-        name: "Linienlaser",
-        link: "/shop",
-    },
-    {
-        name: "Distanzmessgeräte",
-        link: "/shop",
-    },
-    {
-        name: "Empfänger",
-        link: "/shop",
-    },
-    {
-        name: "Nivelliere",
-        link: "/shop",
-    },
-    {
-        name: "Stative",
-        link: "/shop",
-    },
-    {
-        name: "Zubehör Totalstationen",
-        link: "/shop",
-    },
-    {
-        name: "Zubehör GPS",
-        link: "/shop",
+        name: "Leica iCON Robot 80",
+        link: "/shop/totalstationen",
     },
 ];
 
 export default function Page() {
     return (
-        <main className="shop-page">
+        <main className="shop-totalstationen-leica-totalstationen-page">
             <section className="intro-section">
                 <div className="section-container">
                     <div className="flex-grid">

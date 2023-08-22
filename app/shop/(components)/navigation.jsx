@@ -1,13 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import "@/app/shop/(components)/navigation.scss";
 
 import Link from "next/link";
+
+import { useState } from "react";
 
 const products = [
     {
         name: "Totalstationen",
-        link: "/shop",
+        link: "/shop/totalstationen",
     },
     {
         name: "GPS",
@@ -30,7 +32,7 @@ const products = [
         link: "/shop",
     },
     {
-        name: "Disto",
+        name: "Distanzmessgeräte",
         link: "/shop",
     },
     {

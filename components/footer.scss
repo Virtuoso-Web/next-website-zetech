@@ -1,23 +1,23 @@
 @import "@/assets/variables";
 
 .footer {
-    padding-inline: min(5rem, 5%);
-    padding-block: 10rem;
     background-color: $color-black-dark;
 
-    .footer-container {
+    > .footer-container {
         inline-size: min($max-size, 100%);
         margin-inline: auto;
+        padding-inline: min(5rem, 5%);
+        padding-block: 10rem;
+        overflow-x: hidden;
 
-        > .flex-grid {
+        .flex-grid {
             display: grid;
             grid-template-columns: 1fr;
             row-gap: 5rem;
 
-            > .footer-navigation {
+            .footer-navigation {
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                column-gap: 5rem;
+                grid-template-columns: repeat(5, 1fr);
                 row-gap: 5rem;
 
                 @media (max-width: 1024px) {
@@ -80,7 +80,7 @@
                 }
             }
 
-            > .group-box {
+            .group-box {
                 display: flex;
                 flex-direction: column;
                 row-gap: 3rem;

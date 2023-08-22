@@ -1,3 +1,5 @@
+import "@/app/style.scss";
+
 import Slider from "@/app/(components)/slider.jsx";
 import Services from "@/app/(components)/services.jsx";
 
@@ -5,8 +7,6 @@ import Link from "next/link";
 
 import { PiArrowArcRightBold } from "react-icons/pi";
 import { MdOutlineWavingHand } from "react-icons/md";
-
-import "@/app/style.scss";
 
 const products = [
     {

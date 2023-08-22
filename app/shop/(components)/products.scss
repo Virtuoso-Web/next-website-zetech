@@ -1,0 +1,27 @@
+@import "@/assets/variables";
+
+main[class*="shop"] {
+    .products-box {
+        grid-area: b;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
+        column-gap: 5rem;
+        row-gap: 5rem;
+
+        .product {
+            inline-size: 100%;
+            aspect-ratio: calc(1);
+            border-radius: 1rem;
+            border: 0.5rem solid $color-black-light;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                color: $color-black-light;
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
+import "@/app/globals.scss";
+
 import Header from "@/components/header.jsx";
 import Footer from "@/components/footer.jsx";
-
-import "@/app/globals.scss";
 
 export const metadata = {
     title: "ZETECH GmbH",
