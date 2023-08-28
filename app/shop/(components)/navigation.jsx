@@ -1,7 +1,5 @@
 "use client";
 
-import "@/app/shop/(components)/navigation.scss";
-
 import Link from "next/link";
 
 import { useState } from "react";
@@ -13,47 +11,47 @@ const products = [
     },
     {
         name: "GPS",
-        link: "/shop",
+        link: "/shop/gps",
     },
     {
         name: "Tablets",
-        link: "/shop",
+        link: "/shop/tablets",
     },
     {
         name: "Baulaser",
-        link: "/shop",
+        link: "/shop/baulaser",
     },
     {
         name: "Kanalbaulaser",
-        link: "/shop",
+        link: "/shop/kanalbaulaser",
     },
     {
         name: "Linienlaser",
-        link: "/shop",
+        link: "/shop/linienlaser",
     },
     {
         name: "Distanzmessgeräte",
-        link: "/shop",
+        link: "/shop/distanzmessgeraete",
     },
     {
         name: "Empfänger",
-        link: "/shop",
+        link: "/shop/empfaenger",
     },
     {
         name: "Nivelliere",
-        link: "/shop",
+        link: "/shop/nivelliere",
     },
     {
         name: "Stative",
-        link: "/shop",
+        link: "/shop/stative",
     },
     {
         name: "Zubehör Totalstationen",
-        link: "/shop",
+        link: "/shop/zubehoer-totalstationen",
     },
     {
         name: "Zubehör GPS",
-        link: "/shop",
+        link: "/shop/zubehoer-gps",
     },
 ];
 

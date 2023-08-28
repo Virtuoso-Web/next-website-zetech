@@ -1,5 +1,3 @@
-import "@/app/shop/(components)/products.scss";
-
 import Link from "next/link";
 
 export default function Products({ products }) {

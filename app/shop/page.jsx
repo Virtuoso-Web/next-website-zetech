@@ -1,6 +1,3 @@
-import "@/app/shop/style.scss";
-
-import Navigation from "@/app/shop/(components)/navigation.jsx";
 import Products from "@/app/shop/(components)/products.jsx";
 
 const products = [
@@ -10,70 +7,50 @@ const products = [
     },
     {
         name: "GPS",
-        link: "/shop",
+        link: "/shop/gps",
     },
     {
         name: "Tablets",
-        link: "/shop",
+        link: "/shop/tablets",
     },
     {
         name: "Baulaser",
-        link: "/shop",
+        link: "/shop/baulaser",
     },
     {
         name: "Kanalbaulaser",
-        link: "/shop",
+        link: "/shop/kanalbaulaser",
     },
     {
         name: "Linienlaser",
-        link: "/shop",
+        link: "/shop/linienlaser",
     },
     {
         name: "Distanzmessgeräte",
-        link: "/shop",
+        link: "/shop/distanzmessgeraete",
     },
     {
         name: "Empfänger",
-        link: "/shop",
+        link: "/shop/empfaenger",
     },
     {
         name: "Nivelliere",
-        link: "/shop",
+        link: "/shop/nivelliere",
     },
     {
         name: "Stative",
-        link: "/shop",
+        link: "/shop/stative",
     },
     {
         name: "Zubehör Totalstationen",
-        link: "/shop",
+        link: "/shop/zubehoer-totalstationen",
     },
     {
         name: "Zubehör GPS",
-        link: "/shop",
+        link: "/shop/zubehoer-gps",
     },
 ];
 
 export default function Page() {
-    return (
-        <main className="shop-page">
-            <section className="intro-section">
-                <div className="section-container">
-                    <div className="flex-grid">
-                        <h1 className="title">Finden Sie das passende Produkt</h1>
-                        <p className="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut vel tenetur molestias dolorum earum rerum odit reiciendis maiores ex unde voluptatibus, suscipit laboriosam rem nobis fugit! Hic similique dicta ducimus.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section className="catalogue-section">
-                <div className="section-container">
-                    <div className="flex-grid">
-                        <Navigation />
-                        <Products products={products} />
-                    </div>
-                </div>
-            </section>
-        </main>
-    );
+    return <Products products={products} />;
 }
