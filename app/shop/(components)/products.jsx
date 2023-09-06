@@ -4,9 +4,13 @@ export default function Products({ products }) {
     return (
         <div className="products-box">
             {products.map((product, index) => (
-                <Link href={product.link} prefetch={false} className="product" key={index}>
+                <div className="product">
                     <h2 className="title">{product.name}</h2>
-                </Link>
+                    <Link href={product.link} prefetch={false} className="image-holder" key={index}>
+                        <img src="/images/shop/bg-concrete-square.webp" alt="Hintergrund" loading="lazy" className="bg-image" />
+                        <img src={product.image} alt={product.name} loading="lazy" className="image" />
+                    </Link>
+                </div>
             ))}
         </div>
     );

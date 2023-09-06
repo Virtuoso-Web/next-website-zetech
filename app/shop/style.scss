@@ -1,16 +1,26 @@
-@import "@/assets/variables";
+@import "@/variables";
 
 .shop-page {
     padding-block-start: $header-block-size;
 
     .intro-section {
-        isolation: isolate;
-        background-color: $color-black-dark;
+        position: relative;
+        display: flex;
+
+        .bg-image {
+            position: absolute;
+            inline-size: 100%;
+            block-size: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(0.5);
+            z-index: -1;
+        }
 
         > .section-container {
             inline-size: min($max-size, 100%);
-            margin-inline: auto;
             padding-inline: min(5rem, 5%);
+            margin-inline: auto;
             padding-block: 10rem;
 
             .flex-grid {
@@ -45,13 +55,12 @@
     }
 
     .catalogue-section {
-        isolation: isolate;
         background-color: $color-white-dark;
 
         > .section-container {
             inline-size: min($max-size, 100%);
-            margin-inline: auto;
             padding-inline: min(5rem, 5%);
+            margin-inline: auto;
             padding-block: 10rem;
 
             @media (max-width: 1024px) {
@@ -79,11 +88,18 @@
                     flex-direction: column;
                     row-gap: 5rem;
                     block-size: fit-content;
+                    padding-inline-end: 5%;
+                    border-inline-end: 0.5rem solid $color-black-light;
+                    background-color: $color-white-dark;
+                    z-index: 10;
 
                     @media (max-width: 1024px) {
                         inset-block-start: $header-block-size;
+                        padding-inline-end: 0;
                         padding-block-start: 5rem;
-                        background-color: $color-white-dark;
+                        border-inline-end: none;
+                        box-shadow: 0 0 0 100vmax $color-white-dark;
+                        clip-path: inset(0 -100vmax);
                     }
 
                     .title {
@@ -104,7 +120,7 @@
                             transform: rotate(90deg);
 
                             @media (max-width: 1024px) {
-                                display: initial;
+                                display: flex;
 
                                 &.active {
                                     transform: rotate(-90deg);
@@ -121,11 +137,13 @@
 
                         @media (max-width: 1024px) {
                             block-size: 0;
+                            border-block-start: 0.5rem solid $color-black-light;
                             overflow-y: hidden;
 
                             &.active {
                                 block-size: 25vh;
-                                padding-block-end: 5rem;
+                                border-radius: 1rem;
+                                border: 0.5rem solid $color-black-light;
                                 overflow-y: auto;
                                 overscroll-behavior-block: contain;
                             }
@@ -134,15 +152,16 @@
                         .link {
                             color: $color-black-light;
                             font-size: 2rem;
-                            inline-size: fit-content;
-                            padding-inline: 1rem;
+                            // inline-size: fit-content;
+                            padding-inline: 0.5rem;
                             padding-block: 0.5rem;
                             border-radius: 1rem;
                             transition-property: background-color;
                             transition-timing-function: ease-in-out;
                             transition-duration: 200ms;
 
-                            &:hover {
+                            &:hover,
+                            &.active {
                                 background-color: $color-white-light;
                             }
                         }
@@ -157,20 +176,106 @@
                     row-gap: 5rem;
 
                     .product {
-                        inline-size: 100%;
-                        aspect-ratio: calc(1);
-                        border-radius: 1rem;
-                        border: 0.5rem solid $color-black-light;
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding-inline: 5%;
-                        background-color: $color-white-light;
+                        flex-direction: column;
+                        row-gap: 1rem;
+                        isolation: isolate;
 
                         .title {
-                            color: $color-black-light;
                             font-size: 2rem;
+                            font-weight: $weight-bold;
                             text-align: center;
+                        }
+
+                        .image-holder {
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            inline-size: 100%;
+                            aspect-ratio: calc(1);
+                            border-radius: 1rem;
+                            border: 0.5rem solid $color-black-light;
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                inset: 0;
+                                box-shadow: 0 0 2rem $color-black-dark;
+                                opacity: 0;
+                                z-index: -1;
+                                transition-property: opacity;
+                                transition-timing-function: ease-in-out;
+                                transition-duration: 200ms;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    opacity: 1;
+                                }
+                            }
+
+                            .bg-image {
+                                position: absolute;
+                                inline-size: 100%;
+                                block-size: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                                filter: brightness(0.5);
+                            }
+
+                            .image {
+                                position: absolute;
+                                inline-size: 90%;
+                                block-size: 90%;
+                                object-fit: contain;
+                                object-position: center;
+                            }
+                        }
+                    }
+                }
+
+                .product-box {
+                    grid-area: b;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 5rem;
+
+                    .title {
+                        font-size: 3rem;
+                        font-weight: $weight-bold;
+                        text-align: center;
+                    }
+
+                    .gallery {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        row-gap: 3rem;
+
+                        .big-image-holder {
+                            position: relative;
+                            display: flex;
+                            inline-size: 80%;
+                            aspect-ratio: calc(16 / 9);
+                            border-radius: 1rem;
+                            border: 0.5rem solid black;
+                        }
+
+                        .small-image-container {
+                            inline-size: 100%;
+                            display: flex;
+                            justify-content: center;
+                            column-gap: 5rem;
+
+                            .small-image-holder {
+                                position: relative;
+                                display: flex;
+                                inline-size: 20%;
+                                aspect-ratio: calc(16 / 9);
+                                border-radius: 1rem;
+                                border: 0.5rem solid black;
+                            }
                         }
                     }
                 }

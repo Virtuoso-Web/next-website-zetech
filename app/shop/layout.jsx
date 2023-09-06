@@ -6,6 +6,7 @@ export default function ShopLayout({ children }) {
     return (
         <main className="shop-page">
             <section className="intro-section">
+                <img src="/images/bg-concrete.webp" alt="Hintergrund" loading="lazy" className="bg-image" />
                 <div className="section-container">
                     <div className="flex-grid">
                         <h1 className="title">Finden Sie das passende Produkt</h1>

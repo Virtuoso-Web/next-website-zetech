@@ -23,19 +23,19 @@ const products = [
     },
     {
         title: "Leica iCON GPS 70T",
-        image: "/images/home/leica-icon-gps-70t.webp",
+        image: "/images/home/leica-icon-gps-70.webp",
     },
     {
         title: "Leica iCON CC200",
-        image: "/images/home/leica-icon-cc200.webp",
+        image: "/images/home/leica-icon-cc-200.webp",
     },
     {
         title: "Leica iCON CC80",
-        image: "/images/home/leica-icon-cc80.webp",
+        image: "/images/home/leica-icon-cc-80.webp",
     },
     {
         title: "Leica AP20 AutoPole",
-        image: "/images/home/leica-ap20-autopole.webp",
+        image: "/images/home/leica-ap-20-autopole.webp",
     },
     {
         title: "Leica Rugby CLA-CTIVE",
@@ -43,7 +43,7 @@ const products = [
     },
     {
         title: "Geomax 60DG",
-        image: "/images/home/geomax-60dg.webp",
+        image: "/images/home/geomax-60-dg.webp",
     },
 ];
 
@@ -51,14 +51,15 @@ export default function Page() {
     return (
         <main className="home-page">
             <section className="slider-section">
-                <img src="/images/concrete.webp" alt="Hintergrund" className="bg-image" />
+                <img src="/images/bg-concrete.webp" alt="Hintergrund" loading="lazy" className="bg-image" />
                 <div className="section-container">
                     <Slider products={products} />
                 </div>
             </section>
 
             <section className="hero-section">
-                <div className="bg-holder" style={{ backgroundImage: "url(/images/stripe.webp)" }}></div>
+                <div className="bg-holder" style={{ backgroundImage: "url(/images/bg-stripe.webp)" }}></div>
+                <img src="/images/home/construction-landscape.webp" alt="Hintergrund" loading="lazy" className="banner" />
                 <div className="section-container">
                     <h1 className="title">
                         IHRE EXPERTEN IN SACHEN

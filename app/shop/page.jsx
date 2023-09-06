@@ -4,14 +4,17 @@ const products = [
     {
         name: "Totalstationen",
         link: "/shop/totalstationen",
+        image: "/images/shop/totalstationen/leica-icon-robot-70-1.webp",
     },
     {
         name: "GPS",
         link: "/shop/gps",
+        image: "/images/shop/gps/leica-icon-gps-70-1.webp",
     },
     {
         name: "Tablets",
         link: "/shop/tablets",
+        image: "/images/shop/tablets/leica-icon-cc-200-1.webp",
     },
     {
         name: "Baulaser",

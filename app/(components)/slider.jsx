@@ -58,7 +58,7 @@ export default function Slider({ products }) {
 
     return (
         <div className="hero-slider" onPointerLeave={play}>
-            <div className="text-box">
+            <div className="title-box">
                 <AnimatePresence initial={false}>
                     <motion.h1 initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} className="title">
                         {products[slide].title}
@@ -68,7 +68,7 @@ export default function Slider({ products }) {
             <div className="image-box">
                 <div className="image-holder">
                     <AnimatePresence initial={false}>
-                        <motion.img src={products[slide].image} alt={products[slide].title} initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} className="image" />
+                        <motion.img src={products[slide].image} alt={products[slide].title} initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} loading="lazy" className="image" />
                     </AnimatePresence>
                 </div>
             </div>

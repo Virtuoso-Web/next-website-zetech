@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const products = [
@@ -56,6 +57,7 @@ const products = [
 ];
 
 export default function Navigation() {
+    const path = usePathname();
     const [active, setActive] = useState(false);
 
     const toggle = () => {
@@ -65,12 +67,15 @@ export default function Navigation() {
     return (
         <div className="nav-box">
             <h1 className="title" onClick={toggle}>
-                PRODUKTE KATALOG
+                KATALOG
                 <span className={active ? "arrow active" : "arrow"}>{">"}</span>
             </h1>
             <nav className={active ? "navigation active" : "navigation"}>
+                <Link href={"/shop"} prefetch={false} className={path === "/shop" ? "link active" : "link"} key={-1}>
+                    Übersicht
+                </Link>
                 {products.map((product, index) => (
-                    <Link href={product.link} prefetch={false} className="link" key={index}>
+                    <Link href={product.link} prefetch={false} className={path.includes(product.link) ? "link active" : "link"} key={index}>
                         {product.name}
                     </Link>
                 ))}
