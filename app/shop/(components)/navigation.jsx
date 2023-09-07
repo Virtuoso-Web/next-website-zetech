@@ -71,11 +71,11 @@ export default function Navigation() {
                 <span className={active ? "arrow active" : "arrow"}>{">"}</span>
             </h1>
             <nav className={active ? "navigation active" : "navigation"}>
-                <Link href={"/shop"} prefetch={false} className={path === "/shop" ? "link active" : "link"} key={-1}>
+                <Link href={"/shop"} className={path === "/shop" ? "link active" : "link"} key={-1}>
                     Übersicht
                 </Link>
                 {products.map((product, index) => (
-                    <Link href={product.link} prefetch={false} className={path.includes(product.link) ? "link active" : "link"} key={index}>
+                    <Link href={product.link} className={path.includes(product.link) ? "link active" : "link"} key={index}>
                         {product.name}
                     </Link>
                 ))}

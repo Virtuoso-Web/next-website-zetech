@@ -13,101 +13,101 @@ export default function Footer() {
                 <div className="flex-grid">
                     <nav className="footer-navigation">
                         <div className="nav-box">
-                            <Link href={"/dienstleistungen"} prefetch={false} className="header-link">
+                            <Link href={"/dienstleistungen"} className="header-link">
                                 Dienstleistungen / Datenaufbereitung
                             </Link>
                             <div className="sub-links-container">
-                                <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
+                                <Link href={"/dienstleistungen"} className="sub-link">
                                     Datenaufbereitung
                                 </Link>
-                                <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
+                                <Link href={"/dienstleistungen"} className="sub-link">
                                     Bestandaufnahme
                                 </Link>
-                                <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
+                                <Link href={"/dienstleistungen"} className="sub-link">
                                     Massenermittlung / Aufnahme
                                 </Link>
-                                <Link href={"/dienstleistungen"} prefetch={false} className="sub-link">
+                                <Link href={"/dienstleistungen"} className="sub-link">
                                     Schulungen
                                 </Link>
                             </div>
                         </div>
                         <div className="nav-box">
-                            <Link href={"/"} prefetch={false} className="header-link">
+                            <Link href={"/"} className="header-link">
                                 Service / Werkstatt
                             </Link>
                             <div className="sub-links-container">
-                                <Link href={"/"} prefetch={false} className="sub-link">
+                                <Link href={"/"} className="sub-link">
                                     Service
                                 </Link>
-                                <Link href={"/"} prefetch={false} className="sub-link">
+                                <Link href={"/"} className="sub-link">
                                     Werkstatt
                                 </Link>
                             </div>
                         </div>
                         <div className="nav-box">
-                            <Link href={"/shop"} prefetch={false} className="header-link">
+                            <Link href={"/shop"} className="header-link">
                                 Shop
                             </Link>
                             <div className="sub-links-container">
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Totalstationen
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     GPS
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Tablets
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Baulaser
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Kanalbaulaser
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Linienlaser
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Distanzmessgeräte
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Empfänger
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Nivelliere
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Stative
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Zubehör Totalstationen
                                 </Link>
-                                <Link href={"/shop/"} prefetch={false} className="sub-link">
+                                <Link href={"/shop/"} className="sub-link">
                                     Zubehör GPS
                                 </Link>
                             </div>
                         </div>
                         <div className="nav-box">
-                            <Link href={"/downloads"} prefetch={false} className="header-link">
+                            <Link href={"/downloads"} className="header-link">
                                 Downloads
                             </Link>
                             <div className="sub-links-container">
-                                <Link href={"/downloads"} prefetch={false} className="sub-link">
+                                <Link href={"/downloads"} className="sub-link">
                                     TeamViewer
                                 </Link>
                             </div>
                         </div>
                         <div className="nav-box">
-                            <Link href={"/kontakt"} prefetch={false} className="header-link">
+                            <Link href={"/kontakt"} className="header-link">
                                 Kontakt
                             </Link>
                             <div className="sub-links-container">
                                 <p className="sub-text">Luzernerstrasse 88A</p>
                                 <p className="sub-text">6014 Luzern</p>
-                                <Link href={"/"} prefetch={false} className="sub-link">
+                                <Link href={"/"} className="sub-link">
                                     +41 41 250 32 02
                                 </Link>
-                                <Link href={"/"} prefetch={false} className="sub-link">
+                                <Link href={"/"} className="sub-link">
                                     zetech@gmx.ch
                                 </Link>
                             </div>
@@ -123,13 +123,13 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="socials-box">
-                            <Link href={"/"} prefetch={false} className="social-link">
+                            <Link href={"/"} className="social-link">
                                 <BiLogoInstagramAlt />
                             </Link>
-                            <Link href={"/"} prefetch={false} className="social-link">
+                            <Link href={"/"} className="social-link">
                                 <BiLogoFacebookCircle />
                             </Link>
-                            <Link href={"/"} prefetch={false} className="social-link">
+                            <Link href={"/"} className="social-link">
                                 <BsEnvelopeFill />
                             </Link>
                         </div>

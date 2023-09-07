@@ -19,6 +19,7 @@ const products = [
     {
         name: "Baulaser",
         link: "/shop/baulaser",
+        image: "/images/shop/baulaser/leica-rugby-cla-ctive-1.webp",
     },
     {
         name: "Kanalbaulaser",

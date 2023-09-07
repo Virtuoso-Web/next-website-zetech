@@ -26,6 +26,10 @@ const partners = [
     },
 ];
 
+export const metadata = {
+    title: "Kontakt",
+};
+
 export default function Page() {
     return (
         <main className="kontakt-page">
@@ -60,13 +64,13 @@ export default function Page() {
                                         </div>
                                         <div className="contact-group">
                                             <BsTelephoneFill />
-                                            <Link href={"/"} prefetch={false} className="contact-link">
+                                            <Link href={"/"} className="contact-link">
                                                 +41 79 123 45 67
                                             </Link>
                                         </div>
                                         <div className="contact-group">
                                             <BsEnvelopeFill />
-                                            <Link href={"/"} prefetch={false} className="contact-link">
+                                            <Link href={"/"} className="contact-link">
                                                 name@zetech.ch
                                             </Link>
                                         </div>
@@ -103,13 +107,13 @@ export default function Page() {
                                 </div>
                                 <div className="box">
                                     <BsTelephoneFill className="icon" />
-                                    <Link href={"/"} prefetch={false} className="contact-link">
+                                    <Link href={"/"} className="contact-link">
                                         +41 41 250 32 02
                                     </Link>
                                 </div>
                                 <div className="box">
                                     <BsEnvelopeFill className="icon" />
-                                    <Link href={"/"} prefetch={false} className="contact-link">
+                                    <Link href={"/"} className="contact-link">
                                         zetech@gmx.ch
                                     </Link>
                                 </div>

@@ -2,6 +2,10 @@ import Link from "next/link";
 
 import "@/app/dienstleistungen/style.scss";
 
+export const metadata = {
+    title: "Dienstleistungen",
+};
+
 export default function Page() {
     return (
         <main className="dienstleistungen-page">
@@ -26,7 +30,7 @@ export default function Page() {
                             </div>
                             <div className="text-box">
                                 <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore.</p>
-                                <Link href={"/kontakt"} prefetch={false} className="link">
+                                <Link href={"/kontakt"} className="link">
                                     Kontakt aufnehmen
                                 </Link>
                             </div>
@@ -51,7 +55,7 @@ export default function Page() {
                             </div>
                             <div className="text-box">
                                 <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore.</p>
-                                <Link href={"/kontakt"} prefetch={false} className="link">
+                                <Link href={"/kontakt"} className="link">
                                     Kontakt aufnehmen
                                 </Link>
                             </div>
@@ -76,7 +80,7 @@ export default function Page() {
                             </div>
                             <div className="text-box">
                                 <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore.</p>
-                                <Link href={"/kontakt"} prefetch={false} className="link">
+                                <Link href={"/kontakt"} className="link">
                                     Kontakt aufnehmen
                                 </Link>
                             </div>
@@ -101,7 +105,7 @@ export default function Page() {
                             </div>
                             <div className="text-box">
                                 <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quo neque reprehenderit natus voluptatem pariatur, iusto magnam ex aliquid nemo cupiditate illo, saepe labore sit. Earum cumque ea perferendis mollitia libero rerum deleniti aspernatur excepturi quod accusantium magni, esse reiciendis ad, qui labore voluptas sunt, provident sint optio illo eveniet culpa laudantium enim. Rem ducimus corrupti totam, minus quaerat, tempore est ipsam laborum, commodi quam assumenda deserunt cupiditate similique labore repudiandae fugiat exercitationem amet nesciunt eligendi dolore.</p>
-                                <Link href={"/kontakt"} prefetch={false} className="link">
+                                <Link href={"/kontakt"} className="link">
                                     Kontakt aufnehmen
                                 </Link>
                             </div>

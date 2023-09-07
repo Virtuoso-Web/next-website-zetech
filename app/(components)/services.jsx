@@ -18,7 +18,7 @@ export default function Services() {
                 </div>
                 <div className="text-box">
                     <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                    <Link href={"/shop"} prefetch={false} className="link">
+                    <Link href={"/shop"} className="link">
                         Zum Shop
                     </Link>
                 </div>
@@ -32,7 +32,7 @@ export default function Services() {
                 </div>
                 <div className="text-box">
                     <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                    <Link href={"/dienstleistungen"} prefetch={false} className="link">
+                    <Link href={"/dienstleistungen"} className="link">
                         Zur Übersicht
                     </Link>
                 </div>
@@ -46,7 +46,7 @@ export default function Services() {
                 </div>
                 <div className="text-box">
                     <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                    <Link href={"/"} prefetch={false} className="link">
+                    <Link href={"/"} className="link">
                         Zum Service
                     </Link>
                 </div>

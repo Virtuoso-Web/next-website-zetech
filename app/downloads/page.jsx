@@ -4,6 +4,10 @@ import { SiTeamviewer } from "react-icons/si";
 
 import "@/app/downloads/style.scss";
 
+export const metadata = {
+    title: "Downloads",
+};
+
 export default function Page() {
     return (
         <main className="downloads-page">
@@ -27,7 +31,7 @@ export default function Page() {
                             <h2 className="title">TeamViewer</h2>
                         </div>
                         <div className="sub-flex-grid">
-                            <Link href={"/"} prefetch={false} className="box">
+                            <Link href={"/"} className="box">
                                 <div className="logo-holder">
                                     <SiTeamviewer />
                                 </div>
@@ -36,7 +40,7 @@ export default function Page() {
                                     <p className="os">Web-Anwendung</p>
                                 </div>
                             </Link>
-                            <Link href={"/"} prefetch={false} className="box">
+                            <Link href={"/"} className="box">
                                 <div className="logo-holder">
                                     <SiTeamviewer />
                                 </div>
@@ -45,7 +49,7 @@ export default function Page() {
                                     <p className="os">Windows</p>
                                 </div>
                             </Link>
-                            <Link href={"/"} prefetch={false} className="box">
+                            <Link href={"/"} className="box">
                                 <div className="logo-holder">
                                     <SiTeamviewer />
                                 </div>

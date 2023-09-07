@@ -121,7 +121,7 @@ export default function Page() {
                                     <PiArrowArcRightBold className="icon" />
                                 </div>
                             </div>
-                            <Link href={"/kontakt"} prefetch={false} className="icon-holder">
+                            <Link href={"/kontakt"} className="icon-holder">
                                 <MdOutlineWavingHand className="icon" />
                             </Link>
                         </div>

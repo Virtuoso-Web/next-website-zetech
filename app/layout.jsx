@@ -4,8 +4,11 @@ import Header from "@/components/header.jsx";
 import Footer from "@/components/footer.jsx";
 
 export const metadata = {
-    title: "ZETECH GmbH",
-    description: "Beratung, Miete, Verkauf und Service von Baumesstechnik.",
+    title: {
+        default: "ZETECH Baumesstechnik GmbH",
+        template: "%s | ZETECH Baumesstechnik GmbH",
+    },
+    description: "Beratung, Miete, Verkauf und Service von Baumesstechnik",
 };
 
 export default function RootLayout({ children }) {
