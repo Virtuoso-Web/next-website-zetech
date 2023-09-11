@@ -37,13 +37,14 @@ export default function Slider({ products }) {
     };
 
     const play = () => {
-        if (playing) return;
-
-        interval.current = setInterval(() => {
-            setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
-        }, 10000);
-
-        setPlaying(true);
+        if (playing) {
+            return;
+        } else {
+            interval.current = setInterval(() => {
+                setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
+            }, 10000);
+            setPlaying(true);
+        }
     };
 
     useEffect(() => {

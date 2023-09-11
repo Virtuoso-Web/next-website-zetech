@@ -5,15 +5,18 @@
 
     .slider-section {
         position: relative;
-        display: flex;
+        background-image: url("/images/bg-concrete.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        isolation: isolate;
 
-        .bg-image {
+        &::before {
             position: absolute;
-            inline-size: 100%;
-            block-size: 100%;
-            object-fit: cover;
-            object-position: center;
-            filter: brightness(0.5);
+            content: "";
+            inset: 0;
+            opacity: 0.5;
+            background-color: $color-black-dark;
             z-index: -1;
         }
 
@@ -165,12 +168,16 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        padding-block-start: 5rem;
         background-color: $color-white-dark;
 
-        .bg-holder {
+        &::before {
             position: absolute;
-            inline-size: 100%;
+            content: "";
+            inset-inline: 0;
+            inset-block-start: 0;
             block-size: 5rem;
+            background-image: url("/images/bg-stripe.webp");
             background-size: contain;
             background-position: center;
         }
@@ -180,14 +187,13 @@
             block-size: 30rem;
             object-fit: cover;
             object-position: center;
-            transform: translateY(5rem);
         }
 
         > .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
             margin-inline: auto;
-            padding-block: 10rem 5rem;
+            padding-block: 5rem;
             overflow-x: hidden;
 
             .title {

@@ -5,15 +5,18 @@
 
     .intro-section {
         position: relative;
-        display: flex;
+        background-image: url("/images/bg-concrete.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        isolation: isolate;
 
-        .bg-image {
+        &::before {
             position: absolute;
-            inline-size: 100%;
-            block-size: 100%;
-            object-fit: cover;
-            object-position: center;
-            filter: brightness(0.5);
+            content: "";
+            inset: 0;
+            opacity: 0.5;
+            background-color: $color-black-dark;
             z-index: -1;
         }
 
@@ -179,7 +182,6 @@
                         display: flex;
                         flex-direction: column;
                         row-gap: 1rem;
-                        isolation: isolate;
 
                         .title {
                             font-size: 2rem;
@@ -196,32 +198,36 @@
                             aspect-ratio: calc(1);
                             border-radius: 1rem;
                             border: 0.5rem solid $color-black-light;
+                            background-image: url("/images/shop/bg-concrete-square.webp");
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            isolation: isolate;
 
                             &::before {
                                 position: absolute;
                                 content: "";
                                 inset: 0;
+                                opacity: 0.5;
+                                background-color: $color-black-dark;
+                                z-index: -1;
+                            }
+
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                inset: 0;
                                 box-shadow: 0 0 2rem $color-black-dark;
                                 opacity: 0;
-                                z-index: -1;
                                 transition-property: opacity;
                                 transition-timing-function: ease-in-out;
                                 transition-duration: 200ms;
                             }
 
                             &:hover {
-                                &::before {
+                                &::after {
                                     opacity: 1;
                                 }
-                            }
-
-                            .bg-image {
-                                position: absolute;
-                                inline-size: 100%;
-                                block-size: 100%;
-                                object-fit: cover;
-                                object-position: center;
-                                filter: brightness(0.5);
                             }
 
                             .image {

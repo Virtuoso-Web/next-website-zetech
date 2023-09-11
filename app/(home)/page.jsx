@@ -1,7 +1,7 @@
-import "@/app/style.scss";
+import "@/app/(home)/style.scss";
 
-import Slider from "@/app/(components)/slider.jsx";
-import Services from "@/app/(components)/services.jsx";
+import Slider from "@/app/(home)/(components)/slider.jsx";
+import Services from "@/app/(home)/(components)/services.jsx";
 
 import Link from "next/link";
 
@@ -47,18 +47,20 @@ const products = [
     },
 ];
 
+export const metadata = {
+    title: "Home",
+};
+
 export default function Page() {
     return (
         <main className="home-page">
             <section className="slider-section">
-                <img src="/images/bg-concrete.webp" alt="Hintergrund" loading="lazy" className="bg-image" />
                 <div className="section-container">
                     <Slider products={products} />
                 </div>
             </section>
 
             <section className="hero-section">
-                <div className="bg-holder" style={{ backgroundImage: "url(/images/bg-stripe.webp)" }}></div>
                 <img src="/images/home/construction-landscape.webp" alt="Hintergrund" loading="lazy" className="banner" />
                 <div className="section-container">
                     <h1 className="title">

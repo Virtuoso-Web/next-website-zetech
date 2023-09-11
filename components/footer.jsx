@@ -14,7 +14,7 @@ export default function Footer() {
                     <nav className="footer-navigation">
                         <div className="nav-box">
                             <Link href={"/dienstleistungen"} className="header-link">
-                                Dienstleistungen / Datenaufbereitung
+                                Dienstleistungen
                             </Link>
                             <div className="sub-links-container">
                                 <Link href={"/dienstleistungen"} className="sub-link">
@@ -33,7 +33,7 @@ export default function Footer() {
                         </div>
                         <div className="nav-box">
                             <Link href={"/"} className="header-link">
-                                Service / Werkstatt
+                                Service
                             </Link>
                             <div className="sub-links-container">
                                 <Link href={"/"} className="sub-link">
@@ -49,40 +49,40 @@ export default function Footer() {
                                 Shop
                             </Link>
                             <div className="sub-links-container">
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/totalstationen"} className="sub-link">
                                     Totalstationen
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/gps"} className="sub-link">
                                     GPS
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/tablets"} className="sub-link">
                                     Tablets
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/baulaser"} className="sub-link">
                                     Baulaser
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/kanalbaulaser"} className="sub-link">
                                     Kanalbaulaser
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/linienlaser"} className="sub-link">
                                     Linienlaser
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/distanzmessgeraete"} className="sub-link">
                                     Distanzmessgeräte
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/empfaenger"} className="sub-link">
                                     Empfänger
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/nivelliere"} className="sub-link">
                                     Nivelliere
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/stative"} className="sub-link">
                                     Stative
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/zubehoer-totalstationen"} className="sub-link">
                                     Zubehör Totalstationen
                                 </Link>
-                                <Link href={"/shop/"} className="sub-link">
+                                <Link href={"/shop/zubehoer-gps"} className="sub-link">
                                     Zubehör GPS
                                 </Link>
                             </div>

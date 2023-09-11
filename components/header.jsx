@@ -19,18 +19,17 @@ export default function Header() {
             <div className="header-container">
                 <nav className="navigation">
                     <Link href={"/"} className="logo-link" onClick={removeActive}>
-                        <span className="company-name">ZETECH</span>
-                        <span className="company-desc">Baumesstechnik GmbH</span>
+                        <span className="company-name">ZETECH</span> Baumesstechnik GmbH
                     </Link>
                     <div className={active ? "nav-list active" : "nav-list"}>
                         <Link href={"/"} className={pathname === "/" ? "nav-link first active" : "nav-link first"} onClick={removeActive}>
                             Home
                         </Link>
                         <Link href={"/dienstleistungen"} className={pathname.includes("/dienstleistungen") ? "nav-link active" : "nav-link"} onClick={removeActive}>
-                            Dienstleistungen / Datenaufbereitung
+                            Dienstleistungen
                         </Link>
                         <Link href={"/"} className={pathname.includes("/service") ? "nav-link active" : "nav-link"} onClick={removeActive}>
-                            Service / Werkstatt
+                            Service
                         </Link>
                         <Link href={"/shop"} className={pathname.includes("/shop") ? "nav-link active" : "nav-link"} onClick={removeActive}>
                             Shop

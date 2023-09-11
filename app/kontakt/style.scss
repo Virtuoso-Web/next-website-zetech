@@ -5,48 +5,53 @@
     background-color: $color-white-dark;
 
     .intro-section {
-        padding-inline: min(5rem, 5%);
-        padding-block: 10rem;
+        position: relative;
+        background-image: url("/images/bg-concrete.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         isolation: isolate;
-        background-color: $color-black-dark;
 
-        .section-container {
+        &::before {
+            position: absolute;
+            content: "";
+            inset: 0;
+            opacity: 0.5;
+            background-color: $color-black-dark;
+            z-index: -1;
+        }
+
+        > .section-container {
             inline-size: min($max-size, 100%);
+            padding-inline: min(5rem, 5%);
             margin-inline: auto;
+            padding-block: 10rem;
 
-            > .flex-grid {
+            .flex-grid {
                 display: flex;
                 flex-direction: column;
                 row-gap: 5rem;
 
-                > .title-box {
-                    display: flex;
+                .title {
+                    color: $color-white-dark;
+                    font-size: 8rem;
+                    font-weight: $weight-bold;
 
-                    .title {
-                        color: $color-white-dark;
-                        font-size: 7rem;
-                        font-weight: $weight-bold;
+                    @media (max-width: 768px) {
+                        font-size: 5rem;
+                    }
 
-                        @media (max-width: 768px) {
-                            font-size: 6rem;
-                        }
-
-                        @media (max-width: 425px) {
-                            font-size: 5rem;
-                        }
+                    @media (max-width: 425px) {
+                        font-size: 4rem;
                     }
                 }
 
-                > .description-box {
-                    display: flex;
+                .text {
+                    color: $color-white-dark;
+                    font-size: 3rem;
 
-                    .description {
-                        color: $color-white-dark;
-                        font-size: 2.5rem;
-
-                        @media (max-width: 768px) {
-                            font-size: 2rem;
-                        }
+                    @media (max-width: 768px) {
+                        font-size: 2rem;
                     }
                 }
             }

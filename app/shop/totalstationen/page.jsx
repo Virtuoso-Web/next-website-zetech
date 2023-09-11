@@ -2,13 +2,23 @@ import Products from "@/app/shop/(components)/products.jsx";
 
 const products = [
     {
-        name: "Leica Totalstationen",
-        link: "/shop/totalstationen/leica-totalstationen",
+        name: "Leica iCON Robot 70",
+        link: "/shop/totalstationen",
         image: "/images/shop/totalstationen/leica-icon-robot-70-1.webp",
     },
     {
-        name: "Leica iCON Builder",
-        link: "/shop/totalstationen/leica-icon-builder",
+        name: "Leica iCON Robot 80",
+        link: "/shop/totalstationen",
+        image: "/images/shop/totalstationen/leica-icon-robot-80-1.webp",
+    },
+    {
+        name: "Leica iCB 50",
+        link: "/shop/totalstationen",
+        image: "/images/shop/totalstationen/leica-icb-50-1.webp",
+    },
+    {
+        name: "Leica iCB 70",
+        link: "/shop/totalstationen",
         image: "/images/shop/totalstationen/leica-icb-70-1.webp",
     },
     {

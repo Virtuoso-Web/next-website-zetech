@@ -24,6 +24,7 @@ const products = [
     {
         name: "Kanalbaulaser",
         link: "/shop/kanalbaulaser",
+        image: "/images/shop/kanalbaulaser/leica-piper-100-1.webp",
     },
     {
         name: "Linienlaser",
@@ -32,14 +33,17 @@ const products = [
     {
         name: "Distanzmessgeräte",
         link: "/shop/distanzmessgeraete",
+        image: "/images/shop/distanzmessgeraete/leica-disto-110-1.webp",
     },
     {
         name: "Empfänger",
         link: "/shop/empfaenger",
+        image: "/images/shop/empfaenger/geomax-zrd-105-1.webp",
     },
     {
         name: "Nivelliere",
         link: "/shop/nivelliere",
+        image: "/images/shop/nivelliere/leica-na-320-1.webp",
     },
     {
         name: "Stative",

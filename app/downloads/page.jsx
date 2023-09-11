@@ -14,12 +14,8 @@ export default function Page() {
             <section className="intro-section">
                 <div className="section-container">
                     <div className="flex-grid">
-                        <div className="title-box">
-                            <h1 className="title">Praktische Downloads</h1>
-                        </div>
-                        <div className="description-box">
-                            <p className="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem consectetur maiores incidunt, quisquam pariatur fugit, cumque minima nesciunt odit numquam et voluptatum molestiae dolorem magni quas ad hic, sapiente quae facilis voluptates tempore! A aut perferendis ut, quo nam culpa molestias maxime, accusantium veritatis architecto dolore iste veniam fugit officiis.</p>
-                        </div>
+                        <h1 className="title">Praktische Downloads</h1>
+                        <p className="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem consectetur maiores incidunt, quisquam pariatur fugit, cumque minima nesciunt odit numquam et voluptatum molestiae dolorem magni quas ad hic, sapiente quae facilis voluptates tempore! A aut perferendis ut, quo nam culpa molestias maxime, accusantium veritatis architecto dolore iste veniam fugit officiis.</p>
                     </div>
                 </div>
             </section>
