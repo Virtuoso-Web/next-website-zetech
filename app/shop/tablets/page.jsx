@@ -9,7 +9,7 @@ const products = [
     {
         name: "Leica CC170",
         link: "/shop/tablets",
-        image: "/images/shop/tablets/leica-icon-cc-200-1.webp",
+        image: "/images/shop/tablets/leica-icon-cc-170-1.webp",
     },
     {
         name: "Leica CC80",

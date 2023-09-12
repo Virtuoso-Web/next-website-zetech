@@ -14,51 +14,55 @@ const switches = {
 };
 
 export default function Slider({ products }) {
-    const interval = useRef(null);
-    const [playing, setPlaying] = useState(true);
+    // const interval = useRef(null);
+    // const [playing, setPlaying] = useState(true);
     const [slide, setSlide] = useState(0);
 
     const prev = () => {
-        clearInterval(interval.current);
-        setPlaying(false);
+        // clearInterval(interval.current);
+        // setPlaying(false);
         setSlide((slide) => (slide === 0 ? products.length - 1 : slide - 1));
     };
 
     const next = () => {
-        clearInterval(interval.current);
-        setPlaying(false);
+        // clearInterval(interval.current);
+        // setPlaying(false);
         setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
     };
 
     const jump = (i) => {
-        clearInterval(interval.current);
-        setPlaying(false);
+        // clearInterval(interval.current);
+        // setPlaying(false);
         setSlide(i);
     };
 
-    const play = () => {
-        if (playing) {
-            return;
-        } else {
-            interval.current = setInterval(() => {
-                setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
-            }, 10000);
-            setPlaying(true);
-        }
-    };
+    // const play = () => {
+    //     if (playing) {
+    //         return;
+    //     } else {
+    //         interval.current = setInterval(() => {
+    //             setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
+    //         }, 10000);
+    //         setPlaying(true);
+    //     }
+    // };
 
-    useEffect(() => {
-        interval.current = setInterval(() => {
-            setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
-        }, 10000);
+    // useEffect(() => {
+    //     interval.current = setInterval(() => {
+    //         setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
+    //     }, 10000);
 
-        return () => {
-            clearInterval(interval.current);
-        };
-    }, []);
+    //     return () => {
+    //         clearInterval(interval.current);
+    //     };
+    // }, []);
 
     return (
-        <div className="hero-slider" onPointerLeave={play}>
+        <div
+            className="hero-slider"
+            onPointerLeave={() => {
+                return;
+            }}>
             <div className="title-box">
                 <AnimatePresence initial={false}>
                     <motion.h1 initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} className="title">

@@ -29,6 +29,7 @@ const products = [
     {
         name: "Linienlaser",
         link: "/shop/linienlaser",
+        image: "/images/shop/linienlaser/leica-lino-l-2-1.webp",
     },
     {
         name: "Distanzmessgeräte",
