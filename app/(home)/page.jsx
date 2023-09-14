@@ -3,49 +3,12 @@ import "@/app/(home)/style.scss";
 import Slider from "@/app/(home)/(components)/slider.jsx";
 import Services from "@/app/(home)/(components)/services.jsx";
 
+import products from "@/app/(home)/products.json";
+
 import Link from "next/link";
 
 import { PiArrowArcRightBold } from "react-icons/pi";
 import { MdOutlineWavingHand } from "react-icons/md";
-
-const products = [
-    {
-        title: "Leica iCON Robot 70",
-        image: "/images/home/leica-icon-robot-70.webp",
-    },
-    {
-        title: "Leica iCON Robot 80",
-        image: "/images/home/leica-icon-robot-80.webp",
-    },
-    {
-        title: "Leica iCB 70",
-        image: "/images/home/leica-icb-70.webp",
-    },
-    {
-        title: "Leica iCON GPS 70T",
-        image: "/images/home/leica-icon-gps-70.webp",
-    },
-    {
-        title: "Leica iCON CC200",
-        image: "/images/home/leica-icon-cc-200.webp",
-    },
-    {
-        title: "Leica iCON CC80",
-        image: "/images/home/leica-icon-cc-80.webp",
-    },
-    {
-        title: "Leica AP20 AutoPole",
-        image: "/images/home/leica-ap-20-autopole.webp",
-    },
-    {
-        title: "Leica Rugby CLA-CTIVE",
-        image: "/images/home/leica-rugby-cla-ctive.webp",
-    },
-    {
-        title: "Geomax 60DG",
-        image: "/images/home/geomax-60-dg.webp",
-    },
-];
 
 export const metadata = {
     title: "Home",
