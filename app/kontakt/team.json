@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Alfred Zenklusen",
+        "area": "Beratung - Verkauf - Support",
+        "phone": "+41 79 123 45 67",
+        "mail": "name@zetech.ch"
+    },
+    {
+        "name": "Adrian Zenklusen",
+        "area": "Beratung - Verkauf - Support",
+        "phone": "+41 79 123 45 67",
+        "mail": "name@zetech.ch"
+    },
+    {
+        "name": "Claudio Zenklusen",
+        "area": "Service - Support",
+        "phone": "+41 79 123 45 67",
+        "mail": "name@zetech.ch"
+    },
+    {
+        "name": "Ivan Kafadar",
+        "area": "Service - Support",
+        "phone": "+41 79 123 45 67",
+        "mail": "name@zetech.ch"
+    }
+]

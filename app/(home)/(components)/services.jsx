@@ -32,7 +32,7 @@ export default function Services() {
                 </div>
                 <div className="text-box">
                     <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
-                    <Link href={"/"} className="link">
+                    <Link href={"/service"} className="link">
                         Zum Service
                     </Link>
                 </div>

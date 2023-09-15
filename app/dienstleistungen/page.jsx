@@ -12,7 +12,7 @@ export default function Page() {
             <section className="intro-section">
                 <div className="section-container">
                     <div className="flex-grid">
-                        <h1 className="title">Auf Sie zugeschnittene Dienstleistungen</h1>
+                        <h1 className="title">Dienstleistungen</h1>
                         <p className="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut vel tenetur molestias dolorum earum rerum odit reiciendis maiores ex unde voluptatibus, suscipit laboriosam rem nobis fugit! Hic similique dicta ducimus.</p>
                     </div>
                 </div>

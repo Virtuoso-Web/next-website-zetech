@@ -1,30 +1,13 @@
+import "@/app/kontakt/style.scss";
+
+import team from "@/app/kontakt/team.json";
+
 import Link from "next/link";
 
 import { BsPersonFill } from "react-icons/bs";
 import { BsTelephoneFill } from "react-icons/bs";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { BsGeoFill } from "react-icons/bs";
-
-import "@/app/kontakt/style.scss";
-
-const partners = [
-    {
-        name: "Alfred Zenklusen",
-        area: "Beratung - Verkauf - Support",
-    },
-    {
-        name: "Adrian Zenklusen",
-        area: "Beratung - Verkauf - Support",
-    },
-    {
-        name: "Claudio Zenklusen",
-        area: "Service - Support",
-    },
-    {
-        name: "Ivan Kafadar",
-        area: "Service - Support",
-    },
-];
 
 export const metadata = {
     title: "Kontakt",
@@ -36,7 +19,7 @@ export default function Page() {
             <section className="intro-section">
                 <div className="section-container">
                     <div className="flex-grid">
-                        <h1 className="title">Zu jeder Zeit für Sie zur Stelle</h1>
+                        <h1 className="title">Kontakt</h1>
                         <p className="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem consectetur maiores incidunt, quisquam pariatur fugit, cumque minima nesciunt odit numquam et voluptatum molestiae dolorem magni quas ad hic, sapiente quae facilis voluptates tempore! A aut perferendis ut, quo nam culpa molestias maxime, accusantium veritatis architecto dolore iste veniam fugit officiis.</p>
                     </div>
                 </div>
@@ -49,25 +32,25 @@ export default function Page() {
                             <h2 className="title">Ihre Partner</h2>
                         </div>
                         <div className="sub-flex-grid">
-                            {partners.map((partner, index) => (
+                            {team.map((member, index) => (
                                 <div className="partner-box" key={index}>
                                     <div className="image-holder"></div>
                                     <div className="box-group">
-                                        <h3 className="name">{partner.name}</h3>
+                                        <h3 className="name">{member.name}</h3>
                                         <div className="area-group">
                                             <BsPersonFill />
-                                            <p className="area">{partner.area}</p>
+                                            <p className="area">{member.area}</p>
                                         </div>
                                         <div className="contact-group">
                                             <BsTelephoneFill />
-                                            <Link href={"/"} className="contact-link">
-                                                +41 79 123 45 67
+                                            <Link href={"/kontakt"} className="contact-link">
+                                                {member.phone}
                                             </Link>
                                         </div>
                                         <div className="contact-group">
                                             <BsEnvelopeFill />
-                                            <Link href={"/"} className="contact-link">
-                                                name@zetech.ch
+                                            <Link href={"/kontakt"} className="contact-link">
+                                                {member.mail}
                                             </Link>
                                         </div>
                                     </div>
@@ -103,13 +86,13 @@ export default function Page() {
                                 </div>
                                 <div className="box">
                                     <BsTelephoneFill className="icon" />
-                                    <Link href={"/"} className="contact-link">
+                                    <Link href={"/kontakt"} className="contact-link">
                                         +41 41 250 32 02
                                     </Link>
                                 </div>
                                 <div className="box">
                                     <BsEnvelopeFill className="icon" />
-                                    <Link href={"/"} className="contact-link">
+                                    <Link href={"/kontakt"} className="contact-link">
                                         zetech@gmx.ch
                                     </Link>
                                 </div>

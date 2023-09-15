@@ -32,14 +32,14 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="nav-box">
-                            <Link href={"/"} className="header-link">
+                            <Link href={"/service"} className="header-link">
                                 Service
                             </Link>
                             <div className="sub-links-container">
-                                <Link href={"/"} className="sub-link">
+                                <Link href={"/service"} className="sub-link">
                                     Service
                                 </Link>
-                                <Link href={"/"} className="sub-link">
+                                <Link href={"/service"} className="sub-link">
                                     Werkstatt
                                 </Link>
                             </div>
@@ -104,10 +104,10 @@ export default function Footer() {
                             <div className="sub-links-container">
                                 <p className="sub-text">Luzernerstrasse 88A</p>
                                 <p className="sub-text">6014 Luzern</p>
-                                <Link href={"/"} className="sub-link">
+                                <Link href={"/kontakt"} className="sub-link">
                                     +41 41 250 32 02
                                 </Link>
-                                <Link href={"/"} className="sub-link">
+                                <Link href={"/kontakt"} className="sub-link">
                                     zetech@gmx.ch
                                 </Link>
                             </div>
@@ -123,13 +123,13 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="socials-box">
-                            <Link href={"/"} className="social-link">
+                            <Link href={"#"} className="social-link">
                                 <BiLogoInstagramAlt />
                             </Link>
-                            <Link href={"/"} className="social-link">
+                            <Link href={"#"} className="social-link">
                                 <BiLogoFacebookCircle />
                             </Link>
-                            <Link href={"/"} className="social-link">
+                            <Link href={"#"} className="social-link">
                                 <BsEnvelopeFill />
                             </Link>
                         </div>

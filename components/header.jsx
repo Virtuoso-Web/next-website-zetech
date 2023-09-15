@@ -28,7 +28,7 @@ export default function Header() {
                         <Link href={"/dienstleistungen"} className={pathname.includes("/dienstleistungen") ? "nav-link active" : "nav-link"} onClick={removeActive}>
                             Dienstleistungen
                         </Link>
-                        <Link href={"/"} className={pathname.includes("/service") ? "nav-link active" : "nav-link"} onClick={removeActive}>
+                        <Link href={"/service"} className={pathname.includes("/service") ? "nav-link active" : "nav-link"} onClick={removeActive}>
                             Service
                         </Link>
                         <Link href={"/shop"} className={pathname.includes("/shop") ? "nav-link active" : "nav-link"} onClick={removeActive}>
