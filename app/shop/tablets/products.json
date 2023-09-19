@@ -1,17 +1,20 @@
 [
     {
         "name": "Leica CC200",
-        "link": "/shop/tablets",
+        "slug": "leica-cc200",
+        "link": "/shop/tablets/leica-cc200",
         "image": "/images/shop/tablets/leica-icon-cc-200-1.webp"
     },
     {
         "name": "Leica CC170",
-        "link": "/shop/tablets",
+        "slug": "leica-cc170",
+        "link": "/shop/tablets/leica-cc170",
         "image": "/images/shop/tablets/leica-icon-cc-170-1.webp"
     },
     {
         "name": "Leica CC80",
-        "link": "/shop/tablets",
+        "slug": "leica-cc80",
+        "link": "/shop/tablets/leica-cc80",
         "image": "/images/shop/tablets/leica-icon-cc-80-1.webp"
     }
 ]

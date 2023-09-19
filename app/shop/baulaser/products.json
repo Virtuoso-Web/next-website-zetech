@@ -1,57 +1,68 @@
 [
     {
         "name": "Leica Rugby 610",
-        "link": "/shop/baulaser",
+        "slug": "leica-rugby-610",
+        "link": "/shop/baulaser/leica-rugby-610",
         "image": "/images/shop/baulaser/leica-rugby-610-1.webp"
     },
     {
         "name": "Leica Rugby 620",
-        "link": "/shop/baulaser",
+        "slug": "leica-rugby-620",
+        "link": "/shop/baulaser/leica-rugby-620",
         "image": "/images/shop/baulaser/leica-rugby-620-1.webp"
     },
     {
         "name": "Leica Rugby 640",
-        "link": "/shop/baulaser",
+        "slug": "leica-rugby-640",
+        "link": "/shop/baulaser/leica-rugby-640",
         "image": "/images/shop/baulaser/leica-rugby-640-1.webp"
     },
     {
         "name": "Leica Rugby 640 G",
-        "link": "/shop/baulaser",
+        "slug": "leica-rugby-640-g",
+        "link": "/shop/baulaser/leica-rugby-640-g",
         "image": "/images/shop/baulaser/leica-rugby-640-1.webp"
     },
     {
         "name": "Leica Rugby 680",
-        "link": "/shop/baulaser",
+        "slug": "leica-rugby-680",
+        "link": "/shop/baulaser/leica-rugby-680",
         "image": "/images/shop/baulaser/leica-rugby-680-1.webp"
     },
     {
         "name": "Leica Rugby CLA-CTIVE",
-        "link": "/shop/baulaser",
+        "slug": "leica-rugby-cla-ctive",
+        "link": "/shop/baulaser/leica-rugby-cla-ctive",
         "image": "/images/shop/baulaser/leica-rugby-cla-ctive-1.webp"
     },
     {
         "name": "Leica Rugby CLH",
-        "link": "/shop/baulaser",
+        "slug": "leica-rugby-clh",
+        "link": "/shop/baulaser/leica-rugby-clh",
         "image": "/images/shop/baulaser/leica-rugby-clh-1.webp"
     },
     {
         "name": "Geomax 20H",
-        "link": "/shop/baulaser",
+        "slug": "geomax-20h",
+        "link": "/shop/baulaser/geomax-20h",
         "image": "/images/shop/baulaser/geomax-20-h-1.webp"
     },
     {
         "name": "Geomax 20HV",
-        "link": "/shop/baulaser",
+        "slug": "geomax-20hv",
+        "link": "/shop/baulaser/geomax-20hv",
         "image": "/images/shop/baulaser/geomax-20-hv-1.webp"
     },
     {
         "name": "Geomax 60DG",
-        "link": "/shop/baulaser",
+        "slug": "geomax-60dg",
+        "link": "/shop/baulaser/geomax-60dg",
         "image": "/images/shop/baulaser/geomax-60-dg-1.webp"
     },
     {
         "name": "Geomax 60HG",
-        "link": "/shop/baulaser",
+        "slug": "geomax-60hg",
+        "link": "/shop/baulaser/geomax-60hg",
         "image": "/images/shop/baulaser/geomax-60-hg-1.webp"
     }
 ]

@@ -20,11 +20,11 @@
             z-index: -1;
         }
 
-        > .section-container {
+        .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
-            margin-inline: auto;
             padding-block: 10rem;
+            margin-inline: auto;
 
             .flex-grid {
                 display: flex;
@@ -50,6 +50,161 @@
                     font-size: 3rem;
 
                     @media (max-width: 768px) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .workshop-about-section {
+        .section-container {
+            inline-size: min($max-size, 100%);
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
+            margin-inline: auto;
+
+            > .title {
+                color: transparent;
+                font-size: 5rem;
+                font-weight: $weight-bold;
+                text-align: center;
+                inline-size: fit-content;
+                margin-inline: auto;
+                margin-block-end: 5rem;
+                background-image: $color-gradient-blue;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            > .image-holder {
+                aspect-ratio: calc(3 / 1);
+                border: 0.5rem solid $color-black-light;
+                margin-block-end: 5rem;
+            }
+
+            .flex-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 5rem;
+
+                .image-box {
+                    display: flex;
+
+                    .image-holder {
+                        inline-size: 100%;
+                        aspect-ratio: calc(16 / 9);
+                        border: 0.5rem solid $color-black-light;
+                    }
+                }
+
+                .text-box {
+                    display: flex;
+                    align-items: center;
+
+                    .text {
+                        font-size: 2rem;
+
+                        .bold {
+                            font-weight: $weight-bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .workshop-service-section {
+        background-color: $color-white-light;
+
+        .section-container {
+            inline-size: min($max-size, 100%);
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
+            margin-inline: auto;
+
+            .flex-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 5rem;
+
+                .list-box {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 5rem;
+
+                    .list-group {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 2rem;
+
+                        .title {
+                            font-size: 3rem;
+                            font-weight: $weight-bold;
+                            text-decoration: underline;
+                        }
+
+                        .list {
+                            list-style: none;
+                            padding-inline-start: min(5rem, 5%);
+
+                            .list-item {
+                                display: flex;
+                                column-gap: 2rem;
+                                font-size: 2rem;
+
+                                .arrow {
+                                    font-weight: $weight-bold;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .image-box {
+                    display: flex;
+
+                    .image-holder {
+                        inline-size: 100%;
+                        aspect-ratio: calc(16 / 9);
+                        border: 0.5rem solid $color-black-light;
+                    }
+                }
+            }
+        }
+    }
+
+    .workshop-info-section {
+        .section-container {
+            inline-size: min($max-size, 100%);
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
+            margin-inline: auto;
+
+            .flex-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 15rem;
+
+                .price-box {
+                    display: flex;
+                    flex-direction: column;
+
+                    .price-list {
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .price-item {
+                            font-size: 2rem;
+                            font-weight: $weight-bold;
+                        }
+                    }
+                }
+
+                .text-box {
+                    .text {
                         font-size: 2rem;
                     }
                 }

@@ -58,8 +58,6 @@
     }
 
     .catalogue-section {
-        background-color: $color-white-dark;
-
         > .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
@@ -264,25 +262,33 @@
                         .big-image-holder {
                             position: relative;
                             display: flex;
+                            justify-content: center;
+                            align-items: center;
                             inline-size: 80%;
                             aspect-ratio: calc(16 / 9);
                             border-radius: 1rem;
-                            border: 0.5rem solid black;
-                        }
+                            border: 0.5rem solid $color-black-light;
+                            background-image: url("/images/shop/bg-concrete-square.webp");
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            isolation: isolate;
 
-                        .small-image-container {
-                            inline-size: 100%;
-                            display: flex;
-                            justify-content: center;
-                            column-gap: 5rem;
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                inset: 0;
+                                opacity: 0.5;
+                                background-color: $color-black-dark;
+                                z-index: -1;
+                            }
 
-                            .small-image-holder {
-                                position: relative;
-                                display: flex;
-                                inline-size: 20%;
-                                aspect-ratio: calc(16 / 9);
-                                border-radius: 1rem;
-                                border: 0.5rem solid black;
+                            .image {
+                                position: absolute;
+                                inline-size: 90%;
+                                block-size: 90%;
+                                object-fit: contain;
+                                object-position: center;
                             }
                         }
                     }

@@ -1,67 +1,80 @@
 [
     {
         "name": "Leica Lino L2",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-l2",
+        "link": "/shop/linienlaser/leica-lino-l2",
         "image": "/images/shop/linienlaser/leica-lino-l-2-1.webp"
     },
     {
         "name": "Leica Lino L2 Set",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-l2-set",
+        "link": "/shop/linienlaser/leica-lino-l2-set",
         "image": "/images/shop/linienlaser/leica-lino-l-2-set-1.webp"
     },
     {
         "name": "Leica Lino L2G",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-l2g",
+        "link": "/shop/linienlaser/leica-lino-l2g",
         "image": "/images/shop/linienlaser/leica-lino-l-2-g-1.webp"
     },
     {
         "name": "Leica Lino L2G Set",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-l2g-set",
+        "link": "/shop/linienlaser/leica-lino-l2g-set",
         "image": "/images/shop/linienlaser/leica-lino-l-2-g-set-1.webp"
     },
     {
         "name": "Leica Lino L2P5",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-l2p5",
+        "link": "/shop/linienlaser/leica-lino-l2p5",
         "image": "/images/shop/linienlaser/leica-lino-l-2-p-5-1.webp"
     },
     {
         "name": "Leica Lino L2P5G",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-l2p5g",
+        "link": "/shop/linienlaser/leica-lino-l2p5g",
         "image": "/images/shop/linienlaser/leica-lino-l-2-p-5-g-1.webp"
     },
     {
         "name": "Leica Lino L6G",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-l6g",
+        "link": "/shop/linienlaser/leica-lino-l6g",
         "image": "/images/shop/linienlaser/leica-lino-l-6-g-1.webp"
     },
     {
         "name": "Leica Lino L6G Set",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-l6g-set",
+        "link": "/shop/linienlaser/leica-lino-l6g-set",
         "image": "/images/shop/linienlaser/leica-lino-l-6-g-set-1.webp"
     },
     {
         "name": "Leica Lino L6R",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-l6r",
+        "link": "/shop/linienlaser/leica-lino-l6r",
         "image": "/images/shop/linienlaser/leica-lino-l-6-r-1.webp"
     },
     {
         "name": "Leica Lino L6R Set",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-l6r-set",
+        "link": "/shop/linienlaser/leica-lino-l6r-set",
         "image": "/images/shop/linienlaser/leica-lino-l-6-r-set-1.webp"
     },
     {
         "name": "Leica Lino P5 Set",
-        "link": "/shop/linienlaser",
+        "slug": "leica-lino-p5-set",
+        "link": "/shop/linienlaser/leica-lino-p5-set",
         "image": "/images/shop/linienlaser/leica-lino-p-5-set-1.webp"
     },
     {
         "name": "Nestle Octoliner",
-        "link": "/shop/linienlaser",
+        "slug": "nestle-octoliner",
+        "link": "/shop/linienlaser/nestle-octoliner",
         "image": "/images/shop/linienlaser/nestle-octoliner-1.webp"
     },
     {
         "name": "Nestle Octoliner G",
-        "link": "/shop/linienlaser",
+        "slug": "nestle-octoliner-g",
+        "link": "/shop/linienlaser/nestle-octoliner-g",
         "image": "/images/shop/linienlaser/nestle-octoliner-g-1.webp"
     }
 ]

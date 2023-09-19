@@ -1,5 +1,7 @@
 import "@/components/footer.scss";
 
+import products from "@/app/shop/products.json";
+
 import Link from "next/link";
 
 import { BiLogoInstagramAlt } from "react-icons/bi";
@@ -49,42 +51,11 @@ export default function Footer() {
                                 Shop
                             </Link>
                             <div className="sub-links-container">
-                                <Link href={"/shop/totalstationen"} className="sub-link">
-                                    Totalstationen
-                                </Link>
-                                <Link href={"/shop/gps"} className="sub-link">
-                                    GPS
-                                </Link>
-                                <Link href={"/shop/tablets"} className="sub-link">
-                                    Tablets
-                                </Link>
-                                <Link href={"/shop/baulaser"} className="sub-link">
-                                    Baulaser
-                                </Link>
-                                <Link href={"/shop/kanalbaulaser"} className="sub-link">
-                                    Kanalbaulaser
-                                </Link>
-                                <Link href={"/shop/linienlaser"} className="sub-link">
-                                    Linienlaser
-                                </Link>
-                                <Link href={"/shop/distanzmessgeraete"} className="sub-link">
-                                    Distanzmessgeräte
-                                </Link>
-                                <Link href={"/shop/empfaenger"} className="sub-link">
-                                    Empfänger
-                                </Link>
-                                <Link href={"/shop/nivelliere"} className="sub-link">
-                                    Nivelliere
-                                </Link>
-                                <Link href={"/shop/stative"} className="sub-link">
-                                    Stative
-                                </Link>
-                                <Link href={"/shop/zubehoer-totalstationen"} className="sub-link">
-                                    Zubehör Totalstationen
-                                </Link>
-                                <Link href={"/shop/zubehoer-gps"} className="sub-link">
-                                    Zubehör GPS
-                                </Link>
+                                {products.map((product, index) => (
+                                    <Link href={product.link} key={index} className="sub-link">
+                                        {product.name}
+                                    </Link>
+                                ))}
                             </div>
                         </div>
                         <div className="nav-box">

@@ -1,32 +1,38 @@
 [
     {
         "name": "Leica Distanzmessgerät 110",
-        "link": "/shop/distanzmessgeraete",
+        "slug": "leica-distanzmessgeraet-100",
+        "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-100",
         "image": "/images/shop/distanzmessgeraete/leica-disto-110-1.webp"
     },
     {
         "name": "Leica Distanzmessgerät 910",
-        "link": "/shop/distanzmessgeraete",
+        "slug": "leica-distanzmessgeraet-910",
+        "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-910",
         "image": "/images/shop/distanzmessgeraete/leica-disto-910-1.webp"
     },
     {
         "name": "Leica Distanzmessgerät D2",
-        "link": "/shop/distanzmessgeraete",
+        "slug": "leica-distanzmessgeraet-d2",
+        "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-d2",
         "image": "/images/shop/distanzmessgeraete/leica-disto-d-2-1.webp"
     },
     {
         "name": "Leica Distanzmessgerät D510",
-        "link": "/shop/distanzmessgeraete",
+        "slug": "leica-distanzmessgeraet-d510",
+        "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-d510",
         "image": "/images/shop/distanzmessgeraete/leica-disto-d-510-1.webp"
     },
     {
         "name": "Leica Distanzmessgerät X3",
-        "link": "/shop/distanzmessgeraete",
+        "slug": "leica-distanzmessgeraet-x3",
+        "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-x3",
         "image": "/images/shop/distanzmessgeraete/leica-disto-x-3-1.webp"
     },
     {
         "name": "Leica Distanzmessgerät X4",
-        "link": "/shop/distanzmessgeraete",
+        "slug": "leica-distanzmessgeraet-x4",
+        "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-x4",
         "image": "/images/shop/distanzmessgeraete/leica-disto-x-4-1.webp"
     }
 ]

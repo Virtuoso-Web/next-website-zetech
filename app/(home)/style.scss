@@ -169,7 +169,6 @@
         display: flex;
         flex-direction: column;
         padding-block-start: 5rem;
-        background-color: $color-white-dark;
 
         &::before {
             position: absolute;
@@ -453,7 +452,6 @@
 
     .about-section {
         isolation: isolate;
-        background-color: $color-white-dark;
 
         > .section-container {
             inline-size: min($max-size, 100%);
@@ -574,7 +572,7 @@
 
     .contact-section {
         isolation: isolate;
-        background-color: $color-white-dark;
+        background-color: $color-white-light;
 
         > .section-container {
             inline-size: min($max-size, 100%);

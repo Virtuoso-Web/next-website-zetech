@@ -1,37 +1,44 @@
 [
     {
         "name": "Geomax ZRD105",
-        "link": "/shop/empfaenger",
+        "slug": "geomax-zrd105",
+        "link": "/shop/empfaenger/geomax-zrd105",
         "image": "/images/shop/empfaenger/geomax-zrd-105-1.webp"
     },
     {
         "name": "Geomax ZRD105B",
-        "link": "/shop/empfaenger",
+        "slug": "geomax-zrd105b",
+        "link": "/shop/empfaenger/geomax-zrd105b",
         "image": "/images/shop/empfaenger/geomax-zrd-105-b-1.webp"
     },
     {
         "name": "Geomax ZRP105 Pro",
-        "link": "/shop/empfaenger",
+        "slug": "geomax-zrp105-pro",
+        "link": "/shop/empfaenger/geomax-zrp105-pro",
         "image": "/images/shop/empfaenger/geomax-zrp-105-pro-1.webp"
     },
     {
         "name": "Geomax ZRC60 Fernbedienung",
-        "link": "/shop/empfaenger",
+        "slug": "geomax-zrc60-fernbedienung",
+        "link": "/shop/empfaenger/geomax-zrc60-fernbedienung",
         "image": "/images/shop/empfaenger/geomax-zrc-60-fernbedienung-1.webp"
     },
     {
         "name": "Metor MTR-60RGL",
-        "link": "/shop/empfaenger",
+        "slug": "metor-mtr-60rgl",
+        "link": "/shop/empfaenger/metor-mtr-60rgl",
         "image": "/images/shop/empfaenger/metor-mtr-60-rgl-1.webp"
     },
     {
         "name": "Metor MTR-90R",
-        "link": "/shop/empfaenger",
+        "slug": "metor-mtr-90r",
+        "link": "/shop/empfaenger/metor-mtr-90r",
         "image": "/images/shop/empfaenger/metor-mtr-90-r-1.webp"
     },
     {
         "name": "Metor MTR-125",
-        "link": "/shop/empfaenger",
+        "slug": "metor-mtr-125",
+        "link": "/shop/empfaenger/metor-mtr-125",
         "image": "/images/shop/empfaenger/metor-mtr-125-1.webp"
     }
 ]
