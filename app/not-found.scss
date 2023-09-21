@@ -1,0 +1,56 @@
+@import "@/variables";
+
+.not-found-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 100vh;
+    padding-block-start: $header-block-size;
+
+    .not-found-section {
+        inline-size: 100%;
+
+        .section-container {
+            inline-size: min($max-size, 100%);
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
+            margin-inline: auto;
+
+            .title {
+                font-size: 5rem;
+                font-weight: $weight-bold;
+                text-align: center;
+                margin-block-end: 5rem;
+
+                .number {
+                    font-size: 9rem;
+                    font-weight: $weight-bold;
+                }
+            }
+
+            .link {
+                display: flex;
+                justify-content: center;
+                inline-size: min(50rem, 100%);
+                color: $color-black-light;
+                font-size: 2rem;
+                font-weight: $weight-bold;
+                text-align: center;
+                padding-inline: min(5rem, 5%);
+                padding-block: 0.5rem;
+                margin-inline: auto;
+                border-radius: 3rem;
+                outline: 0.3rem solid $color-black-light;
+                outline-offset: 0.3rem;
+                background-image: $color-gradient-blue;
+                transition-property: outline-offset;
+                transition-timing-function: ease-in-out;
+                transition-duration: 200ms;
+
+                &:hover {
+                    outline-offset: 0;
+                }
+            }
+        }
+    }
+}

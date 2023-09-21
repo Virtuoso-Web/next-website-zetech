@@ -4,7 +4,6 @@ import team from "@/app/kontakt/team.json";
 
 import Link from "next/link";
 
-import { BsPersonFill } from "react-icons/bs";
 import { BsTelephoneFill } from "react-icons/bs";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { BsGeoFill } from "react-icons/bs";
@@ -37,10 +36,7 @@ export default function Page() {
                                     <div className="image-holder"></div>
                                     <div className="box-group">
                                         <h3 className="name">{member.name}</h3>
-                                        <div className="area-group">
-                                            <BsPersonFill />
-                                            <p className="area">{member.area}</p>
-                                        </div>
+                                        <p className="area">{member.area}</p>
                                         <div className="contact-group">
                                             <BsTelephoneFill />
                                             <Link href={"/kontakt"} className="contact-link">

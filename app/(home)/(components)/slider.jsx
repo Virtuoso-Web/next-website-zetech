@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef, useCallback, useEffect } from "react";
+
+import { motion } from "framer-motion";
 
 import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
@@ -10,72 +12,50 @@ import { BsArrowRight } from "react-icons/bs";
 const switches = {
     initial: { opacity: 0 },
     animate: { opacity: 1, transition: { ease: "linear", delay: 0.2, duration: 0.2 } },
-    exit: { opacity: 0, transition: { ease: "linear", duration: 0.2 } },
 };
 
 export default function Slider({ products }) {
-    // const interval = useRef(null);
-    // const [playing, setPlaying] = useState(true);
+    const timeout = useRef(null);
     const [slide, setSlide] = useState(0);
 
     const prev = () => {
-        // clearInterval(interval.current);
-        // setPlaying(false);
         setSlide((slide) => (slide === 0 ? products.length - 1 : slide - 1));
     };
 
-    const next = () => {
-        // clearInterval(interval.current);
-        // setPlaying(false);
+    const next = useCallback(() => {
         setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
-    };
+    }, [products, slide]);
 
     const jump = (i) => {
-        // clearInterval(interval.current);
-        // setPlaying(false);
         setSlide(i);
     };
 
-    // const play = () => {
-    //     if (playing) {
-    //         return;
-    //     } else {
-    //         interval.current = setInterval(() => {
-    //             setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
-    //         }, 10000);
-    //         setPlaying(true);
-    //     }
-    // };
+    useEffect(() => {
+        if (timeout.current) clearTimeout(timeout.current);
 
-    // useEffect(() => {
-    //     interval.current = setInterval(() => {
-    //         setSlide((slide) => (slide === products.length - 1 ? 0 : slide + 1));
-    //     }, 10000);
+        timeout.current = setTimeout(() => {
+            next();
+        }, 10000);
 
-    //     return () => {
-    //         clearInterval(interval.current);
-    //     };
-    // }, []);
+        return () => clearTimeout(timeout.current);
+    }, [next]);
 
     return (
-        <div
-            className="hero-slider"
-            onPointerLeave={() => {
-                return;
-            }}>
+        <div className="hero-slider">
             <div className="title-box">
-                <AnimatePresence initial={false}>
-                    <motion.h1 initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} className="title">
-                        {products[slide].title}
-                    </motion.h1>
-                </AnimatePresence>
+                <motion.h1 initial={"initial"} animate={"animate"} variants={switches} key={slide} className="title">
+                    {products[slide].title}
+                </motion.h1>
             </div>
             <div className="image-box">
                 <div className="image-holder">
-                    <AnimatePresence initial={false}>
-                        <motion.img src={products[slide].image} alt={products[slide].title} initial={"initial"} animate={"animate"} exit={"exit"} variants={switches} key={slide} loading="lazy" className="image" />
-                    </AnimatePresence>
+                    <motion.img src={products[slide].image} alt={products[slide].title} initial={"initial"} animate={"animate"} variants={switches} key={slide} loading="lazy" className="image" />
                 </div>
+            </div>
+            <div className="link-box">
+                <Link href={products[slide].link} className="link">
+                    Zum Produkt
+                </Link>
             </div>
             <div className="navigation-box">
                 <button className="icon-holder-prev" onClick={prev}>

@@ -77,38 +77,62 @@
                     }
                 }
 
-                .navigation-box {
+                .link-box {
                     display: flex;
                     justify-content: center;
+
+                    .link {
+                        inline-size: min(50rem, 100%);
+                        color: $color-black-light;
+                        font-size: 2rem;
+                        font-weight: $weight-bold;
+                        text-align: center;
+                        padding-block: 0.5rem;
+                        border-radius: 3rem;
+                        outline: 0.3rem solid $color-white-dark;
+                        outline-offset: 0.3rem;
+                        background-image: $color-gradient-blue;
+                        transition-property: outline-offset;
+                        transition-timing-function: ease-in-out;
+                        transition-duration: 200ms;
+
+                        &:hover {
+                            outline-offset: 0;
+                        }
+                    }
+                }
+
+                .navigation-box {
+                    display: flex;
+                    justify-content: space-between;
                     align-items: center;
 
-                    @media (max-width: 768px) {
-                        justify-content: space-between;
-                    }
-
                     .icon-holder-prev {
-                        position: absolute;
                         display: flex;
-                        align-items: center;
-                        inset-inline-start: 0;
-                        inset-block: 50%;
-                        transform: translateY(-50%);
                         padding-inline: 1rem;
-                        padding-block: 3rem;
-                        border: none;
-                        border-radius: 1rem;
+                        padding-block: 1rem;
+                        border: 0.5rem solid $color-white-dark;
+                        border-radius: 50%;
                         cursor: pointer;
                         background-color: $color-white-dark;
+                        transition-property: background-color;
+                        transition-timing-function: ease-in-out;
+                        transition-duration: 200ms;
 
-                        @media (max-width: 768px) {
-                            position: static;
-                            transform: translateY(0);
-                            padding-block: 1rem;
+                        &:hover {
+                            background-color: $color-black-light;
+
+                            .icon {
+                                color: $color-white-dark;
+                            }
                         }
 
                         .icon {
                             color: $color-black-light;
                             font-size: 4rem;
+                            transition-property: color;
+                            transition-timing-function: ease-in-out;
+                            transition-duration: 200ms;
                         }
                     }
 
@@ -135,28 +159,31 @@
                     }
 
                     .icon-holder-next {
-                        position: absolute;
                         display: flex;
-                        align-items: center;
-                        inset-inline-end: 0;
-                        inset-block: 50%;
-                        transform: translateY(-50%);
                         padding-inline: 1rem;
-                        padding-block: 3rem;
-                        border: none;
-                        border-radius: 1rem;
+                        padding-block: 1rem;
+                        border: 0.5rem solid $color-white-dark;
+                        border-radius: 50%;
                         cursor: pointer;
                         background-color: $color-white-dark;
+                        transition-property: background-color;
+                        transition-timing-function: ease-in-out;
+                        transition-duration: 200ms;
 
-                        @media (max-width: 768px) {
-                            position: static;
-                            transform: translateY(0);
-                            padding-block: 1rem;
+                        &:hover {
+                            background-color: $color-black-light;
+
+                            .icon {
+                                color: $color-white-dark;
+                            }
                         }
 
                         .icon {
                             color: $color-black-light;
                             font-size: 4rem;
+                            transition-property: color;
+                            transition-timing-function: ease-in-out;
+                            transition-duration: 200ms;
                         }
                     }
                 }

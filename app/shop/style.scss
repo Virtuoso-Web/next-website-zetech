@@ -264,7 +264,7 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            inline-size: 80%;
+                            inline-size: min(100rem, 100%);
                             aspect-ratio: calc(16 / 9);
                             border-radius: 1rem;
                             border: 0.5rem solid $color-black-light;
