@@ -23,11 +23,12 @@
             align-items: center;
 
             .logo-link {
-                color: $color-blue-main;
-                font-size: 2rem;
-                font-style: italic;
-                padding-inline: 1rem;
-                padding-block: 0.5rem;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                block-size: 80%;
+                aspect-ratio: calc(4 / 1);
                 border-radius: 1rem;
                 transition-property: background-color;
                 transition-timing-function: ease-in-out;
@@ -37,9 +38,12 @@
                     background-color: $color-white-light;
                 }
 
-                .company-name {
-                    font-size: 4rem;
-                    font-weight: $weight-bold;
+                .logo {
+                    position: absolute;
+                    inline-size: calc(100% - 1rem);
+                    block-size: 100%;
+                    object-fit: contain;
+                    object-position: center;
                 }
             }
 

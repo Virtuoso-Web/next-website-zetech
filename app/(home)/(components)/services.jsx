@@ -14,7 +14,7 @@ export default function Services() {
         <div className="flex-grid">
             <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid">
                 <div className="title-box">
-                    <h2 className="title">Dienstleistungen</h2>
+                    <h2 className="title">DIENSTLEISTUNGEN</h2>
                 </div>
                 <div className="text-box">
                     <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
@@ -28,7 +28,7 @@ export default function Services() {
             </motion.div>
             <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid reversed">
                 <div className="title-box">
-                    <h2 className="title">Service</h2>
+                    <h2 className="title">SERVICE</h2>
                 </div>
                 <div className="text-box">
                     <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>
@@ -42,7 +42,7 @@ export default function Services() {
             </motion.div>
             <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid">
                 <div className="title-box">
-                    <h2 className="title">Shop</h2>
+                    <h2 className="title">SHOP</h2>
                 </div>
                 <div className="text-box">
                     <p className="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dicta nesciunt excepturi tenetur error necessitatibus nam sapiente placeat voluptates! Nesciunt accusantium animi hic neque perferendis, enim quasi corporis esse repudiandae.</p>

@@ -19,7 +19,7 @@ export default function Header() {
             <div className="header-container">
                 <nav className="navigation">
                     <Link href={"/"} className="logo-link" onClick={removeActive}>
-                        <span className="company-name">ZETECH</span> Baumesstechnik GmbH
+                        <img src="/images/logo.svg" alt="Logo" loading="lazy" className="logo" />
                     </Link>
                     <div className={active ? "nav-list active" : "nav-list"}>
                         <Link href={"/"} className={pathname === "/" ? "nav-link first active" : "nav-link first"} onClick={removeActive}>

@@ -64,7 +64,7 @@
                     .image-holder {
                         position: relative;
                         display: flex;
-                        inline-size: min(100rem, 80%);
+                        inline-size: min(80rem, 80%);
                         aspect-ratio: calc(16 / 9);
 
                         .image {
@@ -83,9 +83,9 @@
 
                     .link {
                         inline-size: min(50rem, 100%);
-                        color: $color-black-light;
+                        color: $color-white-dark;
                         font-size: 2rem;
-                        font-weight: $weight-bold;
+                        // font-weight: $weight-bold;
                         text-align: center;
                         padding-block: 0.5rem;
                         border-radius: 3rem;
@@ -424,9 +424,9 @@
                         }
 
                         .link {
-                            color: $color-black-light;
+                            color: $color-white-dark;
                             font-size: 2rem;
-                            font-weight: $weight-bold;
+                            // font-weight: $weight-bold;
                             text-align: center;
                             padding-block: 0.5rem;
                             border-radius: 3rem;

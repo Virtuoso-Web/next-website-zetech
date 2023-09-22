@@ -1,10 +1,12 @@
-$color-black-dark: hsl(0, 0%, 0%);
-$color-black-light: hsl(0, 0%, 29%);
-$color-white-light: hsl(0, 0%, 100%);
-$color-white-dark: hsl(0, 0%, 96%);
-$color-blue-main: blue;
+$color-black-dark: #000000;
+$color-black-light: #4a4a4a;
+$color-white-light: #ffffff;
+$color-white-dark: #f5f5f5;
+$color-blue-main: hsl(213, 60%, 30%);
+$color-blue-main-2: hsl(213, 60%, 60%);
 
-$color-gradient-blue: linear-gradient(to bottom right, #5fa8d3, #add8e6);
+// $color-gradient-blue: linear-gradient(to bottom right, #5fa8d3, #add8e6);
+$color-gradient-blue: linear-gradient(to bottom right, $color-blue-main, $color-blue-main-2);
 
 $weight-light: 200;
 $weight-normal: 400;
