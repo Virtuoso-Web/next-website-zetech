@@ -2,10 +2,6 @@ import "@/app/shop/style.scss";
 
 import Navigation from "@/app/shop/(components)/navigation.jsx";
 
-export const metadata = {
-    title: "Shop",
-};
-
 export default function Layout({ children }) {
     return (
         <main className="shop-page">
