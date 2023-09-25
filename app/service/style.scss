@@ -146,16 +146,10 @@
                         }
 
                         .list {
-                            list-style: none;
+                            list-style-position: inside;
 
                             .list-item {
-                                display: flex;
-                                column-gap: 2rem;
                                 font-size: 2rem;
-
-                                .arrow {
-                                    font-weight: $weight-bold;
-                                }
                             }
                         }
                     }

@@ -292,6 +292,37 @@
                             }
                         }
                     }
+
+                    .description {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1rem;
+
+                        .headline {
+                            font-size: 3rem;
+                        }
+
+                        .subliner-list {
+                            list-style-position: inside;
+
+                            .list-item {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+
+                    .data-link {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 1rem;
+                        inline-size: fit-content;
+                        color: $color-black-light;
+                        font-size: 2rem;
+
+                        .icon {
+                            font-size: 3rem;
+                        }
+                    }
                 }
             }
         }

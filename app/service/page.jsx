@@ -43,62 +43,28 @@ export default function Page() {
                             <div className="list-group">
                                 <h3 className="title">Unsere Werkstatt bietet Ihnen folgendes:</h3>
                                 <ul className="list">
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Reparaturen aller gängigen Marken
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Kalibrierungen mit Zertifikat
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Jahreskontrollen Ihrer Messgeräte
-                                    </li>
+                                    <li className="list-item">Reparaturen aller gängigen Marken</li>
+                                    <li className="list-item">Kalibrierungen mit Zertifikat</li>
+                                    <li className="list-item">Jahreskontrollen Ihrer Messgeräte</li>
                                 </ul>
                             </div>
                             <div className="list-group">
                                 <h3 className="title">Wir sind Ihre Anlaufstelle für folgende Geräte:</h3>
                                 <ul className="list">
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Leica iCON iCR60/65 Robotik-Totalstation
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Leica iCON iCR50/55 Robotik-Totalstation
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Leica iCON iCR70 Robotik-Totalstation
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Leica iCON iCR80 Robotik-Totalstation
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Leica Builder / Tachymeter
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Neigungslaser
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Horizontal-Vertikallaser
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Horizontallaser
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Innenausbaulaser
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Linienlaser
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Kanalbaulaser
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Nivelliere
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Distanzmessgeräte
-                                    </li>
-                                    <li className="list-item">
-                                        <span className="arrow">{">"}</span>Empfänger
-                                    </li>
+                                    <li className="list-item">Leica iCON iCR60/65 Robotik-Totalstation</li>
+                                    <li className="list-item">Leica iCON iCR50/55 Robotik-Totalstation</li>
+                                    <li className="list-item">Leica iCON iCR70 Robotik-Totalstation</li>
+                                    <li className="list-item">Leica iCON iCR80 Robotik-Totalstation</li>
+                                    <li className="list-item">Leica Builder / Tachymeter</li>
+                                    <li className="list-item">Neigungslaser</li>
+                                    <li className="list-item">Horizontal-Vertikallaser</li>
+                                    <li className="list-item">Horizontallaser</li>
+                                    <li className="list-item">Innenausbaulaser</li>
+                                    <li className="list-item">Linienlaser</li>
+                                    <li className="list-item">Kanalbaulaser</li>
+                                    <li className="list-item">Nivelliere</li>
+                                    <li className="list-item">Distanzmessgeräte</li>
+                                    <li className="list-item">Empfänger</li>
                                 </ul>
                             </div>
                         </div>

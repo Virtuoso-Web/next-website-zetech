@@ -3,54 +3,162 @@
         "name": "Leica NA320",
         "slug": "leica-na320",
         "link": "/shop/nivelliere/leica-na320",
-        "image": "/images/shop/nivelliere/leica-na-320-1.webp"
+        "image": "/images/shop/nivelliere/leica-na-320-1.webp",
+        "headline": "Das ist eine längere Headline:",
+        "subliner": [
+            {
+                "subline": "one"
+            },
+            {
+                "subline": "two"
+            },
+            {
+                "subline": "three"
+            }
+        ]
     },
     {
         "name": "Leica NA324",
         "slug": "leica-na324",
         "link": "/shop/nivelliere/leica-na324",
-        "image": "/images/shop/nivelliere/leica-na-324-1.webp"
+        "image": "/images/shop/nivelliere/leica-na-324-1.webp",
+        "headline": "Das ist eine längere Headline:",
+        "subliner": [
+            {
+                "subline": "one"
+            },
+            {
+                "subline": "two"
+            },
+            {
+                "subline": "three"
+            }
+        ]
     },
     {
         "name": "Leica NA332",
         "slug": "leica-na332",
         "link": "/shop/nivelliere/leica-na332",
-        "image": "/images/shop/nivelliere/leica-na-332-1.webp"
+        "image": "/images/shop/nivelliere/leica-na-332-1.webp",
+        "headline": "Das ist eine längere Headline:",
+        "subliner": [
+            {
+                "subline": "one"
+            },
+            {
+                "subline": "two"
+            },
+            {
+                "subline": "three"
+            }
+        ]
     },
     {
         "name": "Leica NA520",
         "slug": "leica-na520",
         "link": "/shop/nivelliere/leica-na520",
-        "image": "/images/shop/nivelliere/leica-na-500-1.webp"
+        "image": "/images/shop/nivelliere/leica-na-500-1.webp",
+        "headline": "Das ist eine längere Headline:",
+        "subliner": [
+            {
+                "subline": "one"
+            },
+            {
+                "subline": "two"
+            },
+            {
+                "subline": "three"
+            }
+        ]
     },
     {
         "name": "Leica NA524",
         "slug": "leica-na524",
         "link": "/shop/nivelliere/leica-na524",
-        "image": "/images/shop/nivelliere/leica-na-500-1.webp"
+        "image": "/images/shop/nivelliere/leica-na-500-1.webp",
+        "headline": "Das ist eine längere Headline:",
+        "subliner": [
+            {
+                "subline": "one"
+            },
+            {
+                "subline": "two"
+            },
+            {
+                "subline": "three"
+            }
+        ]
     },
     {
         "name": "Leica NA530",
         "slug": "leica-na530",
         "link": "/shop/nivelliere/leica-na530",
-        "image": "/images/shop/nivelliere/leica-na-500-1.webp"
+        "image": "/images/shop/nivelliere/leica-na-500-1.webp",
+        "headline": "Das ist eine längere Headline:",
+        "subliner": [
+            {
+                "subline": "one"
+            },
+            {
+                "subline": "two"
+            },
+            {
+                "subline": "three"
+            }
+        ]
     },
     {
         "name": "Leica NA720",
         "slug": "leica-na720",
         "link": "/shop/nivelliere/leica-na720",
-        "image": "/images/shop/nivelliere/leica-na-700-1.webp"
+        "image": "/images/shop/nivelliere/leica-na-700-1.webp",
+        "headline": "Das ist eine längere Headline:",
+        "subliner": [
+            {
+                "subline": "one"
+            },
+            {
+                "subline": "two"
+            },
+            {
+                "subline": "three"
+            }
+        ]
     },
     {
         "name": "Leica NA724",
         "slug": "leica-na724",
         "link": "/shop/nivelliere/leica-na724",
-        "image": "/images/shop/nivelliere/leica-na-700-1.webp"
+        "image": "/images/shop/nivelliere/leica-na-700-1.webp",
+        "headline": "Das ist eine längere Headline:",
+        "subliner": [
+            {
+                "subline": "one"
+            },
+            {
+                "subline": "two"
+            },
+            {
+                "subline": "three"
+            }
+        ]
     },
     {
         "name": "Leica NA730 Plus",
         "slug": "leica-na730-plus",
         "link": "/shop/nivelliere/leica-na730-plus",
-        "image": "/images/shop/nivelliere/leica-na-700-1.webp"
+        "image": "/images/shop/nivelliere/leica-na-700-1.webp",
+        "headline": "Das ist eine längere Headline:",
+        "subliner": [
+            {
+                "subline": "one"
+            },
+            {
+                "subline": "two"
+            },
+            {
+                "subline": "three"
+            }
+        ]
     }
 ]
