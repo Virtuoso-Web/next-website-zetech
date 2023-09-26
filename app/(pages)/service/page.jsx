@@ -19,10 +19,14 @@ export default function Page() {
             <section className="workshop-about-section">
                 <div className="section-container">
                     <h2 className="title">ZERTIFIZIERTE SERVICE WERKSTATT</h2>
-                    <div className="image-holder"></div>
+                    <div className="image-holder">
+                        <img src="/images/service/service-image-1.webp" alt="Service Werkstatt" loading="lazy" className="image" />
+                    </div>
                     <div className="flex-grid">
                         <div className="image-box">
-                            <div className="image-holder"></div>
+                            <div className="image-holder">
+                                <img src="/images/service/service-image-2.webp" alt="Service Werkstatt" loading="lazy" className="image" />
+                            </div>
                         </div>
                         <div className="text-box">
                             <p className="text">
@@ -69,7 +73,9 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="image-box">
-                            <div className="image-holder"></div>
+                            <div className="image-holder">
+                                <img src="/images/service/service-image-3.webp" alt="Service Werkstatt" loading="lazy" className="image" />
+                            </div>
                         </div>
                     </div>
                 </div>

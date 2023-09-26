@@ -79,9 +79,21 @@
             }
 
             > .image-holder {
+                position: relative;
+                display: flex;
                 aspect-ratio: calc(3 / 1);
+                border-radius: 1rem;
                 border: 0.5rem solid $color-black-light;
                 margin-block-end: 5rem;
+                overflow: hidden;
+
+                .image {
+                    position: absolute;
+                    inline-size: 100%;
+                    block-size: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
             }
 
             .flex-grid {
@@ -93,9 +105,21 @@
                     display: flex;
 
                     .image-holder {
+                        position: relative;
+                        display: flex;
                         inline-size: 100%;
                         aspect-ratio: calc(16 / 9);
+                        border-radius: 1rem;
                         border: 0.5rem solid $color-black-light;
+                        overflow: hidden;
+
+                        .image {
+                            position: absolute;
+                            inline-size: 100%;
+                            block-size: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
                     }
                 }
 
@@ -159,9 +183,21 @@
                     display: flex;
 
                     .image-holder {
+                        position: relative;
+                        display: flex;
                         inline-size: 100%;
                         aspect-ratio: calc(16 / 9);
+                        border-radius: 1rem;
                         border: 0.5rem solid $color-black-light;
+                        overflow: hidden;
+
+                        .image {
+                            position: absolute;
+                            inline-size: 100%;
+                            block-size: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
                     }
                 }
             }

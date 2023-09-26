@@ -105,6 +105,16 @@
             {
                 "subline": "three"
             }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/baulaser/leica-rugby-cla-clh.pdf"
+            },
+            {
+                "type": "Leica Broschüre",
+                "path": "/documents/shop/baulaser/leica-rugby-cla-clh-brochure.pdf"
+            }
         ]
     },
     {
@@ -122,6 +132,16 @@
             },
             {
                 "subline": "three"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/baulaser/leica-rugby-cla-clh.pdf"
+            },
+            {
+                "type": "Leica Broschüre",
+                "path": "/documents/shop/baulaser/leica-rugby-cla-clh-brochure.pdf"
             }
         ]
     },

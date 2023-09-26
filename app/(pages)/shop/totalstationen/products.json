@@ -18,6 +18,10 @@
         ],
         "datasheets": [
             {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/totalstationen/leica-icon-icr-70-icr-80.pdf"
+            },
+            {
                 "type": "Leica iCON Build",
                 "path": "/documents/shop/leica-icon-build.pdf"
             }
@@ -41,6 +45,10 @@
             }
         ],
         "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/totalstationen/leica-icon-icr-70-icr-80.pdf"
+            },
             {
                 "type": "Leica iCON Build",
                 "path": "/documents/shop/leica-icon-build.pdf"
@@ -110,6 +118,12 @@
             },
             {
                 "subline": "three"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/totalstationen/leica-ap-20-autopole.pdf"
             }
         ]
     }
