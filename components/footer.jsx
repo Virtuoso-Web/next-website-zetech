@@ -1,6 +1,6 @@
 import "@/components/footer.scss";
 
-import products from "@/app/shop/products.json";
+import products from "@/app/(pages)/shop/products.json";
 
 import Link from "next/link";
 
