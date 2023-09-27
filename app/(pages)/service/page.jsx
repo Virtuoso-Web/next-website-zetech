@@ -84,16 +84,12 @@ export default function Page() {
             <section className="workshop-info-section">
                 <div className="section-container">
                     <div className="flex-grid">
-                        <div className="price-box">
-                            <ul className="price-list">
-                                <li className="price-item">Stundenansatz Laser/Nivelliere:</li>
-                                <li className="price-item">106.- / H</li>
-                            </ul>
-                            <ul className="price-list">
-                                <li className="price-item">Stundenansatz Tachymeter/Builder:</li>
-                                <li className="price-item">150.- / H</li>
-                            </ul>
-                        </div>
+                        <ul className="price-box">
+                            <li className="price-item">Stundenansatz Laser/Nivelliere:</li>
+                            <li className="price-item">106.- / h</li>
+                            <li className="price-item">Stundenansatz Tachymeter/Builder:</li>
+                            <li className="price-item">150.- / h</li>
+                        </ul>
                         <div className="text-box">
                             <p className="text">Für einen unkomplizierten Service- und Reparaturablauf fragen Sie uns nach unserem Abholservice und nach einem Mietgerät.</p>
                         </div>

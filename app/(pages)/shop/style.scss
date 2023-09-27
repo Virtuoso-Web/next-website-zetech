@@ -303,7 +303,7 @@
                         .description {
                             display: flex;
                             flex-direction: column;
-                            row-gap: 1rem;
+                            row-gap: 2.5rem;
 
                             .headline {
                                 font-size: 3rem;
@@ -322,6 +322,11 @@
                             display: flex;
                             flex-direction: column;
                             row-gap: 1rem;
+
+                            .datasheet-title {
+                                font-size: 3rem;
+                                margin-block-end: 1.5rem;
+                            }
 
                             .datasheet-link {
                                 display: flex;

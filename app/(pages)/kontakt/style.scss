@@ -90,7 +90,7 @@
 
                 > .sub-flex-grid {
                     display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(min(35rem, 100%), 1fr));
+                    grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
                     column-gap: 5rem;
                     row-gap: 5rem;
 
@@ -182,18 +182,37 @@
 
                 > .title-box {
                     grid-area: h;
+                    text-align: center;
                     margin-block-end: 5rem;
 
                     .title {
-                        font-size: 7rem;
+                        font-size: 8rem;
                         font-weight: $weight-bold;
 
                         @media (max-width: 768px) {
-                            font-size: 6rem;
+                            font-size: 6.5rem;
                         }
 
                         @media (max-width: 425px) {
                             font-size: 5rem;
+                        }
+
+                        .gradient {
+                            color: transparent;
+                            font-size: 8rem;
+                            font-weight: $weight-bold;
+                            background-image: $color-gradient-blue;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+
+                            @media (max-width: 768px) {
+                                font-size: 6.5rem;
+                            }
+
+                            @media (max-width: 425px) {
+                                font-size: 5rem;
+                            }
                         }
                     }
                 }
@@ -356,7 +375,7 @@
                                     border-radius: 1rem;
                                     border: 0.3rem solid $color-black-light;
                                     outline: none;
-                                    background-color: $color-blue-main;
+                                    background-image: $color-gradient-blue;
                                     cursor: pointer;
                                 }
 
@@ -367,7 +386,7 @@
                                     border-radius: 1rem;
                                     border: 0.3rem solid $color-black-light;
                                     outline: none;
-                                    background-color: red;
+                                    background-image: $color-gradient-red;
                                     cursor: pointer;
                                 }
                             }

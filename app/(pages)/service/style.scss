@@ -99,9 +99,18 @@
             .flex-grid {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: "i t";
                 column-gap: 5rem;
+                row-gap: 5rem;
+
+                @media (max-width: 1024px) {
+                    grid-template-areas:
+                        "t t"
+                        "i i";
+                }
 
                 .image-box {
+                    grid-area: i;
                     display: flex;
 
                     .image-holder {
@@ -124,6 +133,7 @@
                 }
 
                 .text-box {
+                    grid-area: t;
                     display: flex;
                     align-items: center;
 
@@ -152,6 +162,11 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 column-gap: 5rem;
+                row-gap: 5rem;
+
+                @media (max-width: 1024px) {
+                    grid-template-columns: 1fr;
+                }
 
                 .list-box {
                     display: flex;
@@ -214,21 +229,28 @@
             .flex-grid {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                column-gap: 15rem;
+                column-gap: 5rem;
+                row-gap: 5rem;
+
+                @media (max-width: 1070px) {
+                    grid-template-columns: 1fr;
+                }
 
                 .price-box {
-                    display: flex;
-                    flex-direction: column;
+                    display: grid;
+                    grid-template-columns: max-content 1fr;
+                    align-items: center;
+                    column-gap: 10%;
+                    row-gap: 5rem;
+                    list-style: none;
 
-                    .price-list {
-                        list-style: none;
-                        display: flex;
-                        justify-content: space-between;
+                    @media (max-width: 1070px) {
+                        grid-template-columns: 1fr max-content;
+                    }
 
-                        .price-item {
-                            font-size: 2rem;
-                            font-weight: $weight-bold;
-                        }
+                    .price-item {
+                        font-size: 2rem;
+                        font-weight: $weight-bold;
                     }
                 }
 

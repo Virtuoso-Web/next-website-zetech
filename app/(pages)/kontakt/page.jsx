@@ -61,7 +61,11 @@ export default function Page() {
                 <div className="section-container">
                     <div className="flex-grid">
                         <div className="title-box">
-                            <h2 className="title">Sie haben Fragen? Wir haben Antworten.</h2>
+                            <h2 className="title">
+                                Sie haben Fragen?
+                                <br />
+                                <span className="gradient">Wir haben Antworten.</span>
+                            </h2>
                         </div>
                         <div className="sub-flex-grid-1">
                             <h3 className="title">Öffnungszeiten</h3>

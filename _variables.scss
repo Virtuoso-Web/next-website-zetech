@@ -3,10 +3,12 @@ $color-black-light: #4a4a4a;
 $color-white-light: #ffffff;
 $color-white-dark: #f5f5f5;
 $color-blue-main: #1f497d;
-$color-blue-main-2: #2fadff;
+$color-blue-second: #2fadff;
+$color-red-main: #dc143c;
+$color-red-second: #f08080;
 
-// $color-gradient-blue: linear-gradient(to bottom right, $color-blue-main, $color-blue-main-2);
-$color-gradient-blue: linear-gradient(to right bottom, #1f497d, #27609c, #2d79bc, #3092dd, #2fadff);
+$color-gradient-blue: linear-gradient(to right bottom, $color-blue-main, #27609c, #2d79bc, #3092dd, $color-blue-second);
+$color-gradient-red: linear-gradient(to right bottom, $color-red-main, #e23c4c, #e8565d, #ec6c6e, $color-red-second);
 
 $weight-light: 200;
 $weight-normal: 400;

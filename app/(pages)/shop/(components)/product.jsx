@@ -23,6 +23,7 @@ export default function Product({ product }) {
                     </ul>
                 </div>
                 <div className="datasheet-list">
+                    <p className="datasheet-title">Dokumente:</p>
                     {product.datasheets?.map((sheet, index) => (
                         <Link href={sheet.path} target="_blank" key={index} className="datasheet-link">
                             <FaFilePdf className="icon" />
