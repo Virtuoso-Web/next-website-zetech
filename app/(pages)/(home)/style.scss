@@ -270,8 +270,8 @@
             inline-size: 50%;
             block-size: 50%;
             filter: blur(25rem);
-            opacity: 0.5;
-            border-end-end-radius: 25%;
+            opacity: 0.75;
+            border-radius: 25%;
             background-image: $color-gradient-blue;
             z-index: -3;
             animation-name: rotate-before;
@@ -288,8 +288,8 @@
             inline-size: 50%;
             block-size: 50%;
             filter: blur(25rem);
-            opacity: 0.5;
-            border-start-start-radius: 25%;
+            opacity: 0.75;
+            border-radius: 25%;
             background-image: $color-gradient-blue;
             z-index: -4;
             animation-name: rotate-after;
@@ -310,7 +310,7 @@
                 font-size: 8rem;
                 font-weight: $weight-bold;
                 text-align: center;
-                margin-block-end: 10rem;
+                margin-block-end: 5rem;
 
                 @media (max-width: 768px) {
                     font-size: 5rem;
@@ -401,12 +401,16 @@
 
                         .title {
                             color: $color-white-dark;
-                            font-size: 3rem;
+                            font-size: 4rem;
                             font-weight: $weight-bold;
 
                             @media (max-width: 1024px) {
                                 margin-inline: auto;
                                 text-align: center;
+                            }
+
+                            @media (max-width: 425px) {
+                                font-size: 3rem;
                             }
                         }
                     }
@@ -540,11 +544,11 @@
                         font-weight: $weight-bold;
 
                         @media (max-width: 768px) {
-                            font-size: 6.5rem;
+                            font-size: 5rem;
                         }
 
                         @media (max-width: 425px) {
-                            font-size: 5rem;
+                            font-size: 4rem;
                         }
 
                         .gradient {
@@ -557,11 +561,11 @@
                             -webkit-text-fill-color: transparent;
 
                             @media (max-width: 768px) {
-                                font-size: 6.5rem;
+                                font-size: 5rem;
                             }
 
                             @media (max-width: 425px) {
-                                font-size: 5rem;
+                                font-size: 4rem;
                             }
                         }
                     }
@@ -634,16 +638,24 @@
                         -webkit-text-fill-color: transparent;
 
                         @media (max-width: 768px) {
-                            font-size: 6.5rem;
+                            font-size: 5rem;
                         }
 
                         @media (max-width: 425px) {
-                            font-size: 5rem;
+                            font-size: 4rem;
                         }
                     }
 
                     .text {
                         font-size: 5rem;
+
+                        @media (max-width: 768px) {
+                            font-size: 4rem;
+                        }
+
+                        @media (max-width: 425px) {
+                            font-size: 3rem;
+                        }
                     }
                 }
 

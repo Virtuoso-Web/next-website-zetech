@@ -94,16 +94,15 @@
         "slug": "leica-rugby-cla-ctive",
         "link": "/shop/baulaser/leica-rugby-cla-ctive",
         "image": "/images/shop/baulaser/leica-rugby-cla-ctive-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "headline": "Leistungen der Rugby CLA-CTIVE:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": false,
+                "subline": "Maximale Flexibilität und eine schnelle Anpassung an die Projektanforderungen sind für Ihren Erfolg unverzichtbar. Mit dem Leica Rugby CLA-ctive und CLH können Sie Ihre Laser aufrüsten, um sie an die Anforderungen Ihrer Anwendung anzupassen. Sie zahlen nur für die von Ihnen benötigten Funktionen und nicht für Extra-Ausstattungen, die Sie nicht nutzen. Dank zusätzlicher Services wie Reparatur und Kalibrierung können Sie die hohe Leistungsfähigkeit Ihres Lasers für viele Jahre sicherstellen."
             },
             {
-                "subline": "two"
-            },
-            {
-                "subline": "three"
+                "bullet": false,
+                "subline": "Da er sich durch Software-Upgrades Onboard-Betrieb an verschiedenste Anforderungen anpassen lässt, ist Leica Rugby CLA der erste aufrüstbare Laser zur Steigerung der Produktivität und Leistung auf der Baustelle. Die Aufrüstmöglichkeiten sorgen für unschlagbare Leistungen bei Nivellier-, Ausricht- und Absteckarbeiten und machen ihn zu einem echten Multitalent."
             }
         ],
         "datasheets": [
@@ -122,16 +121,15 @@
         "slug": "leica-rugby-clh",
         "link": "/shop/baulaser/leica-rugby-clh",
         "image": "/images/shop/baulaser/leica-rugby-clh-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "headline": "Leistungen der Rugby CLH:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": false,
+                "subline": "Maximale Flexibilität und eine schnelle Anpassung an die Projektanforderungen sind für Ihren Erfolg unverzichtbar. Mit dem Leica Rugby CLA-ctive und CLH können Sie Ihre Laser aufrüsten, um sie an die Anforderungen Ihrer Anwendung anzupassen. Sie zahlen nur für die von Ihnen benötigten Funktionen und nicht für Extra-Ausstattungen, die Sie nicht nutzen. Dank zusätzlicher Services wie Reparatur und Kalibrierung können Sie die hohe Leistungsfähigkeit Ihres Lasers für viele Jahre sicherstellen."
             },
             {
-                "subline": "two"
-            },
-            {
-                "subline": "three"
+                "bullet": false,
+                "subline": "Die Einfachheit des Leica Rugby CLH macht die Nutzung aller Möglichkeiten des Lasersystems ganz leicht. Sie sparen Zeit durch vereinfachte Prozesse und sind deutlich produktiver. Seine robuste Konstruktion sorgt für Messbeständigkeit und Genauigkeit bei den täglichen Aufgaben. Die Aufrüstoptionen steigern die Leistung bei allen Nivellierungsanwendungen."
             }
         ],
         "datasheets": [

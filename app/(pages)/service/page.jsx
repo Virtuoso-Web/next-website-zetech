@@ -18,7 +18,11 @@ export default function Page() {
 
             <section className="workshop-about-section">
                 <div className="section-container">
-                    <h2 className="title">ZERTIFIZIERTE SERVICE WERKSTATT</h2>
+                    <h2 className="title">
+                        ZERTIFIZIERTE
+                        <br />
+                        <span className="gradient">SERVICE WERKSTATT</span>
+                    </h2>
                     <div className="image-holder">
                         <img src="/images/service/service-image-1.webp" alt="Service Werkstatt" loading="lazy" className="image" />
                     </div>
@@ -47,28 +51,62 @@ export default function Page() {
                             <div className="list-group">
                                 <h3 className="title">Unsere Werkstatt bietet Ihnen folgendes:</h3>
                                 <ul className="list">
-                                    <li className="list-item">Reparaturen aller gängigen Marken</li>
-                                    <li className="list-item">Kalibrierungen mit Zertifikat</li>
-                                    <li className="list-item">Jahreskontrollen Ihrer Messgeräte</li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Reparaturen aller gängigen Marken
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Kalibrierungen mit Zertifikat
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Jahreskontrollen Ihrer Messgeräte
+                                    </li>
                                 </ul>
                             </div>
                             <div className="list-group">
                                 <h3 className="title">Wir sind Ihre Anlaufstelle für folgende Geräte:</h3>
                                 <ul className="list">
-                                    <li className="list-item">Leica iCON iCR60/65 Robotik-Totalstation</li>
-                                    <li className="list-item">Leica iCON iCR50/55 Robotik-Totalstation</li>
-                                    <li className="list-item">Leica iCON iCR70 Robotik-Totalstation</li>
-                                    <li className="list-item">Leica iCON iCR80 Robotik-Totalstation</li>
-                                    <li className="list-item">Leica Builder / Tachymeter</li>
-                                    <li className="list-item">Neigungslaser</li>
-                                    <li className="list-item">Horizontal-Vertikallaser</li>
-                                    <li className="list-item">Horizontallaser</li>
-                                    <li className="list-item">Innenausbaulaser</li>
-                                    <li className="list-item">Linienlaser</li>
-                                    <li className="list-item">Kanalbaulaser</li>
-                                    <li className="list-item">Nivelliere</li>
-                                    <li className="list-item">Distanzmessgeräte</li>
-                                    <li className="list-item">Empfänger</li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Leica iCON iCR60/65 Robotik-Totalstation
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Leica iCON iCR50/55 Robotik-Totalstation
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Leica iCON iCR70 Robotik-Totalstation
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Leica iCON iCR80 Robotik-Totalstation
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Leica Builder / Tachymeter
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Neigungslaser
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Horizontal-Vertikallaser
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Horizontallaser
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Innenausbaulaser
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Linienlaser
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Kanalbaulaser
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Nivelliere
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Distanzmessgeräte
+                                    </li>
+                                    <li className="list-item">
+                                        <span className="point">{"•"}</span>Empfänger
+                                    </li>
                                 </ul>
                             </div>
                         </div>

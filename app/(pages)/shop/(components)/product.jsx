@@ -17,6 +17,7 @@ export default function Product({ product }) {
                     <ul className="subliner-list">
                         {product.subliner?.map((subline, index) => (
                             <li key={index} className="list-item">
+                                {subline.bullet ? <span className="point">{"•"}</span> : null}
                                 {subline.subline}
                             </li>
                         ))}

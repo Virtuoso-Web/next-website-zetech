@@ -4,16 +4,39 @@
         "slug": "leica-cc200",
         "link": "/shop/tablets/leica-cc200",
         "image": "/images/shop/tablets/leica-icon-cc-200-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "headline": "Leistungen der iCON CC200:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Großer 10-Zoll-Bildschirm bietet eine größere Kartensichtbarkeit"
             },
             {
-                "subline": "two"
+                "bullet": true,
+                "subline": "Höhere Leistung; ideal für die Verarbeitung großer Datenmengen"
             },
             {
-                "subline": "three"
+                "bullet": true,
+                "subline": "Betriebsdauer von bis zu 12 Stunden"
+            },
+            {
+                "bullet": true,
+                "subline": "Entspiegelter Bildschirm"
+            },
+            {
+                "bullet": true,
+                "subline": "„Handschuh“- und „Regen“-Modus sorgen für Bedienkomfort unter allen Wetterbedingungen"
+            },
+            {
+                "bullet": true,
+                "subline": "„Portrait“-Modus erhöht die Sichtbarkeit bei der Verwendung bestimmter Apps"
+            },
+            {
+                "bullet": true,
+                "subline": "Tasten mit benutzerprogrammierbaren Funktionen bieten einen leichteren und schnelleren Zugriff auf Befehle"
+            },
+            {
+                "bullet": true,
+                "subline": "Unterstützt von Leica iCON Site und Leica iCON build Software"
             }
         ],
         "datasheets": [
@@ -36,22 +59,41 @@
         "slug": "leica-cc170",
         "link": "/shop/tablets/leica-cc170",
         "image": "/images/shop/tablets/leica-icon-cc-170-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "headline": "Leistungen der iCON CC170:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Kompakte Größe mit einem auch bei Sonnenlicht ablesbaren 7-Zoll-Multi-Touchscreen"
             },
             {
-                "subline": "two"
+                "bullet": true,
+                "subline": "geringes Gewicht"
             },
             {
-                "subline": "three"
+                "bullet": true,
+                "subline": "Volle LTE-Unterstützung und ein Modem für alle Regionen"
+            },
+            {
+                "bullet": true,
+                "subline": "Optionales Langstrecken-Bluetooth®"
+            },
+            {
+                "bullet": true,
+                "subline": "Bis zu 6 Stunden Betriebszeit"
+            },
+            {
+                "bullet": true,
+                "subline": "Im laufenden Betrieb wechselbare Akkus"
+            },
+            {
+                "bullet": true,
+                "subline": "Zwei benutzerprogrammierbare Tasten"
             }
         ],
         "datasheets": [
             {
                 "type": "Leica Produktedatenblatt",
-                "path": "/documents/shop/tablets/leica-icon-cc-200.pdf"
+                "path": "/documents/shop/tablets/leica-icon-cc-170.pdf"
             },
             {
                 "type": "Leica iCON Build",

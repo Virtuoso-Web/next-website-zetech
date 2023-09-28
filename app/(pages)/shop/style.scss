@@ -306,13 +306,19 @@
                             row-gap: 2.5rem;
 
                             .headline {
-                                font-size: 3rem;
+                                font-size: 2rem;
+                                font-weight: $weight-bold;
                             }
 
                             .subliner-list {
-                                list-style-position: inside;
+                                list-style: none;
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 2.5rem;
 
                                 .list-item {
+                                    display: flex;
+                                    column-gap: 2rem;
                                     font-size: 2rem;
                                 }
                             }
@@ -321,11 +327,11 @@
                         .datasheet-list {
                             display: flex;
                             flex-direction: column;
-                            row-gap: 1rem;
+                            row-gap: 2.5rem;
 
                             .datasheet-title {
-                                font-size: 3rem;
-                                margin-block-end: 1.5rem;
+                                font-size: 2rem;
+                                font-weight: $weight-bold;
                             }
 
                             .datasheet-link {

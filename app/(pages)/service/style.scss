@@ -65,17 +65,36 @@
             margin-inline: auto;
 
             > .title {
-                color: transparent;
-                font-size: 5rem;
+                font-size: 8rem;
                 font-weight: $weight-bold;
                 text-align: center;
-                inline-size: fit-content;
-                margin-inline: auto;
                 margin-block-end: 5rem;
-                background-image: $color-gradient-blue;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+
+                @media (max-width: 768px) {
+                    font-size: 5rem;
+                }
+
+                @media (max-width: 425px) {
+                    font-size: 4rem;
+                }
+
+                .gradient {
+                    color: transparent;
+                    font-size: 8rem;
+                    font-weight: $weight-bold;
+                    background-image: $color-gradient-blue;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                    @media (max-width: 768px) {
+                        font-size: 5rem;
+                    }
+
+                    @media (max-width: 425px) {
+                        font-size: 4rem;
+                    }
+                }
             }
 
             > .image-holder {
@@ -185,9 +204,11 @@
                         }
 
                         .list {
-                            list-style-position: inside;
+                            list-style: none;
 
                             .list-item {
+                                display: flex;
+                                column-gap: 2rem;
                                 font-size: 2rem;
                             }
                         }
