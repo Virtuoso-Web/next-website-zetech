@@ -9,14 +9,14 @@ import { motion } from "framer-motion";
 import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
 
-const switches = {
+const change = {
     initial: { opacity: 0 },
     animate: { opacity: 1, transition: { ease: "linear", delay: 0.2, duration: 0.2 } },
 };
 
-const scales = {
-    hidden: { scale: 0 },
-    visible: { scale: 1, transition: { type: "spring", duration: 0.4 } },
+const reveal = {
+    hidden: { y: "25%", opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { type: "spring", duration: 0.4 } },
 };
 
 export default function Content({ products }) {
@@ -51,13 +51,13 @@ export default function Content({ products }) {
                 <div className="section-container">
                     <div className="hero-slider">
                         <div className="title-box">
-                            <motion.h1 initial={"initial"} animate={"animate"} variants={switches} key={slide} className="title">
+                            <motion.h1 initial={"initial"} animate={"animate"} variants={change} key={slide} className="title">
                                 {products[slide].name}
                             </motion.h1>
                         </div>
                         <div className="image-box">
                             <div className="image-holder">
-                                <motion.img src={products[slide].image} alt={products[slide].name} initial={"initial"} animate={"animate"} variants={switches} key={slide} loading="lazy" className="image" />
+                                <motion.img src={products[slide].image} alt={products[slide].name} initial={"initial"} animate={"animate"} variants={change} key={slide} loading="lazy" className="image" />
                             </div>
                         </div>
                         <div className="link-box">
@@ -95,13 +95,13 @@ export default function Content({ products }) {
 
             <section className="services-section">
                 <div className="section-container">
-                    <h1 className="title">
+                    <motion.h1 initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={reveal} className="title">
                         UNSERE
                         <br />
                         <span className="gradient">FACHGEBIETE</span>
-                    </h1>
+                    </motion.h1>
                     <div className="flex-grid">
-                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid">
+                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={reveal} className="sub-flex-grid">
                             <div className="title-box">
                                 <h2 className="title">DIENSTLEISTUNGEN</h2>
                             </div>
@@ -115,7 +115,7 @@ export default function Content({ products }) {
                                 <div className="image-holder"></div>
                             </div>
                         </motion.div>
-                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid reversed">
+                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={reveal} className="sub-flex-grid reversed">
                             <div className="title-box">
                                 <h2 className="title">SERVICE</h2>
                             </div>
@@ -129,7 +129,7 @@ export default function Content({ products }) {
                                 <div className="image-holder"></div>
                             </div>
                         </motion.div>
-                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={scales} className="sub-flex-grid">
+                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={reveal} className="sub-flex-grid">
                             <div className="title-box">
                                 <h2 className="title">SHOP</h2>
                             </div>

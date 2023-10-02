@@ -303,7 +303,7 @@
             margin-inline: auto;
             padding-inline: min(5rem, 5%);
             padding-block: 10rem;
-            overflow-x: hidden;
+            overflow: hidden;
 
             > .title {
                 color: $color-white-dark;
