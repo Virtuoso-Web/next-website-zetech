@@ -4,16 +4,29 @@
         "slug": "leica-distanzmessgeraet-100",
         "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-100",
         "image": "/images/shop/distanzmessgeraete/leica-disto-110-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Der D110 wiegt 92 g (3 1/4 Unzen) und passt in jede Tasche. Während des Messprozesses ist der horizontale Display gut lesbar, auch bei Flächenmessungen. Durch die Bluetooth®-Konnektivität kann der D110 die Messergebnisse, unverzüglich nach deren Berechnung, an mobile Apps senden"
             },
             {
-                "subline": "two"
+                "bullet": true,
+                "subline": "Der Leica DISTO D110 baut auf der einfachen Schnittstelle des D1 auf und bietet zusätzliche Mess- und Ergonomiefunktionen, die für schnelle und genaue Messungen bestens geeignet sind. Macht das akkurate Messen von Quadratmetern zum Kinderspiel. Und der horizontale Bildschirm macht es einfach, Messergebnisse auf Tastendruck abzulesen"
             },
             {
-                "subline": "three"
+                "bullet": true,
+                "subline": "Er mag sogar kleiner sein als das D1 Gerät, aber das bedeutet nicht, dass dafür die Genauigkeit zu kurz kam. Der D110 hat genau das, was Sie von einem Leica DISTO erwarten (1.5 mm Genauigkeit) und jedes einzelne Gerät ist für seine Genauigkeit und seine Reichweite zertifiziert"
+            },
+            {
+                "bullet": true,
+                "subline": "Der D110 ist bluetooth®fähig und Sie können während dem Messprozess die Ergebnisse an mobile Apps senden. Das perfekte Gerät für die Erfassung von Grundmaßen, Immobilienbewertungen und allgemeine Schätzaufgaben"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/distanzmessgeraete/leica-disto-110.pdf"
             }
         ]
     },
@@ -22,16 +35,29 @@
         "slug": "leica-distanzmessgeraet-910",
         "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-910",
         "image": "/images/shop/distanzmessgeraete/leica-disto-910-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Wenn Sie den S910 benutzen, dann benötigen Sie keine Leiter mehr, denn der S910 verfügt über eine eingebaute Punkt zu Punkt (P2P) Messtechnologie. Er berechnet den Abstand zwischen zwei Punkten, unabhängig von Höhe oder Winkel. Sie können auch Mehrfach-P2P-Messungen durchführen, um komplexe Ebenen, wie z. B. Dächer, zu messen"
             },
             {
-                "subline": "two"
+                "bullet": true,
+                "subline": "Die integrierte Smart Base vom S910 ist der Schlüssel zur «Punkt zu Punkt» (P2P) Technologie. Sie ermöglicht Entfernungsmessungen zwischen zwei beliebigen Punkten von einem Standort aus. Die Kombination aus P2P Technologie und integriertem Neigungssensor eröffnet völlig neue Messmöglichkeiten"
             },
             {
-                "subline": "three"
+                "bullet": true,
+                "subline": "Die intelligente Flächenmessfunktion des S910 könnte nicht einfacher zu bedienen sein. Messen Sie einfach den Umriss einer Fläche - im oder gegen den Uhrzeigersinn - und sehen Sie das Ergebnis sofort auf dem Display. Egal wie komplex die Form der Fläche ist"
+            },
+            {
+                "bullet": true,
+                "subline": "Der S910 ist mit Technologie bestückt, die Ihnen hilft, das Beste aus Ihren Messungen herauszuholen. Bluetooth®, WLAN und USB-Konnektivität ermöglichen vor Ort sowohl den direkten Export Ihrer Messergebnisse als .DXF-Dateien ins CAD als auch den Export Ihrer mit Messdaten versehenen .JPG-Dateien"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/distanzmessgeraete/leica-disto-910.pdf"
             }
         ]
     },
@@ -39,17 +65,30 @@
         "name": "Leica Distanzmessgerät D2",
         "slug": "leica-distanzmessgeraet-d2",
         "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-d2",
-        "image": "/images/shop/distanzmessgeraete/leica-disto-d-2-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "image": "/images/shop/distanzmessgeraete/leica-disto-d2-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Der DISTO D2 bietet mehrere Messmodi, die für viele verschiedene Projektarten nützlich sind: Entfernungsmessung, Min/Max-Messung, Dauermessung, Absteckfunktion, Werte addieren/subtrahieren, Flächen- und Volumenmessung, aber auch die Maler- und Pythagoras-Funktionen dürfen nicht vergessen werden. Das intelligente Endstück lässt Messungen ab Innen- und Außenkante zu und auch diagonale Messungen sind möglich. Der D2 berechnet Fläche und Volumen und speichert die letzten 10 Messungen. und ein hintergrundbeleuchteter LCD-Bildschirm sorgt für eine gute Lesbarkeit vor Ort"
             },
             {
-                "subline": "two"
+                "bullet": true,
+                "subline": "Standardmäßig misst der DISTO D2 von seiner Base aus; er kann aber auch so eingestellt werden, dass er von der Vorderseite aus misst. Klappen Sie das multifunktionale Endstück bis 90° aus, um es an Außenkanten anzulegen oder klappen Sie es ganz aus, um aus Ecken oder Nuten zu messen. In Kombination mit der Min/Max Funktion können Sie für präzise diagonale Messungen, so wie im Video 'multifunktionales Endstück' gezeigt, durchführen, indem Sie das Tool bis in die Ecke hinein führen"
             },
             {
-                "subline": "three"
+                "bullet": true,
+                "subline": "Der DISTO D2 wiegt nur 100 g und lässt sich problemlos in einem Werkzeugkasten oder der Hosentasche verstauen. Er verfügt über ein einfach bedienbares Interface und leistungsstarke Schaltungen in einem kompakten Gehäuse der Schutzklasse IP54 (staub- und spritzwassergeschützt). Die Schnittstelle ist perfekt für gelegentliche Arbeiten zu Hause und auf die Genauigkeit des DISTO D2 können Sie sich verlassen: das intelligente Endstück verbindet sich direkt mit der Leiterplatte"
+            },
+            {
+                "bullet": true,
+                "subline": "Wenn Sie des Öfteren Messungen im Innenbereich durchzuführen haben und nicht nur äußerste Präzision sondern auch zusätzliche Funktionen für das Durchführen verschiedener Messungen, wie z. B. Winkelmessungen, benötigen, dann ist der D2 die richtige Wahl, sowohl hinsichtlich seiner Funktionen als auch hinsichtlich seines Preises"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/distanzmessgeraete/leica-disto-d2.pdf"
             }
         ]
     },
@@ -57,17 +96,26 @@
         "name": "Leica Distanzmessgerät D510",
         "slug": "leica-distanzmessgeraet-d510",
         "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-d510",
-        "image": "/images/shop/distanzmessgeraete/leica-disto-d-510-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "image": "/images/shop/distanzmessgeraete/leica-disto-d510-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Der DISTO D510 kann viele Arten von Messaufgaben, die die Profis aus Architektur, Ingenieur- und Bauwesen regelmäßig erledigen müssen, bewältigen. Er deckt nicht nur die Grundlagen ab, sondern auch erweiterte Funktionen wie Smart Horizontal und Höhentracking. Zudem zeichnet er sich durch komplexe Messungen, wie sie beispielswiese mit der 'Trapezfunktion' durchgeführt werden können, aus. Mit dieser Funktion können Neigung, Länge und Fläche eines Daches von einem Ort aus gemessen werden"
             },
             {
-                "subline": "two"
+                "bullet": true,
+                "subline": "Der DISTO D510 sieht vielleicht nicht ganz so robust aus wie die DISTO Geräte der X-Serie, aber er ist es doch - und ja, Sie können ihn unter fließendem Wasser reinigen. Außerdem ist er ein elegantes Gerät mit einem hochauflösenden Farbdisplay und mehreren Zusatztasten, die es Ihnen ermöglichen, auf gewisse Funktionen, wie z. B. die Zielsucher-Kamera, schnell zuzugreifen"
             },
             {
-                "subline": "three"
+                "bullet": true,
+                "subline": "Das Lasermodul des D510 kann Ziele in einer Entfernung ausmachen, in der sich der Laserpunkt nicht mehr erkennen lässt. Dank des Zielsuchers - einer 4-fach Zoom Digitalkamera - können Sie das Objekt mit dem Fadenkreuz auf dem Display anzielen, wodurch die Reichweite auf 200 m erweitert wird und das bei einer zertifizierten Genauigkeit. Um eine größere Stabilität auf lange Distanzen zu erzielen, empfehlen wir die Verwendung des D510 zusammen mit einem Stativ und unserem Adapter mit Feintrieb"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/distanzmessgeraete/leica-disto-d510.pdf"
             }
         ]
     },
@@ -75,17 +123,34 @@
         "name": "Leica Distanzmessgerät X3",
         "slug": "leica-distanzmessgeraet-x3",
         "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-x3",
-        "image": "/images/shop/distanzmessgeraete/leica-disto-x-3-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "image": "/images/shop/distanzmessgeraete/leica-disto-x3-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Der DISTO X3 ist widerstandsfähig und intelligent zugleich. Er verfügt über unsere 'Smart Horizontal' Funktion und über einen integrierten Neigungssensor, sodass über und um Hindernisse herum gemessen werden kann. Nicht zu vergessen ist Bluetooth®, was den Transfer der Messdaten auf Ihren Computer oder Ihr Tablet ermöglicht. Auch DISTO Plan für iOS und Android findet Verwendung"
             },
             {
-                "subline": "two"
+                "bullet": true,
+                "subline": "Der DISTO X3 verfügt über ein helles, farbiges, hintergrundbeleuchtetes Display für Messungen bei Lichtverhältnissen jeglicher Art: von dunklen Innenmessungen im Keller bis hin zu hellen Außenmessungen"
             },
             {
-                "subline": "three"
+                "bullet": true,
+                "subline": "Der X3 ist unser erstes DISTO Gerät, das mit dem DST360 kompatibel ist. Beim DST 360 handelt es sich um ein intelligentes Stativ- und Adapterset, das die Messmöglichkeiten des X3 erweitert. Zusammen mit dem DST 360 verwandelt er sich zu einer professionellen Messstation mit der Sie Punkt zu Punkt (P2P) Messungen von einem Ort aus durchführen können. Das intelligente Stativ- und Adapterset DST 360 erweitert die Messmöglichkeiten des X3"
+            },
+            {
+                "bullet": true,
+                "subline": "Bei Verwendung mit dem DST 360 kombiniert der DISTO X3 Rotations-, Winkel- und Distanzmessungen, um hochpräzise Punkt zu Punkt (P2P) Messungen durchzuführen. Dies ermöglicht es, Distanzen zwischen zwei beliebigen Punkten von einer dritten Position aus exakt zu messen"
+            },
+            {
+                "bullet": true,
+                "subline": "Verwenden Sie die DISTO Plan App, um Zugriff auf die Funktionen 'Skizzieren', 'Dokumentieren' und 'Smart Room' zu haben. Damit erstellen Sie CAD-fähige Grund- und Wandpläne, inklusive Türen und Fenster. Exportieren Sie Ihre Pläne als .DXF- oder .DWG-Dateien. Nach Fertigstellung exportieren Sie Ihre Pläne einfach als DXF- oder DWG-Datei in Ihre bevorzugte CAD-Lösung"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/distanzmessgeraete/leica-disto-x3.pdf"
             }
         ]
     },
@@ -93,17 +158,34 @@
         "name": "Leica Distanzmessgerät X4",
         "slug": "leica-distanzmessgeraet-x4",
         "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-x4",
-        "image": "/images/shop/distanzmessgeraete/leica-disto-x-4-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "image": "/images/shop/distanzmessgeraete/leica-disto-x4-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Automatisch drehendes Display Integrierter Neigungssensor für Smart Horizontal. Inklusive Bluetooth® zur Übertragung von Messwerten auf Ihren Computer oder Ihr mobiles Gerät. Nahtloses Funktionieren mit unserer DISTO Plan App"
             },
             {
-                "subline": "two"
+                "bullet": true,
+                "subline": "Er bietet die gleiche robuste Konstruktion wie der DISTO X3: Schutzklasse IP65 und Fallprüfung aus 2 m Höhe. Mit der Zielsucherkamera können Sie bei jeder Art von Beleuchtung bis 150 m messen und erzielen damit eine große Reichweite mit zertifizierter Genauigkeit"
             },
             {
-                "subline": "three"
+                "bullet": true,
+                "subline": "Der intelligente Adapter Leica DST 360 erweitert die Messmöglichkeiten des DISTO X4. Zusammen mit dem DST 360 verwandelt er sich zu einer professionellen Messstation mit der Sie Punkt zu Punkt (P2P) Messungen von einem Ort aus durchführen können"
+            },
+            {
+                "bullet": true,
+                "subline": "Bei Verwendung mit dem DST 360 kombiniert der DISTO X4 Rotations-, Winkel- und Distanzmessungen, um hochpräzise Punkt zu Punkt (P2P) Messungen durchzuführen. Dies ermöglicht es, Distanzen zwischen zwei beliebigen Punkten von einer dritten Position aus exakt zu messen"
+            },
+            {
+                "bullet": true,
+                "subline": "Verwenden Sie die DISTO Plan App, um Zugriff auf die Funktionen 'Skizzieren', 'Dokumentieren' und 'Smart Room' zu haben. Damit erstellen Sie CAD-fähige Grund- und Wandpläne, inklusive Türen und Fenster. Exportieren Sie Ihre Pläne als .DXF- oder .DWG-Dateien. Nach Fertigstellung exportieren Sie Ihre Pläne einfach als DXF- oder DWG-Datei in Ihre bevorzugte CAD-Lösung"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/distanzmessgeraete/leica-disto-x4.pdf"
             }
         ]
     }

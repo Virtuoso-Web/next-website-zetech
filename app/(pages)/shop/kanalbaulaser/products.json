@@ -4,16 +4,21 @@
         "slug": "leica-piper-100",
         "link": "/shop/kanalbaulaser/leica-piper-100",
         "image": "/images/shop/kanalbaulaser/leica-piper-100-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Subline"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/kanalbaulaser/leica-piper-series.pdf"
             },
             {
-                "subline": "two"
-            },
-            {
-                "subline": "three"
+                "type": "Leica Broschüre",
+                "path": "/documents/shop/kanalbaulaser/leica-piper-series-broschuere.pdf"
             }
         ]
     },
@@ -21,17 +26,22 @@
         "name": "Leica Piper 100G",
         "slug": "leica-piper-100g",
         "link": "/shop/kanalbaulaser/leica-piper-100g",
-        "image": "/images/shop/kanalbaulaser/leica-piper-100-g-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "image": "/images/shop/kanalbaulaser/leica-piper-100g-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Subline"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/kanalbaulaser/leica-piper-series.pdf"
             },
             {
-                "subline": "two"
-            },
-            {
-                "subline": "three"
+                "type": "Leica Broschüre",
+                "path": "/documents/shop/kanalbaulaser/leica-piper-series-broschuere.pdf"
             }
         ]
     },
@@ -40,16 +50,21 @@
         "slug": "leica-piper-200",
         "link": "/shop/kanalbaulaser/leica-piper-200",
         "image": "/images/shop/kanalbaulaser/leica-piper-200-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Subline"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/kanalbaulaser/leica-piper-series.pdf"
             },
             {
-                "subline": "two"
-            },
-            {
-                "subline": "three"
+                "type": "Leica Broschüre",
+                "path": "/documents/shop/kanalbaulaser/leica-piper-series-broschuere.pdf"
             }
         ]
     },
@@ -57,17 +72,22 @@
         "name": "Leica Piper 200G",
         "slug": "leica-piper-200g",
         "link": "/shop/kanalbaulaser/leica-piper-200g",
-        "image": "/images/shop/kanalbaulaser/leica-piper-200-g-1.webp",
-        "headline": "Das ist eine längere Headline:",
+        "image": "/images/shop/kanalbaulaser/leica-piper-200g-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
-                "subline": "one"
+                "bullet": true,
+                "subline": "Subline"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Leica Produktedatenblatt",
+                "path": "/documents/shop/kanalbaulaser/leica-piper-series.pdf"
             },
             {
-                "subline": "two"
-            },
-            {
-                "subline": "three"
+                "type": "Leica Broschüre",
+                "path": "/documents/shop/kanalbaulaser/leica-piper-series-broschuere.pdf"
             }
         ]
     }

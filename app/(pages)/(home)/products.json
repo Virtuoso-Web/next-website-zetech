@@ -1,32 +1,32 @@
 [
     {
-        "name": "Leica iCON Robot 70",
-        "image": "/images/home/leica-icon-robot-70.webp",
-        "link": "/shop/totalstationen/leica-icon-robot-70"
+        "name": "Leica iCON iCR 70",
+        "image": "/images/home/leica-icon-icr-70.webp",
+        "link": "/shop/totalstationen/leica-icon-icr-70"
     },
     {
-        "name": "Leica iCON Robot 80",
-        "image": "/images/home/leica-icon-robot-80.webp",
-        "link": "/shop/totalstationen/leica-icon-robot-80"
+        "name": "Leica iCON iCR 80",
+        "image": "/images/home/leica-icon-icr-80.webp",
+        "link": "/shop/totalstationen/leica-icon-icr-80"
     },
     {
-        "name": "Leica iCB 70",
-        "image": "/images/home/leica-icb-70.webp",
-        "link": "/shop/totalstationen/leica-icb-70"
+        "name": "Leica iCON iCB 70",
+        "image": "/images/home/leica-icon-icb-70.webp",
+        "link": "/shop/totalstationen/leica-icon-icb-70"
     },
     {
-        "name": "Leica iCON GPS 70T",
+        "name": "Leica iCON iCG 70T",
         "image": "/images/home/leica-icon-gps-70.webp",
-        "link": "/shop/gps/leica-icg-70t"
+        "link": "/shop/gps/leica-icon-icg-70t"
     },
     {
         "name": "Leica iCON CC200",
-        "image": "/images/home/leica-icon-cc-200.webp",
-        "link": "/shop/tablets/leica-cc200"
+        "image": "/images/home/leica-icon-cc200.webp",
+        "link": "/shop/tablets/leica-icon-cc200"
     },
     {
         "name": "Leica AP20 AutoPole",
-        "image": "/images/home/leica-ap-20-autopole.webp",
+        "image": "/images/home/leica-ap20-autopole.webp",
         "link": "/shop/totalstationen/leica-ap20-autopole"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
         "name": "Geomax 60DG",
-        "image": "/images/home/geomax-60-dg.webp",
+        "image": "/images/home/geomax-60dg.webp",
         "link": "/shop/baulaser/geomax-60dg"
     }
 ]

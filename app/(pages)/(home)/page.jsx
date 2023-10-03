@@ -59,7 +59,7 @@ export default function Page() {
                                     <PiArrowArcRightBold className="icon" />
                                 </div>
                             </div>
-                            <Link href={"/kontakt"} className="icon-holder">
+                            <Link href={"/kontakt"} aria-label="Kontakt" className="icon-holder">
                                 <MdOutlineWavingHand className="icon" />
                             </Link>
                         </div>

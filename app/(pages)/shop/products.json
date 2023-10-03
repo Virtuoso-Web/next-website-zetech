@@ -2,7 +2,7 @@
     {
         "name": "Totalstationen",
         "link": "/shop/totalstationen",
-        "image": "/images/shop/totalstationen/leica-icon-robot-70-1.webp"
+        "image": "/images/shop/totalstationen/leica-icon-icr-70-1.webp"
     },
     {
         "name": "GPS",
@@ -12,7 +12,7 @@
     {
         "name": "Tablets",
         "link": "/shop/tablets",
-        "image": "/images/shop/tablets/leica-icon-cc-200-1.webp"
+        "image": "/images/shop/tablets/leica-icon-cc200-1.webp"
     },
     {
         "name": "Baulaser",
@@ -27,7 +27,7 @@
     {
         "name": "Linienlaser",
         "link": "/shop/linienlaser",
-        "image": "/images/shop/linienlaser/leica-lino-l-2-1.webp"
+        "image": "/images/shop/linienlaser/leica-lino-l2-1.webp"
     },
     {
         "name": "Distanzmessgeräte",
@@ -37,12 +37,12 @@
     {
         "name": "Empfänger",
         "link": "/shop/empfaenger",
-        "image": "/images/shop/empfaenger/geomax-zrd-105-1.webp"
+        "image": "/images/shop/empfaenger/geomax-zrd105-1.webp"
     },
     {
         "name": "Nivelliere",
         "link": "/shop/nivelliere",
-        "image": "/images/shop/nivelliere/leica-na-320-1.webp"
+        "image": "/images/shop/nivelliere/leica-na320-1.webp"
     },
     {
         "name": "Stative",

@@ -1,10 +1,10 @@
 [
     {
-        "name": "Leica CC200",
-        "slug": "leica-cc200",
-        "link": "/shop/tablets/leica-cc200",
-        "image": "/images/shop/tablets/leica-icon-cc-200-1.webp",
-        "headline": "Leistungen der iCON CC200:",
+        "name": "Leica iCON CC200",
+        "slug": "leica-icon-cc200",
+        "link": "/shop/tablets/leica-icon-cc200",
+        "image": "/images/shop/tablets/leica-icon-cc200-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
                 "bullet": true,
@@ -42,7 +42,7 @@
         "datasheets": [
             {
                 "type": "Leica Produktedatenblatt",
-                "path": "/documents/shop/tablets/leica-icon-cc-200.pdf"
+                "path": "/documents/shop/tablets/leica-icon-cc200.pdf"
             },
             {
                 "type": "Leica iCON Build",
@@ -55,11 +55,11 @@
         ]
     },
     {
-        "name": "Leica CC170",
-        "slug": "leica-cc170",
-        "link": "/shop/tablets/leica-cc170",
-        "image": "/images/shop/tablets/leica-icon-cc-170-1.webp",
-        "headline": "Leistungen der iCON CC170:",
+        "name": "Leica iCON CC170",
+        "slug": "leica-icon-cc170",
+        "link": "/shop/tablets/leica-icon-cc170",
+        "image": "/images/shop/tablets/leica-icon-cc170-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
                 "bullet": true,
@@ -93,7 +93,7 @@
         "datasheets": [
             {
                 "type": "Leica Produktedatenblatt",
-                "path": "/documents/shop/tablets/leica-icon-cc-170.pdf"
+                "path": "/documents/shop/tablets/leica-icon-cc170.pdf"
             },
             {
                 "type": "Leica iCON Build",

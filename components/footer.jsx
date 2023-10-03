@@ -94,13 +94,13 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="socials-box">
-                            <Link href={"#"} className="social-link">
+                            <Link href={"/"} aria-label="Instagram" className="social-link">
                                 <BiLogoInstagramAlt />
                             </Link>
-                            <Link href={"#"} className="social-link">
+                            <Link href={"/"} aria-label="Facebook" className="social-link">
                                 <BiLogoFacebookCircle />
                             </Link>
-                            <Link href={"#"} className="social-link">
+                            <Link href={"/"} aria-label="Mail" className="social-link">
                                 <BsEnvelopeFill />
                             </Link>
                         </div>

@@ -9,6 +9,7 @@ export const metadata = {
         template: "%s | ZETECH Baumesstechnik GmbH",
     },
     description: "Beratung, Miete, Verkauf und Service von Baumesstechnik",
+    keywords: ["Baumesstechnik", "Leica", "Geomax"],
 };
 
 export default function RootLayout({ children }) {

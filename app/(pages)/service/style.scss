@@ -247,39 +247,8 @@
             padding-block: 10rem;
             margin-inline: auto;
 
-            .flex-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                column-gap: 5rem;
-                row-gap: 5rem;
-
-                @media (max-width: 1070px) {
-                    grid-template-columns: 1fr;
-                }
-
-                .price-box {
-                    display: grid;
-                    grid-template-columns: max-content 1fr;
-                    align-items: center;
-                    column-gap: 10%;
-                    row-gap: 5rem;
-                    list-style: none;
-
-                    @media (max-width: 1070px) {
-                        grid-template-columns: 1fr max-content;
-                    }
-
-                    .price-item {
-                        font-size: 2rem;
-                        font-weight: $weight-bold;
-                    }
-                }
-
-                .text-box {
-                    .text {
-                        font-size: 2rem;
-                    }
-                }
+            .text {
+                font-size: 2rem;
             }
         }
     }

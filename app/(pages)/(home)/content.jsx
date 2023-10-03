@@ -66,15 +66,15 @@ export default function Content({ products }) {
                             </Link>
                         </div>
                         <div className="navigation-box">
-                            <button className="icon-holder-prev" onClick={prev}>
+                            <button aria-label="Previous" className="icon-holder-prev" onClick={prev}>
                                 <BsArrowLeft className="icon" />
                             </button>
                             <div className="dots">
                                 {products.map((_, index) => (
-                                    <button className={index === slide ? "dot active" : "dot"} key={index} onClick={() => jump(index)}></button>
+                                    <button aria-label="Jump" className={index === slide ? "dot active" : "dot"} key={index} onClick={() => jump(index)}></button>
                                 ))}
                             </div>
-                            <button className="icon-holder-next" onClick={next}>
+                            <button aria-label="Next" className="icon-holder-next" onClick={next}>
                                 <BsArrowRight className="icon" />
                             </button>
                         </div>

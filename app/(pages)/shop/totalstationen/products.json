@@ -1,10 +1,10 @@
 [
     {
-        "name": "Leica iCON Robot 70",
-        "slug": "leica-icon-robot-70",
-        "link": "/shop/totalstationen/leica-icon-robot-70",
-        "image": "/images/shop/totalstationen/leica-icon-robot-70-1.webp",
-        "headline": "Leistungen der iCON iCR 70:",
+        "name": "Leica iCON iCR 70",
+        "slug": "leica-icon-icr-70",
+        "link": "/shop/totalstationen/leica-icon-icr-70",
+        "image": "/images/shop/totalstationen/leica-icon-icr-70-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
                 "bullet": true,
@@ -35,11 +35,11 @@
         ]
     },
     {
-        "name": "Leica iCON Robot 80",
-        "slug": "leica-icon-robot-80",
-        "link": "/shop/totalstationen/leica-icon-robot-80",
-        "image": "/images/shop/totalstationen/leica-icon-robot-80-1.webp",
-        "headline": "Leistungen der iCON iCR 80:",
+        "name": "Leica iCON iCR 80",
+        "slug": "leica-icon-icr-80",
+        "link": "/shop/totalstationen/leica-icon-icr-80",
+        "image": "/images/shop/totalstationen/leica-icon-icr-80-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
                 "bullet": true,
@@ -78,11 +78,11 @@
         ]
     },
     {
-        "name": "Leica iCB 50",
-        "slug": "leica-icb-50",
-        "link": "/shop/totalstationen/leica-icb-50",
-        "image": "/images/shop/totalstationen/leica-icb-50-1.webp",
-        "headline": "Leistungen der iCON iCB 50:",
+        "name": "Leica iCON iCB 50",
+        "slug": "leica-icon-icb-50",
+        "link": "/shop/totalstationen/leica-icon-icb-50",
+        "image": "/images/shop/totalstationen/leica-icon-icb-50-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
                 "bullet": true,
@@ -109,11 +109,11 @@
         ]
     },
     {
-        "name": "Leica iCB 70",
-        "slug": "leica-icb-70",
-        "link": "/shop/totalstationen/leica-icb-70",
-        "image": "/images/shop/totalstationen/leica-icb-70-1.webp",
-        "headline": "Leistungen der iCON iCB 70:",
+        "name": "Leica iCON iCB 70",
+        "slug": "leica-icon-icb-70",
+        "link": "/shop/totalstationen/leica-icon-icb-70",
+        "image": "/images/shop/totalstationen/leica-icon-icb-70-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
                 "bullet": true,
@@ -151,8 +151,8 @@
         "name": "Leica AP20 AutoPole",
         "slug": "leica-ap20-autopole",
         "link": "/shop/totalstationen/leica-ap20-autopole",
-        "image": "/images/shop/totalstationen/leica-ap-20-autopole-1.webp",
-        "headline": "Leistungen der AP20 AutoPole:",
+        "image": "/images/shop/totalstationen/leica-ap20-autopole-1.webp",
+        "headline": "Eigenschaften und Leistungen:",
         "subliner": [
             {
                 "bullet": false,
@@ -162,7 +162,7 @@
         "datasheets": [
             {
                 "type": "Leica Produktedatenblatt",
-                "path": "/documents/shop/totalstationen/leica-ap-20-autopole.pdf"
+                "path": "/documents/shop/totalstationen/leica-ap20-autopole.pdf"
             }
         ]
     }
