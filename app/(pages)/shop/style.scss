@@ -70,15 +70,15 @@
 
             .flex-grid {
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-areas: "a b b b";
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: "a a b b b b";
                 column-gap: 5rem;
                 row-gap: 5rem;
 
                 @media (max-width: 1024px) {
                     grid-template-areas:
-                        "a a a a"
-                        "b b b b";
+                        "a a a a a a"
+                        "b b b b b b";
                 }
 
                 .nav-box {
@@ -89,19 +89,20 @@
                     flex-direction: column;
                     row-gap: 5rem;
                     block-size: fit-content;
-                    padding-inline-end: 5%;
-                    border-inline-end: 0.5rem solid $color-black-light;
-                    background-color: $color-white-dark;
+                    padding-inline: min(5rem, 5%);
+                    padding-block: min(5rem, 5%);
+                    border-radius: 1rem;
+                    background-color: $color-white-light;
                     z-index: 10;
 
                     @media (max-width: 1024px) {
                         inset-block-start: $header-block-size;
                         row-gap: 1rem;
-                        padding-inline-end: 0;
-                        padding-block-start: 5rem;
-                        border-inline-end: none;
-                        border-block-end: 0.5rem solid $color-black-light;
-                        box-shadow: 0 0 0 100vmax $color-white-dark;
+                        padding-inline: 0;
+                        padding-block: 2.5rem;
+                        border-radius: 0;
+                        border-block-end: 1px solid $color-black-light;
+                        box-shadow: 0 0 0 100vmax $color-white-light;
                         clip-path: inset(0 -100vmax);
                     }
 
@@ -138,7 +139,7 @@
 
                             &:hover,
                             &.active {
-                                background-color: $color-white-light;
+                                background-color: $color-white-dark;
                             }
                         }
                     }
@@ -151,6 +152,11 @@
                     grid-auto-rows: min-content;
                     column-gap: 5rem;
                     row-gap: 5rem;
+                    block-size: fit-content;
+                    padding-inline: min(5rem, 5%);
+                    padding-block: min(5rem, 5%);
+                    border-radius: 1rem;
+                    background-color: $color-white-light;
 
                     .product {
                         display: flex;
@@ -172,7 +178,6 @@
                             inline-size: 100%;
                             aspect-ratio: calc(1);
                             border-radius: 1rem;
-                            border: 0.5rem solid $color-black-light;
                             background-image: url("/images/shop/bg-concrete-square.webp");
                             background-size: cover;
                             background-position: center;
@@ -183,6 +188,7 @@
                                 position: absolute;
                                 content: "";
                                 inset: 0;
+                                border-radius: inherit;
                                 opacity: 0.5;
                                 background-color: $color-black-dark;
                                 z-index: -1;
@@ -192,6 +198,7 @@
                                 position: absolute;
                                 content: "";
                                 inset: 0;
+                                border-radius: inherit;
                                 box-shadow: 0 0 2rem $color-black-dark;
                                 opacity: 0;
                                 transition-property: opacity;
@@ -239,14 +246,14 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            inline-size: min(100rem, 100%);
+                            inline-size: 100%;
                             aspect-ratio: calc(16 / 9);
                             border-radius: 1rem;
-                            border: 0.5rem solid $color-black-light;
                             background-image: url("/images/shop/bg-concrete-square.webp");
                             background-size: cover;
                             background-position: center;
                             background-repeat: no-repeat;
+                            overflow: hidden;
                             isolation: isolate;
 
                             &::before {
@@ -269,8 +276,6 @@
                     }
 
                     .info-container {
-                        inline-size: min(100rem, 100%);
-                        margin-inline: auto;
                         display: flex;
                         flex-direction: column;
                         row-gap: 5rem;
@@ -279,9 +284,13 @@
                             display: flex;
                             flex-direction: column;
                             row-gap: 2.5rem;
+                            padding-inline: min(5rem, 5%);
+                            padding-block: min(5rem, 5%);
+                            border-radius: 1rem;
+                            background-color: $color-white-light;
 
                             .headline {
-                                font-size: 2rem;
+                                font-size: 3rem;
                                 font-weight: $weight-bold;
                             }
 
@@ -303,9 +312,13 @@
                             display: flex;
                             flex-direction: column;
                             row-gap: 2.5rem;
+                            padding-inline: min(5rem, 5%);
+                            padding-block: min(5rem, 5%);
+                            border-radius: 1rem;
+                            background-color: $color-white-light;
 
                             .datasheet-title {
-                                font-size: 2rem;
+                                font-size: 3rem;
                                 font-weight: $weight-bold;
                             }
 

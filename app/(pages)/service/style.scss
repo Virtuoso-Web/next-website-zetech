@@ -102,7 +102,6 @@
                 display: flex;
                 aspect-ratio: calc(3 / 1);
                 border-radius: 1rem;
-                border: 0.5rem solid $color-black-light;
                 margin-block-end: 5rem;
                 overflow: hidden;
 
@@ -138,7 +137,6 @@
                         inline-size: 100%;
                         aspect-ratio: calc(16 / 9);
                         border-radius: 1rem;
-                        border: 0.5rem solid $color-black-light;
                         overflow: hidden;
 
                         .image {
@@ -224,7 +222,6 @@
                         inline-size: 100%;
                         aspect-ratio: calc(16 / 9);
                         border-radius: 1rem;
-                        border: 0.5rem solid $color-black-light;
                         overflow: hidden;
 
                         .image {

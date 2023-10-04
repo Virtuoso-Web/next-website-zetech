@@ -13,7 +13,7 @@ export default function Product({ product }) {
             </div>
             <div className="info-container">
                 <div className="description">
-                    <p className="headline">{product.headline}</p>
+                    <h2 className="headline">{product.headline}</h2>
                     <ul className="subliner-list">
                         {product.subliner?.map((subline, index) => (
                             <li key={index} className="list-item">
@@ -24,7 +24,7 @@ export default function Product({ product }) {
                     </ul>
                 </div>
                 <div className="datasheet-list">
-                    <p className="datasheet-title">Dokumente:</p>
+                    <h2 className="datasheet-title">Dokumente:</h2>
                     {product.datasheets?.map((sheet, index) => (
                         <Link href={sheet.path} target="_blank" key={index} className="datasheet-link">
                             <FaFilePdf className="icon" />

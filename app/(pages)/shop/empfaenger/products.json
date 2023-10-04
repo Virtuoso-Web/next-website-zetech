@@ -10,6 +10,12 @@
                 "bullet": true,
                 "subline": "Subline"
             }
+        ],
+        "datasheets": [
+            {
+                "type": "Nestle Produktedatenblatt",
+                "path": "/documents/shop/empfaenger/geomax-zrd105.pdf"
+            }
         ]
     },
     {
@@ -23,6 +29,12 @@
                 "bullet": true,
                 "subline": "Subline"
             }
+        ],
+        "datasheets": [
+            {
+                "type": "Nestle Produktedatenblatt",
+                "path": "/documents/shop/empfaenger/geomax-zrd105b.pdf"
+            }
         ]
     },
     {
@@ -35,6 +47,12 @@
             {
                 "bullet": true,
                 "subline": "Subline"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Nestle Produktedatenblatt",
+                "path": "/documents/shop/empfaenger/geomax-zrp105-pro.pdf"
             }
         ]
     },
@@ -62,6 +80,12 @@
                 "bullet": true,
                 "subline": "Subline"
             }
+        ],
+        "datasheets": [
+            {
+                "type": "Nestle Produktedatenblatt",
+                "path": "/documents/shop/empfaenger/metor-mtr-60rgl.pdf"
+            }
         ]
     },
     {
@@ -74,6 +98,12 @@
             {
                 "bullet": true,
                 "subline": "Subline"
+            }
+        ],
+        "datasheets": [
+            {
+                "type": "Nestle Produktedatenblatt",
+                "path": "/documents/shop/empfaenger/metor-mtr-90r.pdf"
             }
         ]
     },

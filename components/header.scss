@@ -5,7 +5,7 @@
     inset-inline: 0;
     inset-block-start: 0;
     block-size: $header-block-size;
-    box-shadow: 0 0 1rem 0 $color-black-light;
+    box-shadow: 0 0 1rem $color-black-light;
     background-color: $color-white-dark;
     z-index: 100;
 
@@ -40,7 +40,7 @@
 
                 .logo {
                     position: absolute;
-                    inline-size: calc(100% - 1rem);
+                    inline-size: calc(100% - 2rem);
                     block-size: 100%;
                     object-fit: contain;
                     object-position: center;

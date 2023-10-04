@@ -100,7 +100,7 @@ export default function Page() {
                         </div>
                         <div className="sub-flex-grid-3">
                             <div className="map-box">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.442377502408!2d8.268957613173532!3d47.05117187102395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fe4b4ce2a7e75%3A0xb7f3a29db42be61a!2sZetech%20Baumesstechnik%20GmbH!5e0!3m2!1sen!2sch!4v1689543824843!5m2!1sen!2sch" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="map"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.442377502408!2d8.268957613173532!3d47.05117187102395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fe4b4ce2a7e75%3A0xb7f3a29db42be61a!2sZetech%20Baumesstechnik%20GmbH!5e0!3m2!1sen!2sch!4v1689543824843!5m2!1sen!2sch" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Location" className="map"></iframe>
                             </div>
                             <div className="form-box">
                                 <form action="" className="form">
