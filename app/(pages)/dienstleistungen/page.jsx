@@ -40,7 +40,6 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div id="bestandaufnahme" aria-hidden="true"></div>
             </section>
 
             <section className="service-section-even">
@@ -65,7 +64,6 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div id="massenermittlung" aria-hidden="true"></div>
             </section>
 
             <section className="service-section-odd">
@@ -90,7 +88,6 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div id="schulungen" aria-hidden="true"></div>
             </section>
 
             <section className="service-section-even">

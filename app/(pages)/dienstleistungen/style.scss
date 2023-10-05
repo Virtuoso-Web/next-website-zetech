@@ -23,8 +23,8 @@
         .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
+            padding-block: 5rem;
             margin-inline: auto;
-            padding-block: 10rem;
 
             .flex-grid {
                 display: flex;
@@ -58,24 +58,22 @@
     }
 
     .service-section-odd {
-        isolation: isolate;
-
         .section-container {
             inline-size: min($max-size, 100%);
-            margin-inline: auto;
             padding-inline: min(5rem, 5%);
             padding-block: 10rem;
+            margin-inline: auto;
 
             .flex-grid {
                 display: flex;
                 flex-direction: column;
                 row-gap: 5rem;
+                isolation: isolate;
 
                 > .title-box {
                     position: relative;
                     display: flex;
                     justify-content: flex-start;
-                    overflow-x: hidden;
 
                     @media (max-width: 1024px) {
                         justify-content: center;
@@ -115,10 +113,14 @@
                         &::before {
                             position: absolute;
                             content: "";
-                            inset-inline: min(-5rem, -10%);
+                            inset-inline: 0 -5rem;
                             inset-block: 0;
                             background-color: $color-white-dark;
                             z-index: -1;
+
+                            @media (max-width: 1024px) {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -168,12 +170,11 @@
                         .link {
                             color: $color-white-dark;
                             font-size: 2rem;
-                            // font-weight: $weight-bold;
                             text-align: center;
                             padding-block: 0.5rem;
                             border-radius: 3rem;
-                            outline: 0.3rem solid $color-black-light;
-                            outline-offset: 0.3rem;
+                            outline: 3px solid $color-black-light;
+                            outline-offset: 3px;
                             background-image: $color-gradient-blue;
                             transition-property: outline-offset;
                             transition-timing-function: ease-in-out;
@@ -201,6 +202,10 @@
                             aspect-ratio: calc(16 / 9);
                             border-radius: 1rem;
                             border: 1px solid black;
+
+                            @media (max-width: 768px) {
+                                inline-size: 100%;
+                            }
                         }
                     }
                 }
@@ -209,25 +214,24 @@
     }
 
     .service-section-even {
-        isolation: isolate;
         background-color: $color-white-light;
 
         .section-container {
             inline-size: min($max-size, 100%);
-            margin-inline: auto;
             padding-inline: min(5rem, 5%);
             padding-block: 10rem;
+            margin-inline: auto;
 
             .flex-grid {
                 display: flex;
                 flex-direction: column;
                 row-gap: 5rem;
+                isolation: isolate;
 
                 > .title-box {
                     position: relative;
                     display: flex;
                     justify-content: flex-end;
-                    overflow-x: hidden;
 
                     @media (max-width: 1024px) {
                         justify-content: center;
@@ -267,10 +271,14 @@
                         &::before {
                             position: absolute;
                             content: "";
-                            inset-inline: min(-5rem, -10%);
+                            inset-inline: -5rem 0;
                             inset-block: 0;
                             background-color: $color-white-light;
                             z-index: -1;
+
+                            @media (max-width: 1024px) {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -320,12 +328,11 @@
                         .link {
                             color: $color-white-dark;
                             font-size: 2rem;
-                            // font-weight: $weight-bold;
                             text-align: center;
                             padding-block: 0.5rem;
                             border-radius: 3rem;
-                            outline: 0.3rem solid $color-black-light;
-                            outline-offset: 0.3rem;
+                            outline: 3px solid $color-black-light;
+                            outline-offset: 3px;
                             background-image: $color-gradient-blue;
                             transition-property: outline-offset;
                             transition-timing-function: ease-in-out;
@@ -353,6 +360,10 @@
                             aspect-ratio: calc(16 / 9);
                             border-radius: 1rem;
                             border: 1px solid black;
+
+                            @media (max-width: 768px) {
+                                inline-size: 100%;
+                            }
                         }
                     }
                 }

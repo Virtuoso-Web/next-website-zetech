@@ -20,11 +20,11 @@
             z-index: -1;
         }
 
-        > .section-container {
+        .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
+            padding-block: 5rem;
             margin-inline: auto;
-            padding-block: 10rem;
 
             .flex-grid {
                 display: flex;

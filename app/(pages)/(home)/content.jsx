@@ -66,7 +66,7 @@ export default function Content({ products }) {
                             </Link>
                         </div>
                         <div className="navigation-box">
-                            <button aria-label="Previous" className="icon-holder-prev" onClick={prev}>
+                            <button aria-label="Previous" className="button-holder" onClick={prev}>
                                 <BsArrowLeft className="icon" />
                             </button>
                             <div className="dots">
@@ -74,7 +74,7 @@ export default function Content({ products }) {
                                     <button aria-label="Jump" className={index === slide ? "dot active" : "dot"} key={index} onClick={() => jump(index)}></button>
                                 ))}
                             </div>
-                            <button aria-label="Next" className="icon-holder-next" onClick={next}>
+                            <button aria-label="Next" className="button-holder" onClick={next}>
                                 <BsArrowRight className="icon" />
                             </button>
                         </div>
@@ -83,7 +83,9 @@ export default function Content({ products }) {
             </section>
 
             <section className="hero-section">
-                <img src="/images/home/construction-landscape.webp" alt="Hintergrund" loading="lazy" className="banner" />
+                <div className="image-holder">
+                    <img src="/images/home/construction-landscape.webp" alt="Hintergrund" loading="lazy" className="banner" />
+                </div>
                 <div className="section-container">
                     <h1 className="title">
                         IHRE EXPERTEN IN SACHEN
