@@ -58,12 +58,10 @@
     }
 
     .teamviewer-section {
-        padding-inline: min(5rem, 5%);
-        padding-block: 10rem;
-        isolation: isolate;
-
         .section-container {
             inline-size: min($max-size, 100%);
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
             margin-inline: auto;
 
             > .flex-grid {

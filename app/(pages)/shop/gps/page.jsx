@@ -1,11 +1,11 @@
 import Products from "@/app/(pages)/shop/(components)/products.jsx";
 
-import products from "@/app/(pages)/shop/gps/products.json";
+import data from "@/app/(pages)/shop/gps/data.json";
 
 export const metadata = {
     title: "GPS",
 };
 
 export default function Page() {
-    return <Products products={products} />;
+    return <Products data={data} />;
 }

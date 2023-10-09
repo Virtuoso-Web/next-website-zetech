@@ -1,0 +1,126 @@
+{
+    "category": "Empfänger",
+    "products": [
+        {
+            "name": "Geomax ZRD105",
+            "slug": "geomax-zrd105",
+            "link": "/shop/empfaenger/geomax-zrd105",
+            "image": "/images/shop/empfaenger/geomax-zrd105-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Subline"
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Nestle Produktedatenblatt",
+                    "path": "/documents/shop/empfaenger/geomax-zrd105.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Geomax ZRD105B",
+            "slug": "geomax-zrd105b",
+            "link": "/shop/empfaenger/geomax-zrd105b",
+            "image": "/images/shop/empfaenger/geomax-zrd105b-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Subline"
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Nestle Produktedatenblatt",
+                    "path": "/documents/shop/empfaenger/geomax-zrd105b.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Geomax ZRP105 Pro",
+            "slug": "geomax-zrp105-pro",
+            "link": "/shop/empfaenger/geomax-zrp105-pro",
+            "image": "/images/shop/empfaenger/geomax-zrp105-pro-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Subline"
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Nestle Produktedatenblatt",
+                    "path": "/documents/shop/empfaenger/geomax-zrp105-pro.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Geomax ZRC60 Fernbedienung",
+            "slug": "geomax-zrc60-fernbedienung",
+            "link": "/shop/empfaenger/geomax-zrc60-fernbedienung",
+            "image": "/images/shop/empfaenger/geomax-zrc60-fernbedienung-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Subline"
+                }
+            ]
+        },
+        {
+            "name": "Metor MTR-60RGL",
+            "slug": "metor-mtr-60rgl",
+            "link": "/shop/empfaenger/metor-mtr-60rgl",
+            "image": "/images/shop/empfaenger/metor-mtr-60rgl-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Subline"
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Nestle Produktedatenblatt",
+                    "path": "/documents/shop/empfaenger/metor-mtr-60rgl.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Metor MTR-90R",
+            "slug": "metor-mtr-90r",
+            "link": "/shop/empfaenger/metor-mtr-90r",
+            "image": "/images/shop/empfaenger/metor-mtr-90r-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Subline"
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Nestle Produktedatenblatt",
+                    "path": "/documents/shop/empfaenger/metor-mtr-90r.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Metor MTR-125",
+            "slug": "metor-mtr-125",
+            "link": "/shop/empfaenger/metor-mtr-125",
+            "image": "/images/shop/empfaenger/metor-mtr-125-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Subline"
+                }
+            ]
+        }
+    ]
+}

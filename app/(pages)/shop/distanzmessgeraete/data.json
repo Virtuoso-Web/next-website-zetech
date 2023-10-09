@@ -1,0 +1,243 @@
+{
+    "category": "Distanzmessgeräte",
+    "products": [
+        {
+            "name": "Leica Distanzmessgerät 110",
+            "slug": "leica-distanzmessgeraet-100",
+            "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-100",
+            "image": "/images/shop/distanzmessgeraete/leica-disto-110-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Der D110 ist der kleinste aus der Leica DISTO Serie mit integrierter Bluetooth® Smart Technologie"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Ergonomisch geformt liegt er perfekt in der Hand"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Mit seinen vier Tasten ist er schnell und intuitiv zu bedienen und ermöglicht Distanz- und Flächenmessungen in Sekundenschnelle"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Die neueste Leica App DISTO sketch ist das ideale Bindeglied zwischen dem D110 und einem Smartphone oder Tablet"
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Leica Produktedatenblatt",
+                    "path": "/documents/shop/distanzmessgeraete/leica-disto-110.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Leica Distanzmessgerät 910",
+            "slug": "leica-distanzmessgeraet-910",
+            "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-910",
+            "image": "/images/shop/distanzmessgeraete/leica-disto-910-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": false,
+                    "subline": "Wenn Sie den S910 benutzen, dann benötigen Sie keine Leiter mehr, denn der S910 verfügt über eine eingebaute Punkt zu Punkt (P2P) Messtechnologie. Er berechnet den Abstand zwischen zwei Punkten, unabhängig von Höhe oder Winkel. Sie können auch Mehrfach-P2P-Messungen durchführen, um komplexe Ebenen, wie z. B. Dächer, zu messen."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Die integrierte Smart Base vom S910 ist der Schlüssel zur «Punkt zu Punkt» (P2P) Technologie. Sie ermöglicht Entfernungsmessungen zwischen zwei beliebigen Punkten von einem Standort aus. Die Kombination aus P2P Technologie und integriertem Neigungssensor eröffnet völlig neue Messmöglichkeiten."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Die intelligente Flächenmessfunktion des S910 könnte nicht einfacher zu bedienen sein. Messen Sie einfach den Umriss einer Fläche - im oder gegen den Uhrzeigersinn - und sehen Sie das Ergebnis sofort auf dem Display. Egal wie komplex die Form der Fläche ist."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Der S910 ist mit Technologie bestückt, die Ihnen hilft, das Beste aus Ihren Messungen herauszuholen. Bluetooth®, WLAN und USB-Konnektivität ermöglichen vor Ort sowohl den direkten Export Ihrer Messergebnisse als .DXF-Dateien ins CAD als auch den Export Ihrer mit Messdaten versehenen .JPG-Dateien."
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Leica Produktedatenblatt",
+                    "path": "/documents/shop/distanzmessgeraete/leica-disto-910.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Leica Distanzmessgerät D2",
+            "slug": "leica-distanzmessgeraet-d2",
+            "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-d2",
+            "image": "/images/shop/distanzmessgeraete/leica-disto-d2-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Die innovative X-Range Power Technology ermöglicht es, mit dem Leica DISTO D2 Distanzen von bis zu 100 m zu messen"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Messen Sie aus Ecken, Nuten oder ab Kanten mit seinem Multifunktionalen Endstück sind Sie auf alle Messsituationen vorbereitet. Die automatische Endstückerkennung hilft, teure Messfehler zu vermeiden"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Funktionen: Min-/Max-Messung, Addition / Subtraktion, Fläche und Volumen"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Speicher für 10 Messergebnisse"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Dank integriertem Bluetooth® Smart können Messdaten direkt auf Smartphones oder Tablets übertragen werden so werden teure Fehler beim Abtippen vermieden"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Beleuchtetes Display"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Der DISTO D2 ist nach ISO-Norm 16331-1 zertifiziert"
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Leica Produktedatenblatt",
+                    "path": "/documents/shop/distanzmessgeraete/leica-disto-d2.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Leica Distanzmessgerät D510",
+            "slug": "leica-distanzmessgeraet-d510",
+            "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-d510",
+            "image": "/images/shop/distanzmessgeraete/leica-disto-d510-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Präzises Anzielen und zuverlässige Messungen im Außenbereich"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Bei ungünstigen Lichtbedingungen, wie z. B. hellem Sonnenlicht und bei weit entfernten Objekten ist das Ziel exakt auf dem hochauflösenden Farbdisplay im Fadenkreuz zu erkennen"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Mit dem multifunktionalen Endstück, das automatisch erkannt wird, können Sie bequem aus Ecken herausmessen"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Der Disto D510 kann bei allen Wetterbedingungen eingesetzt werden (IP65). Er ist staubdicht und strahlwassergeschützt"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Reichweite von bis zu 200 m und einer Genauigkeit von ± 1 mm"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Mit dem D510 können Sie sich die Maße in m, ft, in und yd anzeigen lassen"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Einheiten im Neigungssensor 0,0°, 0,00 %, mm/m und in/ft"
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Leica Produktedatenblatt",
+                    "path": "/documents/shop/distanzmessgeraete/leica-disto-d510.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Leica Distanzmessgerät X3",
+            "slug": "leica-distanzmessgeraet-x3",
+            "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-x3",
+            "image": "/images/shop/distanzmessgeraete/leica-disto-x3-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Distanzen-, Flächen- und Volumenberechnung sowie Pythagorasfunktion"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Bestimmung indirekter Höhen und Weiten"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Mit BLUETOOTH®-Smart-Schnittstelle"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Der Leica DISTO X3 und X4 lassen sich schnell und einfach mit einer App verbinden zum übertragen und dokumentieren von Messungen"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Mit dem optionalen Paket DST 360 können Sie Punkte präzise anzielen sowie Distanzen zwischen 2 beliebigen Punkten messen"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Zusammen mit dem optionalen Leica DST 360 Adapter lässt sich die X-Serie zu einer leistungsstarken 3D-Aufnahmestation machen"
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Leica Produktedatenblatt",
+                    "path": "/documents/shop/distanzmessgeraete/leica-disto-x3.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Leica Distanzmessgerät X4",
+            "slug": "leica-distanzmessgeraet-x4",
+            "link": "/shop/distanzmessgeraete/leica-distanzmessgeraet-x4",
+            "image": "/images/shop/distanzmessgeraete/leica-disto-x4-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": true,
+                    "subline": "Integrierter 360° Neigungssensor"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Digitaler Zielsucher mit (4-fach-Zoom)"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Beleuchtetes sowie rotierendes Farbdisplay für perfekte Lesbarkeit"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Intelligente Flächenmessung"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Addieren / Subtrahieren von Flächen und Volumina"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Zusätzlich steht die Funktion ''Höhentracking'' zur Verfügung"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Zusammen mit dem optionalen Leica DST 360 Adapter lässt sich die X-Serie zu einer leistungsstarken 3D-Aufnahmestation erweitern"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Mit dem optionalen Paket DST 360 können Sie Punkte präzise anzielen sowie Distanzen zwischen beliebigen 2 Punkten messen"
+                },
+                {
+                    "bullet": true,
+                    "subline": "Der Leica DISTO X3 und X4 lassen sich schnell und einfach mit einer App verbinden zum übertragen und dokumentieren von Messungen"
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Leica Produktedatenblatt",
+                    "path": "/documents/shop/distanzmessgeraete/leica-disto-x4.pdf"
+                }
+            ]
+        }
+    ]
+}

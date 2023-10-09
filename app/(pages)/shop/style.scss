@@ -108,6 +108,10 @@
                     .title {
                         font-size: 3rem;
                         font-weight: $weight-bold;
+
+                        @media (max-width: 1024px) {
+                            text-align: center;
+                        }
                     }
 
                     .navigation {
@@ -146,77 +150,89 @@
 
                 .products-box {
                     grid-area: b;
-                    display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
-                    grid-auto-rows: min-content;
-                    column-gap: 5rem;
+                    display: flex;
+                    flex-direction: column;
                     row-gap: 5rem;
-                    block-size: fit-content;
-                    padding-inline: min(5rem, 5%);
-                    padding-block: 5rem;
-                    border-radius: 1rem;
-                    background-color: $color-white-light;
 
-                    .product {
-                        display: flex;
-                        flex-direction: column;
-                        row-gap: 1rem;
+                    .title {
+                        font-size: 4rem;
+                        font-weight: $weight-bold;
+                        text-align: center;
+                    }
 
-                        .title {
-                            flex-grow: 1;
-                            font-size: 2rem;
-                            font-weight: $weight-bold;
-                            text-align: center;
-                        }
+                    .products-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+                        grid-auto-rows: min-content;
+                        column-gap: 5rem;
+                        row-gap: 5rem;
+                        block-size: fit-content;
+                        padding-inline: min(5rem, 5%);
+                        padding-block: 5rem;
+                        border-radius: 1rem;
+                        background-color: $color-white-light;
 
-                        .image-holder {
-                            position: relative;
+                        .product {
                             display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            inline-size: 100%;
-                            aspect-ratio: calc(1);
-                            border-radius: 1rem;
-                            background-image: url("/images/shop/bg-concrete-square.webp");
-                            background-size: cover;
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            isolation: isolate;
+                            flex-direction: column;
+                            row-gap: 1rem;
 
-                            &::before {
-                                position: absolute;
-                                content: "";
-                                inset: 0;
-                                border-radius: inherit;
-                                opacity: 0.5;
-                                background-color: $color-black-dark;
-                                z-index: -1;
+                            .title {
+                                flex-grow: 1;
+                                font-size: 2rem;
+                                font-weight: $weight-bold;
+                                text-align: center;
                             }
 
-                            &::after {
-                                position: absolute;
-                                content: "";
-                                inset: 0;
-                                border-radius: inherit;
-                                box-shadow: 0 0 2rem $color-black-dark;
-                                opacity: 0;
-                                transition-property: opacity;
-                                transition-timing-function: ease-in-out;
-                                transition-duration: 200ms;
-                            }
+                            .image-holder {
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                inline-size: 100%;
+                                aspect-ratio: calc(1);
+                                border-radius: 1rem;
+                                background-image: url("/images/shop/bg-concrete-square.webp");
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                isolation: isolate;
 
-                            &:hover {
-                                &::after {
-                                    opacity: 1;
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    inset: 0;
+                                    border-radius: inherit;
+                                    opacity: 0.5;
+                                    background-color: $color-black-dark;
+                                    z-index: -1;
                                 }
-                            }
 
-                            .image {
-                                position: absolute;
-                                inline-size: 90%;
-                                block-size: 90%;
-                                object-fit: contain;
-                                object-position: center;
+                                &::after {
+                                    position: absolute;
+                                    content: "";
+                                    inset: 0;
+                                    border-radius: inherit;
+                                    box-shadow: 0 0 2rem $color-black-dark;
+                                    opacity: 0;
+                                    transition-property: opacity;
+                                    transition-timing-function: ease-in-out;
+                                    transition-duration: 200ms;
+                                }
+
+                                &:hover {
+                                    &::after {
+                                        opacity: 1;
+                                    }
+                                }
+
+                                .image {
+                                    position: absolute;
+                                    inline-size: 90%;
+                                    block-size: 90%;
+                                    object-fit: contain;
+                                    object-position: center;
+                                }
                             }
                         }
                     }

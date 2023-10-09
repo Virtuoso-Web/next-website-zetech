@@ -1,11 +1,11 @@
 import Product from "@/app/(pages)/shop/(components)/product.jsx";
 
-import products from "@/app/(pages)/shop/linienlaser/products.json";
+import data from "@/app/(pages)/shop/linienlaser/data.json";
 
 import { notFound } from "next/navigation";
 
 export function generateMetadata({ params }) {
-    const product = products.find((product) => product.slug === params.slug);
+    const product = data.products.find((product) => product.slug === params.slug);
 
     if (!product) {
         return {
@@ -19,7 +19,7 @@ export function generateMetadata({ params }) {
 }
 
 export default function Page({ params }) {
-    const product = products.find((product) => product.slug === params.slug);
+    const product = data.products.find((product) => product.slug === params.slug);
 
     if (!product) notFound();
 

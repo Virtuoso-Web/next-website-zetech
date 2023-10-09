@@ -1,6 +1,6 @@
 import "@/components/footer.scss";
 
-import products from "@/app/(pages)/shop/products.json";
+import data from "@/app/(pages)/shop/data.json";
 
 import Link from "next/link";
 
@@ -51,7 +51,7 @@ export default function Footer() {
                                 Shop
                             </Link>
                             <div className="sub-links-container">
-                                {products.map((product, index) => (
+                                {data.products.map((product, index) => (
                                     <Link href={product.link} key={index} className="sub-link">
                                         {product.name}
                                     </Link>

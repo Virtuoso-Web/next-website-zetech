@@ -1,6 +1,6 @@
-import Link from "next/link";
-
 import "@/app/(pages)/dienstleistungen/style.scss";
+
+import Link from "next/link";
 
 export const metadata = {
     title: "Dienstleistungen",

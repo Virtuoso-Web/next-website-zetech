@@ -58,12 +58,10 @@
     }
 
     .team-section {
-        padding-inline: min(5rem, 5%);
-        padding-block: 10rem;
-        isolation: isolate;
-
         .section-container {
             inline-size: min($max-size, 100%);
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
             margin-inline: auto;
 
             > .flex-grid {
@@ -153,13 +151,12 @@
     }
 
     .form-section {
-        padding-inline: min(5rem, 5%);
-        padding-block: 10rem;
-        isolation: isolate;
         background-color: $color-white-light;
 
         .section-container {
             inline-size: min($max-size, 100%);
+            padding-inline: min(5rem, 5%);
+            padding-block: 10rem;
             margin-inline: auto;
 
             > .flex-grid {
@@ -227,7 +224,7 @@
                     padding-inline: min(5rem, 5%);
                     padding-block: 3rem;
                     border-radius: 1rem;
-                    border: 0.5rem solid $color-black-light;
+                    border: 1px solid $color-black-light;
                     background-color: $color-white-dark;
 
                     .title {
@@ -256,7 +253,7 @@
                     padding-inline: min(5rem, 5%);
                     padding-block: 3rem;
                     border-radius: 1rem;
-                    border: 0.5rem solid $color-black-light;
+                    border: 1px solid $color-black-light;
                     background-color: $color-white-dark;
 
                     .box-container {
@@ -296,7 +293,7 @@
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     border-radius: 1rem;
-                    border: 0.5rem solid $color-black-light;
+                    border: 1px solid $color-black-light;
                     overflow: hidden;
 
                     @media (max-width: 1024px) {
@@ -335,14 +332,16 @@
 
                                 .input-label {
                                     font-size: 2rem;
+                                    font-weight: $weight-bold;
                                 }
 
                                 .form-input {
                                     font-size: 2rem;
-                                    padding-inline: min(5rem, 5%);
+                                    padding-inline: 1rem;
                                     padding-block: 1rem;
                                     border-radius: 1rem;
-                                    border: 0.3rem solid $color-black-light;
+                                    // border: 1px solid $color-black-light;
+                                    border: none;
                                     outline: none;
                                     background-color: $color-white-light;
                                 }
@@ -351,11 +350,12 @@
                                     font-size: 2rem;
                                     min-block-size: 20rem;
                                     max-block-size: 50rem;
-                                    padding-inline: min(5rem, 5%);
+                                    padding-inline: 1rem;
                                     padding-block: 1rem;
                                     resize: vertical;
                                     border-radius: 1rem;
-                                    border: 0.3rem solid $color-black-light;
+                                    // border: 1px solid $color-black-light;
+                                    border: none;
                                     outline: none;
                                     background-color: $color-white-light;
                                 }
@@ -364,7 +364,7 @@
                             .button-group {
                                 display: grid;
                                 grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-                                column-gap: min(5rem, 5%);
+                                column-gap: 5rem;
                                 row-gap: 3rem;
 
                                 .send-button {
@@ -372,7 +372,7 @@
                                     font-size: 2rem;
                                     padding-block: 1rem;
                                     border-radius: 1rem;
-                                    border: 0.3rem solid $color-black-light;
+                                    border: 1px solid $color-black-light;
                                     outline: none;
                                     background-image: $color-gradient-blue;
                                     cursor: pointer;
@@ -383,7 +383,7 @@
                                     font-size: 2rem;
                                     padding-block: 1rem;
                                     border-radius: 1rem;
-                                    border: 0.3rem solid $color-black-light;
+                                    border: 1px solid $color-black-light;
                                     outline: none;
                                     background-image: $color-gradient-red;
                                     cursor: pointer;
