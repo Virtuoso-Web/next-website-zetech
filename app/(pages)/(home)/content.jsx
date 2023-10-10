@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { useState, useRef, useCallback, useEffect } from "react";
 
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
@@ -12,11 +12,6 @@ import { BsArrowRight } from "react-icons/bs";
 const change = {
     initial: { opacity: 0 },
     animate: { opacity: 1, transition: { ease: "linear", delay: 0.2, duration: 0.2 } },
-};
-
-const reveal = {
-    hidden: { y: "25%", opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { type: "spring", duration: 0.4 } },
 };
 
 export default function Content({ products }) {
@@ -86,24 +81,28 @@ export default function Content({ products }) {
                 <div className="image-holder">
                     <img src="/images/home/construction-landscape.webp" alt="Hintergrund" loading="lazy" className="banner" />
                 </div>
-                <div className="section-container">
+                <ScrollContainer classes={"section-container"}>
                     <h1 className="title">
-                        IHRE EXPERTEN IN SACHEN
+                        IHRE EXPERTEN
+                        <br />
+                        IN SACHEN
                         <br />
                         <span className="gradient">BAUMESSTECHNIK</span>
                     </h1>
-                </div>
+                </ScrollContainer>
             </section>
 
             <section className="services-section">
                 <div className="section-container">
-                    <motion.h1 initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={reveal} className="title">
-                        UNSERE
-                        <br />
-                        <span className="gradient">FACHGEBIETE</span>
-                    </motion.h1>
+                    <ScrollContainer classes={"title-box"}>
+                        <h1 className="title">
+                            UNSERE
+                            <br />
+                            <span className="gradient">FACHGEBIETE</span>
+                        </h1>
+                    </ScrollContainer>
                     <div className="flex-grid">
-                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={reveal} className="sub-flex-grid">
+                        <ScrollContainer classes={"sub-flex-grid"}>
                             <div className="title-box">
                                 <h2 className="title">DIENSTLEISTUNGEN</h2>
                             </div>
@@ -116,8 +115,8 @@ export default function Content({ products }) {
                             <div className="image-box flex-end">
                                 <div className="image-holder"></div>
                             </div>
-                        </motion.div>
-                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={reveal} className="sub-flex-grid reversed">
+                        </ScrollContainer>
+                        <ScrollContainer classes={"sub-flex-grid reversed"}>
                             <div className="title-box">
                                 <h2 className="title">SERVICE</h2>
                             </div>
@@ -130,8 +129,8 @@ export default function Content({ products }) {
                             <div className="image-box flex-start">
                                 <div className="image-holder"></div>
                             </div>
-                        </motion.div>
-                        <motion.div initial={"hidden"} whileInView={"visible"} viewport={{ once: true, amount: 0.5 }} variants={reveal} className="sub-flex-grid">
+                        </ScrollContainer>
+                        <ScrollContainer classes={"sub-flex-grid"}>
                             <div className="title-box">
                                 <h2 className="title">SHOP</h2>
                             </div>
@@ -144,10 +143,25 @@ export default function Content({ products }) {
                             <div className="image-box flex-end">
                                 <div className="image-holder"></div>
                             </div>
-                        </motion.div>
+                        </ScrollContainer>
                     </div>
                 </div>
             </section>
         </>
+    );
+}
+
+function ScrollContainer({ children, classes }) {
+    const reference = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+        target: reference,
+        offset: ["0 1", "1 1"],
+    });
+
+    return (
+        <motion.div ref={reference} style={{ opacity: scrollYProgress }} className={classes}>
+            {children}
+        </motion.div>
     );
 }
