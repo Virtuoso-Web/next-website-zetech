@@ -1,10 +1,12 @@
 "use client";
 
+import ScrollContainer from "@/containers/scroll-container.jsx";
+
 import Link from "next/link";
 
 import { useState, useRef, useCallback, useEffect } from "react";
 
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
@@ -81,15 +83,17 @@ export default function Content({ products }) {
                 <div className="image-holder">
                     <img src="/images/home/construction-landscape.webp" alt="Hintergrund" loading="lazy" className="banner" />
                 </div>
-                <ScrollContainer classes={"section-container"}>
-                    <h1 className="title">
-                        IHRE EXPERTEN
-                        <br />
-                        IN SACHEN
-                        <br />
-                        <span className="gradient">BAUMESSTECHNIK</span>
-                    </h1>
-                </ScrollContainer>
+                <div className="section-container">
+                    <ScrollContainer classes={"title-box"}>
+                        <h1 className="title">
+                            IHRE EXPERTEN
+                            <br />
+                            IN SACHEN
+                            <br />
+                            <span className="gradient">BAUMESSTECHNIK</span>
+                        </h1>
+                    </ScrollContainer>
+                </div>
             </section>
 
             <section className="services-section">
@@ -148,20 +152,5 @@ export default function Content({ products }) {
                 </div>
             </section>
         </>
-    );
-}
-
-function ScrollContainer({ children, classes }) {
-    const reference = useRef(null);
-
-    const { scrollYProgress } = useScroll({
-        target: reference,
-        offset: ["0 1", "1 1"],
-    });
-
-    return (
-        <motion.div ref={reference} style={{ opacity: scrollYProgress }} className={classes}>
-            {children}
-        </motion.div>
     );
 }

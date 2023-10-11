@@ -202,27 +202,11 @@
             padding-block: 5rem;
             margin-inline: auto;
 
-            .title {
-                font-size: 8rem;
-                font-weight: $weight-bold;
-                text-align: center;
-
-                @media (max-width: 768px) {
-                    font-size: 5rem;
-                }
-
-                @media (max-width: 425px) {
-                    font-size: 4rem;
-                }
-
-                .gradient {
-                    color: transparent;
+            .title-box {
+                .title {
                     font-size: 8rem;
                     font-weight: $weight-bold;
-                    background-image: $color-gradient-blue;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    text-align: center;
 
                     @media (max-width: 768px) {
                         font-size: 5rem;
@@ -230,6 +214,24 @@
 
                     @media (max-width: 425px) {
                         font-size: 4rem;
+                    }
+
+                    .gradient {
+                        color: transparent;
+                        font-size: 8rem;
+                        font-weight: $weight-bold;
+                        background-image: $color-gradient-blue;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+                        @media (max-width: 768px) {
+                            font-size: 5rem;
+                        }
+
+                        @media (max-width: 425px) {
+                            font-size: 4rem;
+                        }
                     }
                 }
             }
@@ -591,18 +593,22 @@
     }
 
     .contact-section {
-        background-color: $color-white-light;
+        // background-color: $color-white-light;
 
         .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
-            padding-block: 10rem;
+            padding-block: 0 10rem;
             margin-inline: auto;
 
             .flex-grid {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 row-gap: 10rem;
+                padding-inline: min(5rem, 5%);
+                padding-block: 5rem;
+                border-radius: 1rem;
+                background-color: $color-white-light;
 
                 @media (max-width: 1024px) {
                     grid-template-columns: 1fr;

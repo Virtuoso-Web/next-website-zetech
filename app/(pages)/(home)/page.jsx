@@ -1,5 +1,7 @@
 import "@/app/(pages)/(home)/style.scss";
 
+import ScrollContainer from "@/containers/scroll-container.jsx";
+
 import Content from "@/app/(pages)/(home)/content.jsx";
 
 import products from "@/app/(pages)/(home)/products.json";
@@ -24,22 +26,22 @@ export default function Page() {
                         <div className="image-box">
                             <div className="image-holder"></div>
                         </div>
-                        <div className="title-box">
+                        <ScrollContainer classes={"title-box"}>
                             <h1 className="title">
                                 WIR SIND IHR
                                 <br />
                                 <span className="gradient">STARKER PARTNER</span>
                             </h1>
-                        </div>
+                        </ScrollContainer>
                         <div className="sub-flex-grid">
-                            <div className="description-box">
+                            <ScrollContainer classes={"description-box"}>
                                 <h2 className="title">BESCHREIBUNG</h2>
                                 <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, illum earum deserunt unde obcaecati enim totam distinctio recusandae praesentium dicta explicabo, eum molestiae rem eveniet, consequatur eos porro natus soluta ab beatae ex vitae. Consequatur, impedit eius explicabo, veritatis modi cupiditate itaque ad doloremque illum natus earum, sunt quia ratione?</p>
-                            </div>
-                            <div className="description-box">
+                            </ScrollContainer>
+                            <ScrollContainer classes={"description-box"}>
                                 <h2 className="title">BESCHREIBUNG</h2>
-                                <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, illum earum deserunt unde obcaecati enim totam distinctio recusandae praesentium dicta explicabo, eum molestiae rem eveniet, consequatur eos porro natus soluta ab beatae ex vitae. Consequatur, impedit eius explicabo?</p>
-                            </div>
+                                <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, illum earum deserunt unde obcaecati enim totam distinctio recusandae praesentium dicta explicabo, eum molestiae rem eveniet, consequatur eos porro natus soluta ab beatae ex vitae. Consequatur, impedit eius explicabo, veritatis modi cupiditate itaque ad doloremque illum natus earum, sunt quia ratione?</p>
+                            </ScrollContainer>
                         </div>
                     </div>
                 </div>
@@ -52,7 +54,7 @@ export default function Page() {
                             <h1 className="title">Zögern Sie nicht</h1>
                             <p className="text">und kontaktieren Sie uns bei allen Fragen oder Anliegen.</p>
                         </div>
-                        <div className="icon-box">
+                        <ScrollContainer classes={"icon-box"}>
                             <div className="hello-box">
                                 <h1 className="title">Say Hello</h1>
                                 <div className="icon-holder">
@@ -62,7 +64,7 @@ export default function Page() {
                             <Link href={"/kontakt"} aria-label="Kontakt" className="link-holder">
                                 <MdOutlineWavingHand className="icon" />
                             </Link>
-                        </div>
+                        </ScrollContainer>
                     </div>
                 </div>
             </section>
