@@ -3,12 +3,11 @@
 .footer {
     background-color: $color-black-dark;
 
-    > .footer-container {
+    .footer-container {
         inline-size: min($max-size, 100%);
-        margin-inline: auto;
         padding-inline: min(5rem, 5%);
         padding-block: 10rem;
-        overflow-x: hidden;
+        margin-inline: auto;
 
         .flex-grid {
             display: grid;
@@ -17,47 +16,76 @@
 
             .footer-navigation {
                 display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                row-gap: 5rem;
+                grid-template-columns: 1fr 2fr;
 
                 @media (max-width: 1024px) {
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: 1fr;
                 }
 
-                .nav-box {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    row-gap: 1rem;
+                .nav-box-a {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: min-content 1fr;
+                    grid-template-areas:
+                        "a"
+                        "b";
+                    row-gap: 10rem;
 
-                    .header-link {
-                        inline-size: fit-content;
-                        margin-inline: auto;
-                        color: $color-white-dark;
-                        font-size: 2rem;
-                        font-weight: $weight-bold;
-                        padding-inline: 1rem;
-                        padding-block: 0.5rem;
-                        border-radius: 1rem;
-                        transition-property: background-color;
-                        transition-timing-function: ease-in-out;
-                        transition-duration: 200ms;
-
-                        &:hover {
-                            background-color: $color-black-light;
-                        }
+                    @media (max-width: 1024px) {
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-areas: "a b";
+                        row-gap: 5rem;
                     }
 
-                    .sub-links-container {
+                    .nav-box {
+                        &.dienstleistungen {
+                            grid-area: a;
+                        }
+
+                        &.service {
+                            grid-area: b;
+                        }
+                    }
+                }
+
+                .nav-box-b {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: min-content 1fr;
+                    grid-template-areas:
+                        "a b"
+                        "a c";
+                    row-gap: 10rem;
+
+                    .nav-box {
+                        &.shop {
+                            grid-area: a;
+                        }
+
+                        &.downloads {
+                            grid-area: b;
+                        }
+
+                        &.kontakt {
+                            grid-area: c;
+                        }
+                    }
+                }
+
+                .nav-box-a,
+                .nav-box-b {
+                    .nav-box {
                         display: flex;
                         flex-direction: column;
                         text-align: center;
+                        row-gap: 1rem;
 
-                        .sub-link {
+                        .header-link {
                             inline-size: fit-content;
                             margin-inline: auto;
                             color: $color-white-dark;
                             font-size: 2rem;
+                            font-weight: $weight-bold;
                             padding-inline: 1rem;
                             padding-block: 0.5rem;
                             border-radius: 1rem;
@@ -70,11 +98,34 @@
                             }
                         }
 
-                        .sub-text {
-                            color: $color-white-dark;
-                            font-size: 2rem;
-                            padding-inline: 1rem;
-                            padding-block: 0.5rem;
+                        .sub-links-container {
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+
+                            .sub-link {
+                                inline-size: fit-content;
+                                margin-inline: auto;
+                                color: $color-white-dark;
+                                font-size: 2rem;
+                                padding-inline: 1rem;
+                                padding-block: 0.5rem;
+                                border-radius: 1rem;
+                                transition-property: background-color;
+                                transition-timing-function: ease-in-out;
+                                transition-duration: 200ms;
+
+                                &:hover {
+                                    background-color: $color-black-light;
+                                }
+                            }
+
+                            .sub-text {
+                                color: $color-white-dark;
+                                font-size: 2rem;
+                                padding-inline: 1rem;
+                                padding-block: 0.5rem;
+                            }
                         }
                     }
                 }
@@ -83,7 +134,8 @@
             .group-box {
                 display: flex;
                 flex-direction: column;
-                row-gap: 3rem;
+                row-gap: 5rem;
+                isolation: isolate;
 
                 .open-hours-box {
                     display: flex;
@@ -91,8 +143,8 @@
                     align-items: center;
                     text-align: center;
                     row-gap: 2rem;
-                    padding-block-start: 3rem;
-                    border-block-start: 0.5rem solid $color-black-light;
+                    padding-block-start: 5rem;
+                    border-block-start: 5px solid $color-black-light;
 
                     .title {
                         color: $color-white-dark;
@@ -115,18 +167,28 @@
                 }
 
                 .socials-box {
+                    position: relative;
                     display: flex;
                     justify-content: center;
                     text-align: center;
                     column-gap: 5rem;
                     padding-block: 1rem;
                     border-radius: 1rem;
-                    background-color: $color-black-light;
+                    background-image: $color-gradient-blue;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        inset: -0.5rem;
+                        background-image: $color-gradient-blue;
+                        filter: blur(10px);
+                        z-index: -1;
+                    }
 
                     .social-link {
                         display: flex;
                         color: $color-white-dark;
-                        font-size: 4rem;
+                        font-size: 5rem;
                         padding-inline: 1rem;
                         padding-block: 0.5rem;
                         border-radius: 1rem;

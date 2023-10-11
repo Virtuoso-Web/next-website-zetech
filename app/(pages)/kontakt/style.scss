@@ -98,7 +98,7 @@
                         row-gap: 1rem;
                         padding-block-end: 1rem;
                         border-radius: 1rem;
-                        border: 1px solid $color-black-light;
+                        // border: 1px solid $color-black-light;
                         background-color: $color-white-light;
                         overflow: hidden;
 
@@ -107,7 +107,7 @@
                             display: flex;
                             inline-size: 100%;
                             aspect-ratio: 4 / 3;
-                            background-color: $color-white-dark;
+                            background-color: $color-white-light;
                         }
 
                         .box-group {
@@ -151,12 +151,12 @@
     }
 
     .form-section {
-        background-color: $color-white-light;
+        // background-color: $color-white-light;
 
         .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
-            padding-block: 10rem;
+            padding-block: 0 10rem;
             margin-inline: auto;
 
             > .flex-grid {
@@ -224,8 +224,8 @@
                     padding-inline: min(5rem, 5%);
                     padding-block: 3rem;
                     border-radius: 1rem;
-                    border: 1px solid $color-black-light;
-                    background-color: $color-white-dark;
+                    // border: 1px solid $color-black-light;
+                    background-color: $color-white-light;
 
                     .title {
                         font-size: 5rem;
@@ -253,8 +253,8 @@
                     padding-inline: min(5rem, 5%);
                     padding-block: 3rem;
                     border-radius: 1rem;
-                    border: 1px solid $color-black-light;
-                    background-color: $color-white-dark;
+                    // border: 1px solid $color-black-light;
+                    background-color: $color-white-light;
 
                     .box-container {
                         display: flex;
@@ -293,7 +293,8 @@
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     border-radius: 1rem;
-                    border: 1px solid $color-black-light;
+                    // border: 1px solid $color-black-light;
+                    background-color: $color-white-light;
                     overflow: hidden;
 
                     @media (max-width: 1024px) {
@@ -319,7 +320,6 @@
                     .form-box {
                         padding-inline: min(5rem, 5%);
                         padding-block: 3rem;
-                        background-color: $color-white-dark;
 
                         .form {
                             display: flex;
@@ -343,7 +343,7 @@
                                     // border: 1px solid $color-black-light;
                                     border: none;
                                     outline: none;
-                                    background-color: $color-white-light;
+                                    background-color: $color-white-dark;
                                 }
 
                                 .form-input-text {
@@ -357,7 +357,7 @@
                                     // border: 1px solid $color-black-light;
                                     border: none;
                                     outline: none;
-                                    background-color: $color-white-light;
+                                    background-color: $color-white-dark;
                                 }
                             }
 
@@ -372,7 +372,8 @@
                                     font-size: 2rem;
                                     padding-block: 1rem;
                                     border-radius: 1rem;
-                                    border: 1px solid $color-black-light;
+                                    // border: 1px solid $color-black-light;
+                                    border: none;
                                     outline: none;
                                     background-image: $color-gradient-blue;
                                     cursor: pointer;
@@ -383,7 +384,8 @@
                                     font-size: 2rem;
                                     padding-block: 1rem;
                                     border-radius: 1rem;
-                                    border: 1px solid $color-black-light;
+                                    // border: 1px solid $color-black-light;
+                                    border: none;
                                     outline: none;
                                     background-image: $color-gradient-red;
                                     cursor: pointer;

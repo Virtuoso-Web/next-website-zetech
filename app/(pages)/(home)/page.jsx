@@ -9,7 +9,6 @@ import products from "@/app/(pages)/(home)/products.json";
 import Link from "next/link";
 
 import { PiArrowArcRightBold } from "react-icons/pi";
-import { MdOutlineWavingHand } from "react-icons/md";
 
 export const metadata = {
     title: "Home",
@@ -62,7 +61,7 @@ export default function Page() {
                                 </div>
                             </div>
                             <Link href={"/kontakt"} aria-label="Kontakt" className="link-holder">
-                                <MdOutlineWavingHand className="icon" />
+                                <span className="emoji">👋</span>
                             </Link>
                         </ScrollContainer>
                     </div>

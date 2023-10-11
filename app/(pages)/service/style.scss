@@ -167,12 +167,10 @@
     }
 
     .workshop-service-section {
-        background-color: $color-white-light;
-
         .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
-            padding-block: 10rem;
+            padding-block: 0 10rem;
             margin-inline: auto;
 
             .flex-grid {
@@ -188,26 +186,21 @@
                 .list-box {
                     display: flex;
                     flex-direction: column;
+                    justify-content: center;
                     row-gap: 5rem;
 
-                    .list-group {
-                        display: flex;
-                        flex-direction: column;
-                        row-gap: 2rem;
+                    .title {
+                        font-size: 3rem;
+                        font-weight: $weight-bold;
+                    }
 
-                        .title {
-                            font-size: 3rem;
-                            font-weight: $weight-bold;
-                        }
+                    .list {
+                        list-style: none;
 
-                        .list {
-                            list-style: none;
-
-                            .list-item {
-                                display: flex;
-                                column-gap: 2rem;
-                                font-size: 2rem;
-                            }
+                        .list-item {
+                            display: flex;
+                            column-gap: 2rem;
+                            font-size: 2rem;
                         }
                     }
                 }
@@ -240,7 +233,7 @@
         .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
-            padding-block: 10rem;
+            padding-block: 0 10rem;
             margin-inline: auto;
 
             .text {

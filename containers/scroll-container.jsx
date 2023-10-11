@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 import { motion, useScroll } from "framer-motion";
 
-export default function ScrollContainer({ children, classes }) {
+export default function ScrollContainer(props) {
     const reference = useRef(null);
 
     const { scrollYProgress } = useScroll({
@@ -13,8 +13,8 @@ export default function ScrollContainer({ children, classes }) {
     });
 
     return (
-        <motion.div ref={reference} style={{ opacity: scrollYProgress }} className={classes}>
-            {children}
+        <motion.div ref={reference} style={{ opacity: scrollYProgress }} className={props.classes}>
+            {props.children}
         </motion.div>
     );
 }
