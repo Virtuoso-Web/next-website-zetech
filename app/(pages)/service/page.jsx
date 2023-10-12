@@ -24,12 +24,12 @@ export default function Page() {
                         <span className="gradient">SERVICE WERKSTATT</span>
                     </h2>
                     <div className="image-holder">
-                        <img src="/images/service/service-image-1.webp" alt="Service Werkstatt" loading="lazy" className="image" />
+                        <img src="/images/service/image-1.webp" alt="Service Werkstatt" loading="lazy" className="image" />
                     </div>
                     <div className="flex-grid">
                         <div className="image-box">
                             <div className="image-holder">
-                                <img src="/images/service/service-image-2.webp" alt="Service Werkstatt" loading="lazy" className="image" />
+                                <img src="/images/service/image-2.webp" alt="Service Werkstatt" loading="lazy" className="image" />
                             </div>
                         </div>
                         <div className="text-box">
@@ -63,7 +63,7 @@ export default function Page() {
                         </div>
                         <div className="image-box">
                             <div className="image-holder">
-                                <img src="/images/service/service-image-3.webp" alt="Service Werkstatt" loading="lazy" className="image" />
+                                <img src="/images/service/image-3.webp" alt="Service Werkstatt" loading="lazy" className="image" />
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ export default function Page() {
                     <div className="flex-grid">
                         <div className="image-box">
                             <div className="image-holder">
-                                <img src="/images/service/service-image-3.webp" alt="Service Werkstatt" loading="lazy" className="image" />
+                                <img src="/images/service/image-4.webp" alt="Service Werkstatt" loading="lazy" className="image" />
                             </div>
                         </div>
                         <div className="list-box">

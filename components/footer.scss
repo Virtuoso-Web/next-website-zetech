@@ -167,28 +167,21 @@
                 }
 
                 .socials-box {
-                    position: relative;
+                    inline-size: fit-content;
+                    margin-inline: auto;
                     display: flex;
                     justify-content: center;
                     text-align: center;
                     column-gap: 5rem;
+                    padding-inline: min(5rem, 5%);
                     padding-block: 1rem;
                     border-radius: 1rem;
                     background-image: $color-gradient-blue;
 
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        inset: -0.5rem;
-                        background-image: $color-gradient-blue;
-                        filter: blur(10px);
-                        z-index: -1;
-                    }
-
                     .social-link {
                         display: flex;
                         color: $color-white-dark;
-                        font-size: 5rem;
+                        font-size: 3rem;
                         padding-inline: 1rem;
                         padding-block: 0.5rem;
                         border-radius: 1rem;

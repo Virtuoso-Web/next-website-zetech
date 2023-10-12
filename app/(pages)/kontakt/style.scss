@@ -125,22 +125,27 @@
                                 font-size: 2rem;
                             }
 
-                            .area-group {
-                                display: flex;
-                                align-items: center;
-                                column-gap: 3rem;
-                                font-size: 2rem;
-                            }
-
                             .contact-group {
                                 inline-size: fit-content;
                                 display: flex;
                                 align-items: center;
                                 column-gap: 3rem;
-                                font-size: 2rem;
+
+                                .icon-holder {
+                                    display: flex;
+                                    padding-inline: 1rem;
+                                    padding-block: 1rem;
+                                    border-radius: 50%;
+                                    background-color: $color-white-dark;
+
+                                    .icon {
+                                        font-size: 2rem;
+                                    }
+                                }
 
                                 .contact-link {
                                     color: $color-blue-main;
+                                    font-size: 2rem;
                                 }
                             }
                         }
@@ -267,8 +272,16 @@
                             align-items: center;
                             column-gap: 5rem;
 
-                            .icon {
-                                font-size: 5rem;
+                            .icon-holder {
+                                display: flex;
+                                padding-inline: 1.5rem;
+                                padding-block: 1.5rem;
+                                border-radius: 50%;
+                                background-color: $color-white-dark;
+
+                                .icon {
+                                    font-size: 5rem;
+                                }
                             }
 
                             .box-group {

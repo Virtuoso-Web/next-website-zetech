@@ -53,7 +53,7 @@ export default function Page() {
                             <h1 className="title">Zögern Sie nicht</h1>
                             <p className="text">und kontaktieren Sie uns bei allen Fragen oder Anliegen.</p>
                         </div>
-                        <ScrollContainer classes={"icon-box"}>
+                        {/* <ScrollContainer classes={"icon-box"}>
                             <div className="hello-box">
                                 <h1 className="title">Say Hello</h1>
                                 <div className="icon-holder">
@@ -63,7 +63,7 @@ export default function Page() {
                             <Link href={"/kontakt"} aria-label="Kontakt" className="link-holder">
                                 <span className="emoji">👋</span>
                             </Link>
-                        </ScrollContainer>
+                        </ScrollContainer> */}
                     </div>
                 </div>
             </section>

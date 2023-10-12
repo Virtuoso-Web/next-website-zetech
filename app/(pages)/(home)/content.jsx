@@ -57,11 +57,6 @@ export default function Content({ products }) {
                                 <motion.img src={products[slide].image} alt={products[slide].name} initial={"initial"} animate={"animate"} variants={change} key={slide} loading="lazy" className="image" />
                             </div>
                         </div>
-                        <div className="link-box">
-                            <Link href={products[slide].link} className="link">
-                                Zum Produkt
-                            </Link>
-                        </div>
                         <div className="navigation-box">
                             <button aria-label="Previous" className="button-holder" onClick={prev}>
                                 <BsArrowLeft className="icon" />

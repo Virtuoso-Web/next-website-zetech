@@ -84,30 +84,6 @@
                     }
                 }
 
-                .link-box {
-                    display: flex;
-                    justify-content: center;
-
-                    .link {
-                        inline-size: min(50rem, 100%);
-                        color: $color-white-dark;
-                        font-size: 2rem;
-                        text-align: center;
-                        padding-block: 0.5rem;
-                        border-radius: 3rem;
-                        outline: 3px solid $color-white-dark;
-                        outline-offset: 3px;
-                        background-image: $color-gradient-blue;
-                        transition-property: outline-offset;
-                        transition-timing-function: ease-in-out;
-                        transition-duration: 200ms;
-
-                        &:hover {
-                            outline-offset: 0;
-                        }
-                    }
-                }
-
                 .navigation-box {
                     display: flex;
                     justify-content: space-between;
@@ -242,10 +218,10 @@
         position: relative;
         overflow: hidden;
         isolation: isolate;
-        // background-color: $color-black-dark;
-        background-image: radial-gradient($color-white-dark 2px, transparent 2px), radial-gradient($color-white-dark 2px, $color-black-dark 2px);
-        background-size: 30rem 30rem;
-        background-position: 0 0, 15rem 15rem;
+        background-color: $color-black-dark;
+        // background-image: radial-gradient($color-white-dark 2px, transparent 2px), radial-gradient($color-white-dark 2px, $color-black-dark 2px);
+        // background-size: 30rem 30rem;
+        // background-position: 0 0, 15rem 15rem;
 
         &::before {
             position: absolute;
@@ -416,9 +392,11 @@
                         }
 
                         .link {
+                            inline-size: fit-content;
                             color: $color-white-dark;
                             font-size: 2rem;
                             text-align: center;
+                            padding-inline: 5rem;
                             padding-block: 0.5rem;
                             border-radius: 3rem;
                             outline: 3px solid $color-white-dark;
@@ -427,6 +405,10 @@
                             transition-property: outline-offset;
                             transition-timing-function: ease-in-out;
                             transition-duration: 200ms;
+
+                            @media (max-width: 1024px) {
+                                margin-inline: auto;
+                            }
 
                             &:hover {
                                 outline-offset: 0;
@@ -628,8 +610,9 @@
 
             .flex-grid {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                row-gap: 10rem;
+                // grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
+                // row-gap: 10rem;
                 padding-inline: min(5rem, 5%);
                 padding-block: 5rem;
                 border-radius: 1rem;

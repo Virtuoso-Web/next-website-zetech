@@ -13,12 +13,7 @@
                     "subline": "Subline"
                 }
             ],
-            "datasheets": [
-                {
-                    "type": "Nestle Produktedatenblatt",
-                    "path": "/documents/shop/empfaenger/geomax-zrd105.pdf"
-                }
-            ]
+            "datasheets": []
         },
         {
             "name": "Geomax ZRD105B",
@@ -32,12 +27,7 @@
                     "subline": "Subline"
                 }
             ],
-            "datasheets": [
-                {
-                    "type": "Nestle Produktedatenblatt",
-                    "path": "/documents/shop/empfaenger/geomax-zrd105b.pdf"
-                }
-            ]
+            "datasheets": []
         },
         {
             "name": "Geomax ZRP105 Pro",
@@ -51,12 +41,7 @@
                     "subline": "Subline"
                 }
             ],
-            "datasheets": [
-                {
-                    "type": "Nestle Produktedatenblatt",
-                    "path": "/documents/shop/empfaenger/geomax-zrp105-pro.pdf"
-                }
-            ]
+            "datasheets": []
         },
         {
             "name": "Geomax ZRC60 Fernbedienung",
@@ -69,7 +54,8 @@
                     "bullet": true,
                     "subline": "Subline"
                 }
-            ]
+            ],
+            "datasheets": []
         },
         {
             "name": "Metor MTR-60RGL",
@@ -83,12 +69,7 @@
                     "subline": "Subline"
                 }
             ],
-            "datasheets": [
-                {
-                    "type": "Nestle Produktedatenblatt",
-                    "path": "/documents/shop/empfaenger/metor-mtr-60rgl.pdf"
-                }
-            ]
+            "datasheets": []
         },
         {
             "name": "Metor MTR-90R",
@@ -102,12 +83,7 @@
                     "subline": "Subline"
                 }
             ],
-            "datasheets": [
-                {
-                    "type": "Nestle Produktedatenblatt",
-                    "path": "/documents/shop/empfaenger/metor-mtr-90r.pdf"
-                }
-            ]
+            "datasheets": []
         },
         {
             "name": "Metor MTR-125",
@@ -120,7 +96,8 @@
                     "bullet": true,
                     "subline": "Subline"
                 }
-            ]
+            ],
+            "datasheets": []
         }
     ]
 }

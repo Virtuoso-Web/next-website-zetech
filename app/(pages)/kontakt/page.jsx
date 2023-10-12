@@ -38,13 +38,17 @@ export default function Page() {
                                         <h3 className="name">{member.name}</h3>
                                         <p className="area">{member.area}</p>
                                         <div className="contact-group">
-                                            <BsTelephoneFill />
+                                            <div className="icon-holder">
+                                                <BsTelephoneFill className="icon" />
+                                            </div>
                                             <Link href={"/kontakt"} className="contact-link">
                                                 {member.phone}
                                             </Link>
                                         </div>
                                         <div className="contact-group">
-                                            <BsEnvelopeFill />
+                                            <div className="icon-holder">
+                                                <BsEnvelopeFill className="icon" />
+                                            </div>
                                             <Link href={"/kontakt"} className="contact-link">
                                                 {member.mail}
                                             </Link>
@@ -78,22 +82,28 @@ export default function Page() {
                         <div className="sub-flex-grid-2">
                             <div className="box-container">
                                 <div className="box">
-                                    <BsGeoFill className="icon" />
+                                    <div className="icon-holder">
+                                        <BsGeoFill className="icon" />
+                                    </div>
                                     <div className="box-group">
                                         <p>Luzernerstrasse 88A</p>
                                         <p>6014 Luzern</p>
                                     </div>
                                 </div>
                                 <div className="box">
-                                    <BsTelephoneFill className="icon" />
+                                    <div className="icon-holder">
+                                        <BsTelephoneFill className="icon" />
+                                    </div>
                                     <Link href={"/kontakt"} className="contact-link">
                                         +41 41 250 32 02
                                     </Link>
                                 </div>
                                 <div className="box">
-                                    <BsEnvelopeFill className="icon" />
+                                    <div className="icon-holder">
+                                        <BsEnvelopeFill className="icon" />
+                                    </div>
                                     <Link href={"/kontakt"} className="contact-link">
-                                        zetech@gmx.ch
+                                        info@zetech.ch
                                     </Link>
                                 </div>
                             </div>

@@ -2,41 +2,6 @@
     "category": "Linienlaser",
     "products": [
         {
-            "name": "Leica Lino L2",
-            "slug": "leica-lino-l2",
-            "link": "/shop/linienlaser/leica-lino-l2",
-            "image": "/images/shop/linienlaser/leica-lino-l2-1.webp",
-            "headline": "Eigenschaften und Leistungen:",
-            "subliner": [
-                {
-                    "bullet": false,
-                    "subline": "Die hochpräzise Optik sorgt, je nach Lichtverhältnissen, für eine hervorragende Sichtbarkeit der Laserlinie bis zu 25 m. Außergewöhnlich lange horizontale und vertikale Laserlinien werden bei mehr als 180 Grad auf Böden, Wände und Decken projiziert."
-                },
-                {
-                    "bullet": false,
-                    "subline": "Der Lino L2 korrigiert die Ausrichtung der Laserlinien automatisch, wenn er sich um ± 4° in Schräglage befindet. Ausserhalb dieser Grenzen wird eine visuelle Warnung ausgelöst, um Fehler zu vermeiden."
-                },
-                {
-                    "bullet": false,
-                    "subline": "Durchdachte Adapter ermöglichen eine schnelle und präzise Positionierung. Sie können drehbare Adapter an Ecken und Profilen anbringen oder sie einfach an Metallrohren, Ständern und Pfosten befestigen."
-                },
-                {
-                    "bullet": false,
-                    "subline": "Das Triple Power Konzept garantiert einen ununterbrochenen Arbeitsablauf. Wiederaufladbare Lithium-Ionen Batterien sorgen für einen Betrieb ohne Unterbruch bis zu 44 Stunden lang. Alternativ können Sie Alkaline-Batterien oder einfach das Ladegerät verwenden."
-                },
-                {
-                    "bullet": false,
-                    "subline": "Der Leica Lino L2 ist gemäß Schutzklasse IP 54 staub- und spritzwassergeschützt. Das macht ihn zum robusten Gerät, das Sie bei all Ihren Arbeitsaufgaben unterstützt."
-                }
-            ],
-            "datasheets": [
-                {
-                    "type": "Leica Produktedatenblatt",
-                    "path": "/documents/shop/linienlaser/leica-lino-l2.pdf"
-                }
-            ]
-        },
-        {
             "name": "Leica Lino L2 Set",
             "slug": "leica-lino-l2-set",
             "link": "/shop/linienlaser/leica-lino-l2-set",
@@ -72,10 +37,45 @@
             ]
         },
         {
-            "name": "Leica Lino L2G",
-            "slug": "leica-lino-l2g",
-            "link": "/shop/linienlaser/leica-lino-l2g",
-            "image": "/images/shop/linienlaser/leica-lino-l2g-1.webp",
+            "name": "Leica Lino L2",
+            "slug": "leica-lino-l2",
+            "link": "/shop/linienlaser/leica-lino-l2",
+            "image": "/images/shop/linienlaser/leica-lino-l2-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": false,
+                    "subline": "Die hochpräzise Optik sorgt, je nach Lichtverhältnissen, für eine hervorragende Sichtbarkeit der Laserlinie bis zu 25 m. Außergewöhnlich lange horizontale und vertikale Laserlinien werden bei mehr als 180 Grad auf Böden, Wände und Decken projiziert."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Der Lino L2 korrigiert die Ausrichtung der Laserlinien automatisch, wenn er sich um ± 4° in Schräglage befindet. Ausserhalb dieser Grenzen wird eine visuelle Warnung ausgelöst, um Fehler zu vermeiden."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Durchdachte Adapter ermöglichen eine schnelle und präzise Positionierung. Sie können drehbare Adapter an Ecken und Profilen anbringen oder sie einfach an Metallrohren, Ständern und Pfosten befestigen."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Das Triple Power Konzept garantiert einen ununterbrochenen Arbeitsablauf. Wiederaufladbare Lithium-Ionen Batterien sorgen für einen Betrieb ohne Unterbruch bis zu 44 Stunden lang. Alternativ können Sie Alkaline-Batterien oder einfach das Ladegerät verwenden."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Der Leica Lino L2 ist gemäß Schutzklasse IP 54 staub- und spritzwassergeschützt. Das macht ihn zum robusten Gerät, das Sie bei all Ihren Arbeitsaufgaben unterstützt."
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Leica Produktedatenblatt",
+                    "path": "/documents/shop/linienlaser/leica-lino-l2.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Leica Lino L2G Set",
+            "slug": "leica-lino-l2g-set",
+            "link": "/shop/linienlaser/leica-lino-l2g-set",
+            "image": "/images/shop/linienlaser/leica-lino-l2g-set-1.webp",
             "headline": "Eigenschaften und Leistungen:",
             "subliner": [
                 {
@@ -107,10 +107,10 @@
             ]
         },
         {
-            "name": "Leica Lino L2G Set",
-            "slug": "leica-lino-l2g-set",
-            "link": "/shop/linienlaser/leica-lino-l2g-set",
-            "image": "/images/shop/linienlaser/leica-lino-l2g-set-1.webp",
+            "name": "Leica Lino L2G",
+            "slug": "leica-lino-l2g",
+            "link": "/shop/linienlaser/leica-lino-l2g",
+            "image": "/images/shop/linienlaser/leica-lino-l2g-1.webp",
             "headline": "Eigenschaften und Leistungen:",
             "subliner": [
                 {
@@ -224,45 +224,6 @@
             ]
         },
         {
-            "name": "Leica Lino L6G",
-            "slug": "leica-lino-l6g",
-            "link": "/shop/linienlaser/leica-lino-l6g",
-            "image": "/images/shop/linienlaser/leica-lino-l6g-1.webp",
-            "headline": "Eigenschaften und Leistungen:",
-            "subliner": [
-                {
-                    "bullet": false,
-                    "subline": "Grüne Laserlinien erzielen eine Reichweite von bis zu 70 m im Durchmesser, wodurch sie sich perfekt für größere Räume und helle Umgebungen eignen. Der maximale Arbeitsbereich kann durch den Einsatz des Laserempfängers Leica RGR 200 auf bis zu 140 m erweitert werden."
-                },
-                {
-                    "bullet": false,
-                    "subline": "Das stoßdämpfende Design sowie Spritzwasser- und Staubschutz (IP54) machen diesen grünen Multi-Linienlaser für jede Baustelle geeignet."
-                },
-                {
-                    "bullet": false,
-                    "subline": "Die Verstellrädchen zur Feineinstellung und die exzentrische Basis des Lasers ermöglichen eine Drehung der Laserlinien um ± 10° um den Lotpunkt, während der Laser seine Position beibehält; dies ermöglicht eine schnelle und präzise Positionierung für alle Ausricht-, Lot-, Nivellier- oder Layoutaufgaben."
-                },
-                {
-                    "bullet": false,
-                    "subline": "Der Lino L6G lässt sich leicht an einer Vielzahl von Oberflächen befestigen. Die leistungsstarken Magnet-Adapter passen in U-Profile und ermöglichen eine Befestigung an ferromagnetischen Eckleisten, Schienen oder sogar an Rundrohren. Mit dem zusätzlichen Adapter UAL 130 lässt sich der grüne Multi-Linienlaser auch einfach an Kanten fixieren. Dies ist ideal für abgehängte Deckeninstallationen, die Übertragung von Referenzhöhen oder komplexe Trockenbauinstallationen in großen Räumen."
-                },
-                {
-                    "bullet": false,
-                    "subline": "Sie können jede grüne 360° Laserlinie einzeln auswählen, die beim Einschalten des Geräts erscheinen soll. Das bedeutet, dass Ihre Laserlinieneinstellungen und deren Intensität auf dem Gerät gespeichert werden und es damit nach dem Einschalten sofort einsatzbereit ist."
-                },
-                {
-                    "bullet": false,
-                    "subline": "Der Lino L6G ist ein selbstnivellierender Multi-Linienlaser. Er passt seine Ausrichtung um bis zu ± 4° automatisch an, wenn er leicht schräg steht, ohne dass eine manuelle Ausrichtung erforderlich ist."
-                }
-            ],
-            "datasheets": [
-                {
-                    "type": "Leica Produktedatenblatt",
-                    "path": "/documents/shop/linienlaser/leica-lino-l6g.pdf"
-                }
-            ]
-        },
-        {
             "name": "Leica Lino L6G Set",
             "slug": "leica-lino-l6g-set",
             "link": "/shop/linienlaser/leica-lino-l6g-set",
@@ -302,10 +263,49 @@
             ]
         },
         {
-            "name": "Leica Lino L6R",
-            "slug": "leica-lino-l6r",
-            "link": "/shop/linienlaser/leica-lino-l6r",
-            "image": "/images/shop/linienlaser/leica-lino-l6r-1.webp",
+            "name": "Leica Lino L6G",
+            "slug": "leica-lino-l6g",
+            "link": "/shop/linienlaser/leica-lino-l6g",
+            "image": "/images/shop/linienlaser/leica-lino-l6g-1.webp",
+            "headline": "Eigenschaften und Leistungen:",
+            "subliner": [
+                {
+                    "bullet": false,
+                    "subline": "Grüne Laserlinien erzielen eine Reichweite von bis zu 70 m im Durchmesser, wodurch sie sich perfekt für größere Räume und helle Umgebungen eignen. Der maximale Arbeitsbereich kann durch den Einsatz des Laserempfängers Leica RGR 200 auf bis zu 140 m erweitert werden."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Das stoßdämpfende Design sowie Spritzwasser- und Staubschutz (IP54) machen diesen grünen Multi-Linienlaser für jede Baustelle geeignet."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Die Verstellrädchen zur Feineinstellung und die exzentrische Basis des Lasers ermöglichen eine Drehung der Laserlinien um ± 10° um den Lotpunkt, während der Laser seine Position beibehält; dies ermöglicht eine schnelle und präzise Positionierung für alle Ausricht-, Lot-, Nivellier- oder Layoutaufgaben."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Der Lino L6G lässt sich leicht an einer Vielzahl von Oberflächen befestigen. Die leistungsstarken Magnet-Adapter passen in U-Profile und ermöglichen eine Befestigung an ferromagnetischen Eckleisten, Schienen oder sogar an Rundrohren. Mit dem zusätzlichen Adapter UAL 130 lässt sich der grüne Multi-Linienlaser auch einfach an Kanten fixieren. Dies ist ideal für abgehängte Deckeninstallationen, die Übertragung von Referenzhöhen oder komplexe Trockenbauinstallationen in großen Räumen."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Sie können jede grüne 360° Laserlinie einzeln auswählen, die beim Einschalten des Geräts erscheinen soll. Das bedeutet, dass Ihre Laserlinieneinstellungen und deren Intensität auf dem Gerät gespeichert werden und es damit nach dem Einschalten sofort einsatzbereit ist."
+                },
+                {
+                    "bullet": false,
+                    "subline": "Der Lino L6G ist ein selbstnivellierender Multi-Linienlaser. Er passt seine Ausrichtung um bis zu ± 4° automatisch an, wenn er leicht schräg steht, ohne dass eine manuelle Ausrichtung erforderlich ist."
+                }
+            ],
+            "datasheets": [
+                {
+                    "type": "Leica Produktedatenblatt",
+                    "path": "/documents/shop/linienlaser/leica-lino-l6g.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Leica Lino L6R Set",
+            "slug": "leica-lino-l6r-set",
+            "link": "/shop/linienlaser/leica-lino-l6r-set",
+            "image": "/images/shop/linienlaser/leica-lino-l6r-set-1.webp",
             "headline": "Eigenschaften und Leistungen:",
             "subliner": [
                 {
@@ -341,10 +341,10 @@
             ]
         },
         {
-            "name": "Leica Lino L6R Set",
-            "slug": "leica-lino-l6r-set",
-            "link": "/shop/linienlaser/leica-lino-l6r-set",
-            "image": "/images/shop/linienlaser/leica-lino-l6r-set-1.webp",
+            "name": "Leica Lino L6R",
+            "slug": "leica-lino-l6r",
+            "link": "/shop/linienlaser/leica-lino-l6r",
+            "image": "/images/shop/linienlaser/leica-lino-l6r-1.webp",
             "headline": "Eigenschaften und Leistungen:",
             "subliner": [
                 {

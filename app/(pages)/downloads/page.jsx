@@ -27,7 +27,7 @@ export default function Page() {
                             <h2 className="title">TeamViewer</h2>
                         </div>
                         <div className="sub-flex-grid">
-                            <Link href={"/downloads"} className="box">
+                            <Link href={"https://www.teamviewer.com/de/products/remote/get-started/"} target="_blank" className="box">
                                 <div className="logo-holder">
                                     <SiTeamviewer />
                                 </div>
@@ -36,7 +36,7 @@ export default function Page() {
                                     <p className="os">Web-Anwendung</p>
                                 </div>
                             </Link>
-                            <Link href={"/downloads"} className="box">
+                            <Link href={"https://www.teamviewer.com/de/download/windows/"} target="_blank" className="box">
                                 <div className="logo-holder">
                                     <SiTeamviewer />
                                 </div>
@@ -45,13 +45,13 @@ export default function Page() {
                                     <p className="os">Windows</p>
                                 </div>
                             </Link>
-                            <Link href={"/downloads"} className="box">
+                            <Link href={"https://www.teamviewer.com/de/download/macos/"} target="_blank" className="box">
                                 <div className="logo-holder">
                                     <SiTeamviewer />
                                 </div>
                                 <div className="description">
                                     <h3 className="name">TeamViewer</h3>
-                                    <p className="os">Mac</p>
+                                    <p className="os">MacOS</p>
                                 </div>
                             </Link>
                         </div>
