@@ -27,36 +27,43 @@ export default function Page() {
             <section className="team-section">
                 <div className="section-container">
                     <div className="flex-grid">
-                        <div className="title-box">
-                            <h2 className="title">Ihre Partner</h2>
-                        </div>
-                        <div className="sub-flex-grid">
-                            {team.map((member, index) => (
-                                <div className="partner-box" key={index}>
-                                    <div className="image-holder"></div>
-                                    <div className="box-group">
-                                        <h3 className="name">{member.name}</h3>
-                                        <p className="area">{member.area}</p>
-                                        <div className="contact-group">
-                                            <div className="icon-holder">
-                                                <BsTelephoneFill className="icon" />
+                        <h2 className="title">
+                            IHRE
+                            <br />
+                            <span className="gradient">ANSPRECHPARTNER</span>
+                        </h2>
+                        {team.map((dep, index) => (
+                            <div className="sub-flex-grid" key={index}>
+                                <h3 className="title">{dep.department}</h3>
+                                <div className="partner-flex-grid">
+                                    {dep.members.map((member, index) => (
+                                        <div className="partner-box" key={index}>
+                                            <div className="image-holder"></div>
+                                            <div className="box-group">
+                                                <h3 className="name">{member.name}</h3>
+                                                <p className="area">{member.area}</p>
+                                                <div className="contact-group">
+                                                    <div className="icon-holder">
+                                                        <BsTelephoneFill className="icon" />
+                                                    </div>
+                                                    <Link href={"/kontakt"} className="contact-link">
+                                                        {member.phone}
+                                                    </Link>
+                                                </div>
+                                                <div className="contact-group">
+                                                    <div className="icon-holder">
+                                                        <BsEnvelopeFill className="icon" />
+                                                    </div>
+                                                    <Link href={"/kontakt"} className="contact-link">
+                                                        {member.mail}
+                                                    </Link>
+                                                </div>
                                             </div>
-                                            <Link href={"/kontakt"} className="contact-link">
-                                                {member.phone}
-                                            </Link>
                                         </div>
-                                        <div className="contact-group">
-                                            <div className="icon-holder">
-                                                <BsEnvelopeFill className="icon" />
-                                            </div>
-                                            <Link href={"/kontakt"} className="contact-link">
-                                                {member.mail}
-                                            </Link>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

@@ -64,88 +64,116 @@
             padding-block: 10rem;
             margin-inline: auto;
 
-            > .flex-grid {
-                display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 5rem;
+            .flex-grid {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10rem;
 
-                > .title-box {
-                    display: flex;
+                > .title {
+                    font-size: 8rem;
+                    font-weight: $weight-bold;
+                    text-align: center;
 
-                    .title {
-                        font-size: 7rem;
+                    @media (max-width: 768px) {
+                        font-size: 5rem;
+                    }
+
+                    @media (max-width: 425px) {
+                        font-size: 4rem;
+                    }
+
+                    .gradient {
+                        color: transparent;
+                        font-size: 8rem;
                         font-weight: $weight-bold;
+                        background-image: $color-gradient-blue;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
 
                         @media (max-width: 768px) {
-                            font-size: 6rem;
+                            font-size: 5rem;
                         }
 
                         @media (max-width: 425px) {
-                            font-size: 5rem;
+                            font-size: 4rem;
                         }
                     }
                 }
 
-                > .sub-flex-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
-                    column-gap: 5rem;
+                .sub-flex-grid {
+                    display: flex;
+                    flex-direction: column;
                     row-gap: 5rem;
+                    padding-inline: min(5rem, 5%);
+                    padding-block: 5rem;
+                    border-radius: 1rem;
+                    background-color: $color-white-light;
 
-                    .partner-box {
-                        display: flex;
-                        flex-direction: column;
-                        row-gap: 1rem;
-                        padding-block-end: 1rem;
-                        border-radius: 1rem;
-                        // border: 1px solid $color-black-light;
-                        background-color: $color-white-light;
-                        overflow: hidden;
+                    .title {
+                        font-size: 5rem;
+                    }
 
-                        .image-holder {
-                            position: relative;
-                            display: flex;
-                            inline-size: 100%;
-                            aspect-ratio: 4 / 3;
-                            background-color: $color-white-light;
-                        }
+                    .partner-flex-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
+                        column-gap: 5rem;
+                        row-gap: 5rem;
 
-                        .box-group {
+                        .partner-box {
                             display: flex;
                             flex-direction: column;
                             row-gap: 1rem;
-                            padding-inline: min(5rem, 5%);
+                            padding-block-end: 1rem;
+                            border-radius: 1rem;
+                            background-color: $color-white-dark;
+                            overflow: hidden;
 
-                            .name {
-                                font-size: 2rem;
-                                font-weight: $weight-bold;
-                            }
-
-                            .area {
-                                font-size: 2rem;
-                            }
-
-                            .contact-group {
-                                inline-size: fit-content;
+                            .image-holder {
+                                position: relative;
                                 display: flex;
-                                align-items: center;
-                                column-gap: 3rem;
+                                inline-size: 100%;
+                                aspect-ratio: 4 / 3;
+                                background-color: $color-white-dark;
+                            }
 
-                                .icon-holder {
-                                    display: flex;
-                                    padding-inline: 1rem;
-                                    padding-block: 1rem;
-                                    border-radius: 50%;
-                                    background-color: $color-white-dark;
+                            .box-group {
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 1rem;
+                                padding-inline: min(5rem, 5%);
 
-                                    .icon {
-                                        font-size: 2rem;
-                                    }
+                                .name {
+                                    font-size: 2rem;
+                                    font-weight: $weight-bold;
                                 }
 
-                                .contact-link {
-                                    color: $color-blue-main;
+                                .area {
                                     font-size: 2rem;
+                                }
+
+                                .contact-group {
+                                    inline-size: fit-content;
+                                    display: flex;
+                                    align-items: center;
+                                    column-gap: 3rem;
+
+                                    .icon-holder {
+                                        display: flex;
+                                        padding-inline: 1rem;
+                                        padding-block: 1rem;
+                                        border-radius: 50%;
+                                        background-color: $color-white-light;
+
+                                        .icon {
+                                            font-size: 2rem;
+                                        }
+                                    }
+
+                                    .contact-link {
+                                        color: $color-blue-main;
+                                        font-size: 2rem;
+                                    }
                                 }
                             }
                         }
@@ -185,6 +213,7 @@
                 > .title-box {
                     grid-area: h;
                     text-align: center;
+                    margin-block-end: 5rem;
 
                     .title {
                         font-size: 8rem;

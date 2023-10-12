@@ -1,38 +1,48 @@
 [
     {
-        "name": "Alfred Zenklusen",
-        "area": "Beratung und Verkauf",
-        "phone": "+41 79 414 22 89",
-        "mail": "zetech@gmx.ch"
+        "department": "Beratung und Verkauf",
+        "members": [
+            {
+                "name": "Alfred Zenklusen",
+                "area": "Beratung und Verkauf",
+                "phone": "+41 79 414 22 89",
+                "mail": "zetech@gmx.ch"
+            },
+            {
+                "name": "Adrian Zenklusen",
+                "area": "Beratung und Verkauf",
+                "phone": "+41 79 775 97 47",
+                "mail": "a.zenklusen@zetech.ch"
+            },
+            {
+                "name": "Raniero Fanger",
+                "area": "Beratung und Verkauf",
+                "phone": "+41 79 582 63 99",
+                "mail": "r.fanger@zetech.ch"
+            }
+        ]
     },
     {
-        "name": "Adrian Zenklusen",
-        "area": "Beratung und Verkauf",
-        "phone": "+41 79 775 97 47",
-        "mail": "a.zenklusen@zetech.ch"
-    },
-    {
-        "name": "Raniero Fanger",
-        "area": "Beratung und Verkauf",
-        "phone": "+41 79 582 63 99",
-        "mail": "r.fanger@zetech.ch"
-    },
-    {
-        "name": "Claudio Zenklusen",
-        "area": "Service",
-        "phone": "+41 41 250 32 02",
-        "mail": "c.zenklusen@zetech.ch"
-    },
-    {
-        "name": "Ivan Kafadar",
-        "area": "Service",
-        "phone": "+41 41 250 32 02",
-        "mail": "i.kafadar@zetech.ch"
-    },
-    {
-        "name": "Luka Sucic",
-        "area": "Service",
-        "phone": "+41 41 250 32 02",
-        "mail": "info@zetech.ch"
+        "department": "Service",
+        "members": [
+            {
+                "name": "Claudio Zenklusen",
+                "area": "Service",
+                "phone": "+41 41 250 32 02",
+                "mail": "c.zenklusen@zetech.ch"
+            },
+            {
+                "name": "Ivan Kafadar",
+                "area": "Service",
+                "phone": "+41 41 250 32 02",
+                "mail": "i.kafadar@zetech.ch"
+            },
+            {
+                "name": "Luka Sucic",
+                "area": "Service",
+                "phone": "+41 41 250 32 02",
+                "mail": "info@zetech.ch"
+            }
+        ]
     }
 ]

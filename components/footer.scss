@@ -173,7 +173,7 @@
                     justify-content: center;
                     text-align: center;
                     column-gap: 5rem;
-                    padding-inline: min(5rem, 5%);
+                    padding-inline: min(10rem, 10%);
                     padding-block: 1rem;
                     border-radius: 1rem;
                     background-image: $color-gradient-blue;
@@ -181,7 +181,7 @@
                     .social-link {
                         display: flex;
                         color: $color-white-dark;
-                        font-size: 3rem;
+                        font-size: 4rem;
                         padding-inline: 1rem;
                         padding-block: 0.5rem;
                         border-radius: 1rem;

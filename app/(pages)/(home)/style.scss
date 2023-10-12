@@ -396,7 +396,7 @@
                             color: $color-white-dark;
                             font-size: 2rem;
                             text-align: center;
-                            padding-inline: 5rem;
+                            padding-inline: 10rem;
                             padding-block: 0.5rem;
                             border-radius: 3rem;
                             outline: 3px solid $color-white-dark;
@@ -743,11 +743,5 @@
 
     100% {
         transform: translate(0, 0);
-    }
-}
-
-@keyframes wave {
-    to {
-        transform: rotate(45deg);
     }
 }
