@@ -81,9 +81,7 @@ export default function Content({ products }) {
                 <div className="section-container">
                     <ScrollContainer classes={"title-box"}>
                         <h1 className="title">
-                            IHRE EXPERTEN
-                            <br />
-                            IN SACHEN
+                            IHRE EXPERTEN IN SACHEN
                             <br />
                             <span className="gradient">BAUMESSTECHNIK</span>
                         </h1>

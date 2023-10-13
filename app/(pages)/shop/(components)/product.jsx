@@ -24,13 +24,20 @@ export default function Product({ product }) {
                     </ul>
                 </div>
                 <div className="datasheet-list">
-                    <h2 className="datasheet-title">Dokumente:</h2>
-                    {product.datasheets?.map((sheet, index) => (
-                        <Link href={sheet.path} target="_blank" key={index} className="datasheet-link">
-                            <FaFilePdf className="icon" />
-                            {sheet.type}
+                    <div className="documents-box">
+                        <h2 className="datasheet-title">Dokumente:</h2>
+                        {product.datasheets?.map((sheet, index) => (
+                            <Link href={sheet.path} target="_blank" key={index} className="datasheet-link">
+                                <FaFilePdf className="icon" />
+                                <span className="type">{sheet.type}</span>
+                            </Link>
+                        ))}
+                    </div>
+                    <div className="link-box">
+                        <Link href={"/kontakt"} className="link">
+                            Kontakt aufnehmen
                         </Link>
-                    ))}
+                    </div>
                 </div>
             </div>
         </div>

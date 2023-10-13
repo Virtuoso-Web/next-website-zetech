@@ -82,7 +82,7 @@ export default function Footer() {
                                         +41 41 250 32 02
                                     </Link>
                                     <Link href={"/kontakt"} className="sub-link">
-                                        zetech@gmx.ch
+                                        info@zetech.ch
                                     </Link>
                                 </div>
                             </div>

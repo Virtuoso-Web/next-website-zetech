@@ -132,6 +132,10 @@
                         "h i"
                         "p i";
                     row-gap: 5rem;
+                    padding-inline: min(5rem, 5%);
+                    padding-block: 5rem;
+                    border-radius: 1rem;
+                    background-color: $color-white-light;
 
                     @media (max-width: 1024px) {
                         grid-template-areas:
@@ -220,8 +224,6 @@
     }
 
     .service-section-even {
-        background-color: $color-white-light;
-
         .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
@@ -279,7 +281,7 @@
                             content: "";
                             inset-inline: -5rem 0;
                             inset-block: 0;
-                            background-color: $color-white-light;
+                            background-color: $color-white-dark;
                             z-index: -1;
 
                             @media (max-width: 1024px) {
@@ -296,6 +298,10 @@
                         "i h"
                         "i p";
                     row-gap: 5rem;
+                    padding-inline: min(5rem, 5%);
+                    padding-block: 5rem;
+                    border-radius: 1rem;
+                    background-color: $color-white-light;
 
                     @media (max-width: 1024px) {
                         grid-template-areas:

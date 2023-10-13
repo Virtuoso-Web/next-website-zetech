@@ -176,14 +176,28 @@
             .flex-grid {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: "t i";
                 column-gap: 5rem;
                 row-gap: 5rem;
 
+                &.reversed {
+                    grid-template-areas: "i t";
+                }
+
                 @media (max-width: 1024px) {
-                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                        "t t"
+                        "i i";
+
+                    &.reversed {
+                        grid-template-areas:
+                            "t t"
+                            "i i";
+                    }
                 }
 
                 .list-box {
+                    grid-area: t;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -206,6 +220,7 @@
                 }
 
                 .image-box {
+                    grid-area: i;
                     display: flex;
 
                     .image-holder {
@@ -238,6 +253,7 @@
 
             .text {
                 font-size: 2rem;
+                font-weight: $weight-bold;
                 text-align: center;
             }
         }

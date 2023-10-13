@@ -72,7 +72,7 @@ export default function Page() {
 
             <section className="workshop-service-section">
                 <div className="section-container">
-                    <div className="flex-grid">
+                    <div className="flex-grid reversed">
                         <div className="image-box">
                             <div className="image-holder">
                                 <img src="/images/service/image-4.webp" alt="Service Werkstatt" loading="lazy" className="image" />

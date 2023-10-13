@@ -101,78 +101,99 @@
                     }
                 }
 
-                .sub-flex-grid {
+                .departments-container {
                     display: flex;
                     flex-direction: column;
                     row-gap: 5rem;
-                    padding-inline: min(5rem, 5%);
-                    padding-block: 5rem;
-                    border-radius: 1rem;
-                    background-color: $color-white-light;
 
-                    .title {
-                        font-size: 5rem;
-                    }
-
-                    .partner-flex-grid {
-                        display: grid;
-                        grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
-                        column-gap: 5rem;
+                    .sub-flex-grid {
+                        display: flex;
+                        flex-direction: column;
                         row-gap: 5rem;
+                        padding-inline: min(5rem, 5%);
+                        padding-block: 5rem;
+                        border-radius: 1rem;
+                        background-color: $color-white-light;
 
-                        .partner-box {
-                            display: flex;
-                            flex-direction: column;
-                            row-gap: 1rem;
-                            padding-block-end: 1rem;
-                            border-radius: 1rem;
-                            background-color: $color-white-dark;
-                            overflow: hidden;
+                        .title {
+                            font-size: 5rem;
+                            font-weight: $weight-bold;
 
-                            .image-holder {
-                                position: relative;
-                                display: flex;
-                                inline-size: 100%;
-                                aspect-ratio: 4 / 3;
-                                background-color: $color-white-dark;
+                            @media (max-width: 768px) {
+                                font-size: 4rem;
                             }
 
-                            .box-group {
+                            @media (max-width: 425px) {
+                                font-size: 3rem;
+                            }
+                        }
+
+                        .partner-flex-grid {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(min(30rem, 100%), 1fr));
+                            column-gap: 5rem;
+                            row-gap: 5rem;
+
+                            .partner-box {
                                 display: flex;
                                 flex-direction: column;
                                 row-gap: 1rem;
-                                padding-inline: min(5rem, 5%);
+                                padding-block-end: 1rem;
+                                border-radius: 1rem;
+                                background-color: $color-white-dark;
+                                overflow: hidden;
 
-                                .name {
-                                    font-size: 2rem;
-                                    font-weight: $weight-bold;
-                                }
-
-                                .area {
-                                    font-size: 2rem;
-                                }
-
-                                .contact-group {
-                                    inline-size: fit-content;
+                                .image-holder {
+                                    position: relative;
                                     display: flex;
-                                    align-items: center;
-                                    column-gap: 3rem;
+                                    inline-size: 100%;
+                                    aspect-ratio: 4 / 3;
+                                    background-color: $color-white-dark;
+                                }
 
-                                    .icon-holder {
-                                        display: flex;
-                                        padding-inline: 1rem;
-                                        padding-block: 1rem;
-                                        border-radius: 50%;
-                                        background-color: $color-white-light;
+                                .box-group {
+                                    display: flex;
+                                    flex-direction: column;
+                                    row-gap: 1rem;
+                                    padding-inline: min(5rem, 5%);
 
-                                        .icon {
-                                            font-size: 2rem;
-                                        }
+                                    .name {
+                                        font-size: 2rem;
+                                        font-weight: $weight-bold;
                                     }
 
-                                    .contact-link {
-                                        color: $color-blue-main;
-                                        font-size: 2rem;
+                                    .contact-group {
+                                        inline-size: fit-content;
+                                        display: flex;
+                                        align-items: center;
+                                        column-gap: 1rem;
+
+                                        .icon-holder {
+                                            display: flex;
+                                            padding-inline: 1rem;
+                                            padding-block: 1rem;
+                                            border-radius: 50%;
+                                            background-color: $color-white-light;
+
+                                            .icon {
+                                                font-size: 2rem;
+                                            }
+                                        }
+
+                                        .contact-link {
+                                            color: $color-blue-main;
+                                            font-size: 2rem;
+                                            padding-inline: 1rem;
+                                            padding-block: 0.5rem;
+                                            border-radius: 1rem;
+                                            transition-property: background-color;
+                                            transition-timing-function: ease-in-out;
+                                            transition-duration: 200ms;
+
+                                            &:hover {
+                                                background-color: $color-white-light;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -184,8 +205,6 @@
     }
 
     .form-section {
-        // background-color: $color-white-light;
-
         .section-container {
             inline-size: min($max-size, 100%);
             padding-inline: min(5rem, 5%);
@@ -299,7 +318,7 @@
                             inline-size: fit-content;
                             display: flex;
                             align-items: center;
-                            column-gap: 5rem;
+                            column-gap: 4rem;
 
                             .icon-holder {
                                 display: flex;
@@ -316,6 +335,7 @@
                             .box-group {
                                 display: flex;
                                 flex-direction: column;
+                                padding-inline: 1rem;
 
                                 > p {
                                     font-size: 2rem;
@@ -325,6 +345,16 @@
                             .contact-link {
                                 color: $color-blue-main;
                                 font-size: 2rem;
+                                padding-inline: 1rem;
+                                padding-block: 0.5rem;
+                                border-radius: 1rem;
+                                transition-property: background-color;
+                                transition-timing-function: ease-in-out;
+                                transition-duration: 200ms;
+
+                                &:hover {
+                                    background-color: $color-white-dark;
+                                }
                             }
                         }
                     }

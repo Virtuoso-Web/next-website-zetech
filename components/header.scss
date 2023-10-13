@@ -96,13 +96,14 @@
 
                         &.active,
                         &:hover {
-                            background-color: $color-white-dark;
+                            background-color: $color-white-light;
                             color: $color-black-light;
                         }
                     }
 
                     &.active,
                     &:hover {
+                        color: $color-black-light;
                         background-color: $color-white-light;
                     }
                 }

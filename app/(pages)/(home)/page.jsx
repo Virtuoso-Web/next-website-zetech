@@ -8,8 +8,6 @@ import products from "@/app/(pages)/(home)/products.json";
 
 import Link from "next/link";
 
-import { PiArrowArcRightBold } from "react-icons/pi";
-
 export const metadata = {
     title: "Home",
 };
@@ -53,17 +51,9 @@ export default function Page() {
                             <h1 className="title">Zögern Sie nicht</h1>
                             <p className="text">und kontaktieren Sie uns bei allen Fragen oder Anliegen.</p>
                         </div>
-                        {/* <ScrollContainer classes={"icon-box"}>
-                            <div className="hello-box">
-                                <h1 className="title">Say Hello</h1>
-                                <div className="icon-holder">
-                                    <PiArrowArcRightBold className="icon" />
-                                </div>
-                            </div>
-                            <Link href={"/kontakt"} aria-label="Kontakt" className="link-holder">
-                                <span className="emoji">👋</span>
-                            </Link>
-                        </ScrollContainer> */}
+                        <Link href={"/kontakt"} className="link">
+                            Kontakt aufnehmen
+                        </Link>
                     </div>
                 </div>
             </section>
